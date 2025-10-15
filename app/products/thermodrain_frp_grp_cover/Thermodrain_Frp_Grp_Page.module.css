@@ -1,0 +1,286 @@
+.page {
+  font-family: "Playfair Display", serif;
+  background-color: #fdf9f5;
+  color: #333;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* ========== HERO SECTION ========== */
+.hero {
+  text-align: center;
+  background-color: #fff;
+  padding: 120px 20px 80px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #f58220, #ffae42);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* ========== INSTALLATION METHOD SECTION ========== */
+/* ========== INSTALLATION METHOD SECTION WITH IMAGE ========== */
+.installation {
+  background-color: #fff;
+  padding: 80px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.method {
+  flex: 1 1 500px;
+}
+
+.method h2 {
+  font-size: 2rem;
+  color: #f58220;
+  margin-bottom: 20px;
+}
+
+.method ol {
+  padding-left: 20px;
+  margin-bottom: 40px;
+  color: #444;
+}
+
+.method li {
+  margin-bottom: 12px;
+  line-height: 1.7;
+}
+
+.imageWrapper {
+  flex: 1 1 400px;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.productImage {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  object-fit: cover;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .installation {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .imageWrapper {
+    margin-top: 40px;
+  }
+
+  .method ol {
+    text-align: left;
+  }
+}
+
+/* ========== MAIN CONTENT ========== */
+.mainContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 80px auto;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+.imageWrapper {
+  flex: 1 1 400px;
+  max-width: 600px;
+}
+
+.productImage {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  object-fit: cover;
+}
+
+/* ========== SPECIFICATIONS TABLE ========== */
+.specifications {
+  background-color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+  border-top: 1px solid #f1e4d9;
+}
+
+.specifications h2 {
+  font-size: 2.4rem;
+  background: linear-gradient(90deg, #f58220, #ffae42);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 50px;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+  margin-top: 40px;
+}
+
+.specTable {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+.specTable th,
+.specTable td {
+  padding: 12px 15px;
+  border: 1px solid #ffe0bf;
+  text-align: center;
+}
+
+.specTable th {
+  background: linear-gradient(90deg, #f58220, #ffae42);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.specTable td {
+  background-color: #fff7f0;
+  color: #444;
+  font-weight: 500;
+}
+
+.specTable tr:hover td {
+  background-color: #ffeacc;
+  transition: all 0.3s ease;
+}
+
+/* ========== ADVANTAGES / DISADVANTAGES TABLE ========== */
+.advDisadv {
+  background-color: #fff;
+  padding: 80px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.advDisadv h2 {
+  font-size: 2rem;
+  color: #f58220;
+  margin-bottom: 30px;
+}
+
+.advDisadv .specTable th,
+.advDisadv .specTable td {
+  text-align: left;
+  padding: 12px 15px;
+}
+
+.advDisadv .specTable th {
+  font-size: 1.2rem;
+}
+
+/* ========== CTA SECTION ========== */
+.cta {
+  text-align: center;
+  background: linear-gradient(90deg, #f58220, #ffae42);
+  color: #fff;
+  padding: 100px 20px;
+  margin-top: 60px;
+}
+
+.cta h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.cta p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta button {
+  padding: 14px 36px;
+  border-radius: 999px;
+  border: none;
+  background-color: #fff;
+  color: #f58220;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta button:hover {
+  background-color: #fff7f0;
+  transform: scale(1.05);
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 992px) {
+  .hero h1 {
+    font-size: 2.4rem;
+  }
+
+  .installation h2 {
+    font-size: 1.8rem;
+  }
+
+  .details h2 {
+    font-size: 1.6rem;
+  }
+
+  .tableCard {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainContent {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .installation ol {
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .tableCard {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .specifications h2,
+  .cta h2,
+  .installation h2,
+  .advDisadv h2 {
+    font-size: 2rem;
+  }
+}

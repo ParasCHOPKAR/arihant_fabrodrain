@@ -1,0 +1,181 @@
+"use client";
+
+import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
+import styles from "./Thermodrain_air_Page.module.css";
+
+export default function ThermodrainProductPage() {
+  return (
+    <div className={styles.page}>
+      {/* HERO SECTION */}
+      <section className={styles.hero}>
+        <motion.h1
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+        >
+ THERMODRAIN AIR & WATERTIGHT (PRESSFIT) COVERS WITH FRAME
+        </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3 }}
+        >
+          THERMODRAIN Solid Top Manhole Covers are tested as per BS EN 124, IS1726
+          & AASHTO M306 standards for drainage and utility services meeting all
+          requirements of the code. They perform better than Cast Iron, Ductile
+          Iron, and RCC manhole covers, offering superior durability, strength, and
+          long service life.
+        </motion.p>
+      </section>
+
+      {/* MAIN CONTENT */}
+      <div className={styles.mainContent}>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6 }}
+          className={styles.imageWrapper}
+        >
+          <Image
+            src="/product_img/pruduct_04.jpg"
+            alt="Thermodrain Solid Top Manhole Cover"
+            width={600}
+            height={600}
+            className={styles.productImage}
+          />
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className={styles.details}
+        >
+          <h2>Salient Features</h2>
+          <ul>
+            <li>Double Sealed Arrangement</li>
+            <li>Q-Turn Locking or Bolt Locking Available</li>
+            <li>
+              Closed Bottom Keyhole prevents mosquito breeding and emission of foul smell
+            </li>
+            <li>
+              Permanent set is as per BS EN 124 for all sizes and load bearing
+            </li>
+            <li>Self-Pigmented and Non-Brittle Construction</li>
+          </ul>
+
+          <h2>Key Highlights</h2>
+          <ul>
+            <li>Material: FRP / GRP / Composite Material</li>
+            <li>Load Bearing Capacity: 2.5T (2.5 Tons) to F900 (90 Tons)</li>
+            <li>Shapes: Circular, Square, and Rectangular</li>
+            <li>Seal: Double Seal Arrangements</li>
+            <li>
+              Closed Bottom Keyholes with Stainless Steel or High-Strength Plastic Alloy
+              Inserts (Prevents Cracking)
+            </li>
+          </ul>
+
+          <Link href="/contact">
+            <motion.button whileHover={{ scale: 1.05 }}>
+              Get a Quote
+            </motion.button>
+          </Link>
+        </motion.div>
+      </div>
+
+      {/* SPECIFICATIONS TABLE */}
+<section className={styles.specifications}>
+  <h2>Frame Opening Sizes</h2>
+
+  <div className={styles.tableWrapper}>
+    <table className={styles.specTable}>
+      <thead>
+        <tr>
+          <th>Size (mm)</th>
+          <th>Circular</th>
+          <th>Rectangular</th>
+          <th>Square</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>400</td>
+          <td>400 mm (16")</td>
+          <td>-</td>
+          <td>300 mm × 300 mm (12" × 12")</td>
+        </tr>
+        <tr>
+          <td>450</td>
+          <td>450 mm (17")</td>
+          <td>-</td>
+          <td>450 mm × 450 mm (18" × 18")</td>
+        </tr>
+        <tr>
+          <td>500</td>
+          <td>500 mm (20")</td>
+          <td>-</td>
+          <td>600 mm × 600 mm (24" × 24")</td>
+        </tr>
+        <tr>
+          <td>600</td>
+          <td>600 mm (24")</td>
+          <td>600 mm × 450 mm (24" × 18")</td>
+          <td>675 mm × 675 mm (27" × 27")</td>
+        </tr>
+        <tr>
+          <td>690</td>
+          <td>690 mm (27")</td>
+          <td>-</td>
+          <td>750 mm × 750 mm (29" × 29")</td>
+        </tr>
+        <tr>
+          <td>762</td>
+          <td>762 mm (30")</td>
+          <td>-</td>
+          <td>900 mm × 900 mm (36" × 36")</td>
+        </tr>
+        <tr>
+          <td>900</td>
+          <td>900 mm (36")</td>
+          <td>900 mm × 450 mm (36" × 18")</td>
+          <td>1000 mm × 1000 mm (40" × 40")</td>
+        </tr>
+        <tr>
+          <td>1000</td>
+          <td>1000 mm (40")</td>
+          <td>990 mm × 1220 mm (40" × 49")</td>
+          <td>1200 mm × 1200 mm (48" × 48")</td>
+        </tr>
+        <tr>
+          <td>1400</td>
+          <td>1400 mm (55") (2 covers with single frame)</td>
+          <td>-</td>
+          <td>1500 mm × 1500 mm (60" × 60")</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+</section>
+
+
+      {/* CTA SECTION */}
+      <section className={styles.cta}>
+        <h2>Need THERMODRAIN Covers for Your Project?</h2>
+        <p>
+          Contact us today for bulk inquiries, customization options, or detailed
+          technical data sheets. We’re here to help you choose the right product
+          for your application.
+        </p>
+        <Link href="/contact">
+          <button>Contact Us</button>
+        </Link>
+      </section>
+    </div>
+  );
+}

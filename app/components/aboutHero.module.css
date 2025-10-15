@@ -1,0 +1,140 @@
+.aboutHero {
+  width: 100%;
+  background: #ffffff;
+  padding: 100px 0;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  padding: 0 40px;
+}
+
+/* ---------- LEFT IMAGE SHAPE ---------- */
+.leftImage {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shapeWrapper {
+  position: relative;
+  width: 420px;
+  height: 420px;
+  background: #f58220;
+  border-radius: 30px;
+  transform: rotate(45deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerShape {
+  position: absolute;
+  width: 360px; /* slightly increased */
+  height: 360px;
+  background: #fff;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageWrapper {
+  position: absolute;
+  width: 390px; /* increased from 280px */
+  height: 390px;
+  overflow: hidden;
+  transform: rotate(-45deg); /* counter rotation */
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); /* diamond shape */
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.imageWrapper img:hover {
+  transform: scale(1.08);
+}
+
+/* ---------- RIGHT CONTENT ---------- */
+.rightContent {
+  flex: 1;
+  animation: fadeInRight 1.2s ease forwards;
+}
+
+.title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 25px;
+}
+
+.title span {
+  color: #f58220;
+  position: relative;
+}
+
+.title span::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: rgba(104, 181, 89, 0.3);
+  border-radius: 2px;
+}
+
+.text {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  max-width: 550px;
+}
+
+/* ---------- ANIMATION ---------- */
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 60px;
+  }
+
+  .shapeWrapper {
+    transform: rotate(45deg) scale(0.8);
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .text {
+    margin: 0 auto;
+    font-size: 0.95rem;
+  }
+}

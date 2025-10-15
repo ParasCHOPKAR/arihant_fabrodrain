@@ -1,0 +1,250 @@
+.page {
+  font-family: "Playfair Display", serif;
+  background-color: #fdf9f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ========== HERO SECTION ========== */
+.hero {
+  text-align: center;
+  background-color: #fff;
+  padding: 120px 20px 80px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #f58220, #ffae42);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* ========== MAIN CONTENT ========== */
+.mainContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 80px auto;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+.imageWrapper {
+  flex: 1 1 400px;
+  max-width: 600px;
+}
+
+.productImage {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  object-fit: cover;
+}
+
+.details {
+  flex: 1 1 400px;
+  max-width: 600px;
+}
+
+.details h2 {
+  font-size: 1.8rem;
+  color: #f58220;
+  margin-bottom: 14px;
+}
+
+.details ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 24px;
+  color: #444;
+}
+
+.details li {
+  margin-bottom: 8px;
+}
+
+.details button {
+  padding: 12px 28px;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(90deg, #f58220, #ffae42);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.details button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(245, 130, 32, 0.3);
+}
+
+/* ========== SPECIFICATIONS SECTION ========== */
+/* ========== SPECIFICATIONS SECTION ========== */
+/* ========== SPECIFICATIONS SECTION TABLE ========== */
+.specifications {
+  background-color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+  border-top: 1px solid #f1e4d9;
+}
+
+.specifications h2 {
+  font-size: 2.4rem;
+  background: linear-gradient(90deg, #f58220, #ffae42);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 50px;
+}
+
+/* Table Styling */
+.tableWrapper {
+  overflow-x: auto;
+  margin-top: 40px;
+}
+
+.specTable {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+.specTable th,
+.specTable td {
+  padding: 12px 15px;
+  border: 1px solid #ffe0bf;
+  text-align: center;
+}
+
+.specTable th {
+  background: linear-gradient(90deg, #f58220, #ffae42);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.specTable td {
+  background-color: #fff7f0;
+  color: #444;
+  font-weight: 500;
+}
+
+.specTable tr:hover td {
+  background-color: #ffeacc;
+  transition: all 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .specTable th,
+  .specTable td {
+    padding: 10px 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tableWrapper {
+    overflow-x: auto;
+  }
+
+  .specTable {
+    min-width: 500px;
+  }
+}
+
+/* ========== CTA SECTION ========== */
+.cta {
+  text-align: center;
+  background: linear-gradient(90deg, #f58220, #ffae42);
+  color: #fff;
+  padding: 100px 20px;
+  margin-top: 60px;
+}
+
+.cta h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.cta p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta button {
+  padding: 14px 36px;
+  border-radius: 999px;
+  border: none;
+  background-color: #fff;
+  color: #f58220;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta button:hover {
+  background-color: #fff7f0;
+  transform: scale(1.05);
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 992px) {
+  .hero h1 {
+    font-size: 2.4rem;
+  }
+
+  .details h2 {
+    font-size: 1.6rem;
+  }
+
+  .tableContainer {
+    gap: 20px;
+  }
+
+  .tableCard {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainContent {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .details ul {
+    text-align: left;
+  }
+
+  .tableCard {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .specifications h2,
+  .cta h2 {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,107 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 90vh; /* 50% of viewport height */
+  display: flex;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  color: #fff;
+}
+
+/* Make slides fill the section */
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+  z-index: 0;
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.05);
+  z-index: 1;
+}
+
+/* Container adjusts based on content */
+.container {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* Left Content */
+.leftContent {
+  max-width: 600px;
+  z-index: 2;
+}
+
+.leftContent h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.leftContent p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 400px;
+}
+
+.primaryBtn {
+  background: #f58220;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.primaryBtn:hover {
+  background: #ff9c42;
+}
+
+.secondaryBtn {
+  background: transparent;
+  border: 2px solid #f58220;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.secondaryBtn:hover {
+  background: #f58220;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .leftContent h1 {
+    font-size: 2.2rem;
+  }
+  .leftContent p {
+    font-size: 1rem;
+  }
+}

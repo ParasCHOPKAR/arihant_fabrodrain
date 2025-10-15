@@ -1,0 +1,181 @@
+.industriesPage {
+  font-family: "Playfair Display", serif;
+  color: #333;
+  background-color: #fdf9f5;
+}
+/* HERO SECTION */
+.industriesHero {
+  text-align: center;
+  background: url('/icons/industrie_we_serve.jpg') center/cover no-repeat; /* Add your image path */
+  color: #f58220;
+  padding: 140px 20px 100px;
+  position: relative;
+  height: 52vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Optional overlay for better text readability */
+.industriesHero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.85); /* adjust opacity as needed */
+  z-index: 1;
+}
+
+.industriesHero h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #f58220, #ffae42);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative; /* above overlay */
+  z-index: 2;
+  line-height: 1.2;
+}
+
+.industriesHero h1::after {
+  content: "";
+  display: none;
+  width: 90px;
+  height: 5px;
+  background: linear-gradient(90deg, #f58220, #ffae42);
+  margin: 20px auto 0;
+  border-radius: 3px;
+}
+
+.industriesHero p {
+  max-width: 720px;
+  margin: 25px auto 0;
+  line-height: 1.8;
+  font-size: 1.2rem;
+  color: #555;
+  position: relative; /* above overlay */
+  z-index: 2;
+}
+
+
+/* Add a light bottom shadow to separate sections */
+.industriesHero {
+  box-shadow: 0 10px 30px rgba(245, 130, 32, 0.08);
+  border-bottom: 1px solid rgba(245, 130, 32, 0.1);
+}
+
+/* MAIN CONTENT */
+.industriesContainer {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 30px;
+}
+
+.sectionBox {
+  margin-bottom: 90px;
+}
+
+.sectionBox h2 {
+  color: #f58220;
+  font-size: 2.3rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+  text-align: center;
+  background: linear-gradient(90deg, #f58220, #ffae42);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+.sectionBox h2::after {
+  content: "";
+  display: none;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #f58220, #ffae42);
+  margin: 12px auto 0;
+  border-radius: 3px;
+}
+
+/* GRID STYLE */
+.gridList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 35px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  padding: 40px 25px;
+  text-align: center;
+  transition: all 0.4s ease;
+  border: 2px solid transparent;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  border-color: #f58220;
+  box-shadow: 0 20px 45px rgba(245, 130, 32, 0.2);
+  background: #fffaf5;
+}
+
+.card p {
+  font-weight: 600;
+  font-size: 1.15rem;
+  color: #333;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+}
+
+/* Subtle top animation line */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 4px;
+  background: linear-gradient(90deg, #f58220, #ffae42);
+  transition: width 0.4s ease;
+  border-radius: 10px;
+}
+
+.card:hover::before {
+  width: 60%;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .industriesHero {
+    padding: 100px 15px 70px;
+  }
+
+  .industriesHero h1 {
+    font-size: 2.4rem;
+  }
+
+  .industriesHero p {
+    font-size: 1rem;
+  }
+
+  .sectionBox h2 {
+    font-size: 1.9rem;
+  }
+
+  .gridList {
+    gap: 20px;
+  }
+
+  .card {
+    padding: 30px 20px;
+  }
+}

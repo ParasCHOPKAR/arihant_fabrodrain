@@ -1,0 +1,139 @@
+.testimonialSection {
+  padding: 100px 20px;
+  max-width: 1300px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #fff 0%, #fdf4ec 40%, #fff9f5 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* ---------- Decorative Pattern Layer ---------- */
+.testimonialSection .pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  z-index: 1;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* ---------- Heading ---------- */
+.heading {
+  font-family: "Playfair Display", serif;
+  font-size: 3.2rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 70px;
+  line-height: 1.2;
+  background: linear-gradient(90deg, #f58220, #ffae42);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+  position: relative;
+  z-index: 3;
+}
+
+.heading::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #f58220;
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+/* ---------- Testimonial Card ---------- */
+.testimonialCard {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+  padding: 40px 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  position: relative;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  z-index: 3;
+}
+
+.testimonialCard:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 40px rgba(245, 130, 32, 0.35);
+}
+
+/* ---------- Decorative quote icons ---------- */
+.testimonialCard::before {
+  content: "“";
+  font-size: 80px;
+  color: rgba(245, 130, 32, 0.1);
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-family: "Playfair Display", serif;
+}
+
+.testimonialCard::after {
+  content: "”";
+  font-size: 80px;
+  color: rgba(245, 130, 32, 0.1);
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  font-family: "Playfair Display", serif;
+}
+
+/* ---------- Star Rating ---------- */
+.stars {
+  font-size: 1.4rem;
+  color: #f58220;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.testimonialCard:hover .stars {
+  transform: scale(1.15);
+}
+
+/* ---------- Message ---------- */
+.message {
+  font-size: 1.05rem;
+  color: #444;
+  margin-bottom: 20px;
+  line-height: 1.7;
+  position: relative;
+  z-index: 2;
+}
+
+/* ---------- Name & Designation ---------- */
+.name {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #222;
+  margin-top: 10px;
+}
+
+.designation {
+  font-size: 0.95rem;
+  color: #777;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 992px) {
+  .heading {
+    font-size: 2.4rem;
+  }
+
+  .testimonialCard {
+    padding: 30px 20px;
+  }
+}

@@ -1,0 +1,183 @@
+.missionSection {
+  background: #fff;
+  padding: 100px 20px;
+  font-family: "Playfair Display", serif;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+/* --- Left Content --- */
+.leftContent {
+  flex: 1 1 500px;
+}
+
+.heading {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.underline {
+  width: 80px;
+  height: 5px;
+  background: #F58220;
+  border-radius: 4px;
+  margin-bottom: 40px;
+}
+
+/* --- Mission Cards --- */
+.card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.iconWrapper {
+  background: #e6f9f6;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.icon {
+  color: #F58220;
+  font-size: 24px;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+.text {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 400px;
+}
+
+/* --- Right Image Grid --- */
+.rightImages {
+  flex: 1 1 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px; /* for subtle depth */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  transform: rotate(45deg);
+}
+
+.shape,
+.shapeLarge {
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.shape:hover,
+.shapeLarge:hover {
+  transform: scale(1.05) rotate(0deg);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.shape {
+  width: 150px;
+  height: 150px;
+}
+
+.shapeLarge {
+  grid-column: span 2;
+  width: 320px;
+  height: 320px;
+  margin: auto;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: rotate(-45deg);
+  transition: all 0.4s ease;
+}
+
+.image:hover {
+  transform: scale(1.1) rotate(-45deg);
+  cursor: pointer;
+}
+
+/* --- Responsive --- */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .rightImages {
+    margin-top: 30px;
+  }
+
+  .grid {
+    transform: rotate(0);
+    gap: 15px;
+  }
+
+  .image {
+    transform: none;
+  }
+
+  .shape,
+  .shapeLarge {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+  }
+
+  .heading {
+    font-size: 2.2rem;
+  }
+
+  .underline {
+    width: 60px;
+    height: 4px;
+  }
+
+  .title {
+    font-size: 1.15rem;
+  }
+
+  .text {
+    font-size: 0.95rem;
+    max-width: 100%;
+  }
+}

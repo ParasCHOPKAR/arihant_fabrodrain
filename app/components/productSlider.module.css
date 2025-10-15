@@ -1,0 +1,154 @@
+/* ==========================
+   PRODUCT SECTION
+========================== */
+.productSection {
+  position: relative; /* required for arrows to position outside */
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 50px;
+  line-height: 1.2;
+  background: linear-gradient( #f58220);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+}
+
+/* ==========================
+   PRODUCT CARD
+========================== */
+.productCard {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  /* Make all cards same height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 320px; /* Ensures uniform height */
+}
+
+.productCard:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(245, 130, 32, 0.25);
+}
+
+.productImage {
+  border-radius: 12px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  width: 100%;
+  height: 180px; /* fixed height for uniformity */
+}
+
+.productName {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  color: #111;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  line-height: 1.4;
+}
+
+.productName:hover {
+  color: #f58220;
+}
+
+/* ==========================
+   SWIPER NAVIGATION ARROWS
+========================== */
+.swiper {
+  overflow: visible; /* allow arrows outside */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute; /* relative to .productSection */
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  color: #f58220;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.swiper-button-next {
+  right: -70px; /* outside container */
+}
+
+.swiper-button-prev {
+  left: -90px; /* outside container */
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 22px;
+}
+
+/* ==========================
+   RESPONSIVE ADJUSTMENTS
+========================== */
+@media (max-width: 1200px) {
+  .swiper-button-next { right: -50px; }
+  .swiper-button-prev { left: -50px; }
+}
+
+@media (max-width: 768px) {
+  .productSection {
+    padding: 40px 15px;
+  }
+  .heading {
+    font-size: 2.4rem;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 40px;
+    height: 40px;
+  }
+  .swiper-button-next { right: -30px; }
+  .swiper-button-prev { left: -30px; }
+
+  .productCard {
+    min-height: 300px; /* keep uniform on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 2rem;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 35px;
+    height: 35px;
+  }
+  .swiper-button-next { right: -25px; }
+  .swiper-button-prev { left: -25px; }
+
+  .productCard {
+    min-height: 280px;
+  }
+}
