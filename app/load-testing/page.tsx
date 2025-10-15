@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image"; // Import Next.js Image
 import "./LoadTesting.css";
 
 const LoadTesting = () => {
@@ -23,7 +24,14 @@ const LoadTesting = () => {
             </p>
           </div>
           <div className="imageContent">
-            <img src="images/load-testing.jpg" alt="Load Testing" />
+            <Image
+              src="/images/load-testing.jpg"
+              alt="Load Testing"
+              width={600}   // Adjust width
+              height={400}  // Adjust height
+              className="loadImage"
+              priority      // Optional: preload for LCP
+            />
           </div>
         </div>
       </section>

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image"; // Import Next.js Image
 import styles from "./footer.module.css";
 
 const Footer = () => {
@@ -9,7 +10,13 @@ const Footer = () => {
       <div className={styles.container}>
         {/* Logo & About */}
         <div className={styles.logoSection}>
-          <img src="/images/logo_2.jpg" alt="Logo" className={styles.logo} />
+          <Image
+            src="/images/logo_2.jpg"
+            alt="Logo"
+            width={150} // adjust width
+            height={50} // adjust height
+            className={styles.logo}
+          />
           <p className={styles.about}>
             At <b>THERMODRAIN</b>, we engineer durable and innovative solutions
             for industrial drainage — from precision manhole covers to high-load
@@ -40,10 +47,20 @@ const Footer = () => {
 
           <div className={styles.socials}>
             <a href="#" aria-label="LinkedIn">
-              <img src="/icons/LinkedIn_icon.svg.png" alt="LinkedIn" />
+              <Image
+                src="/icons/LinkedIn_icon.svg.png"
+                alt="LinkedIn"
+                width={24}
+                height={24}
+              />
             </a>
             <a href="#" aria-label="Instagram">
-              <img src="/icons/Instagram_icon.png.webp" alt="Instagram" />
+              <Image
+                src="/icons/Instagram_icon.png.webp"
+                alt="Instagram"
+                width={24}
+                height={24}
+              />
             </a>
           </div>
         </div>

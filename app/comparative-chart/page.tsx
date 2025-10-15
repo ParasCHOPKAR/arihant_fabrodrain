@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image"; // Next.js Image
 import styles from "./Comparative.module.css"; // CSS Modules
 
 const ComparativePage = () => {
@@ -43,28 +44,35 @@ const ComparativePage = () => {
             key={idx}
             onClick={() => openModal(img)}
           >
-            <img src={img} alt={`Comparison ${idx + 1}`} />
+            <Image
+              src={img}
+              alt={`Comparison ${idx + 1}`}
+              width={400}          // Adjust width as needed
+              height={300}         // Adjust height as needed
+              className={styles.imageCardImg}
+              priority             // Optional: preload important images
+            />
           </div>
         ))}
       </section>
 
       {/* MODAL */}
       {modalOpen && (
-        <div
-          className={styles.modalOverlay}
-          onClick={closeModal}
-        >
+        <div className={styles.modalOverlay} onClick={closeModal}>
           <div
             className={styles.modalContent}
             onClick={(e) => e.stopPropagation()}
           >
-            <button
-              className={styles.closeBtn}
-              onClick={closeModal}
-            >
+            <button className={styles.closeBtn} onClick={closeModal}>
               &times;
             </button>
-            <img src={currentImg} alt="Open Comparison" />
+            <Image
+              src={currentImg}
+              alt="Open Comparison"
+              width={800}           // Adjust width as needed
+              height={600}          // Adjust height as needed
+              className={styles.modalImage}
+            />
           </div>
         </div>
       )}

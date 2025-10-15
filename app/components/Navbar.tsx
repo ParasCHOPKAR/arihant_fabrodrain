@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image"; // Import Next.js Image
 import styles from "./navbar.module.css";
 
 const Navbar = () => {
@@ -51,7 +52,13 @@ const Navbar = () => {
       <nav className={`${styles.navbar} ${scrolled ? styles.navbarScrolled : ""}`}>
         {/* Logo */}
         <Link href="/" className={styles.logo}>
-          <img src="/images/logo_2.png" alt="Logo" />
+          <Image
+            src="/images/logo_2.png"
+            alt="Logo"
+            width={150}   // Adjust width according to design
+            height={50}   // Adjust height according to design
+            priority      // Optional: preload logo for faster LCP
+          />
         </Link>
 
         {/* Hamburger Toggle */}
@@ -68,7 +75,7 @@ const Navbar = () => {
 
           <li>
             <a href="#" onClick={toggleDropdown}>
-            Products <span className={styles.arrow}>▼</span>
+              Products <span className={styles.arrow}>▼</span>
             </a>
             <ul className={styles.dropdownMenu}>
               <li><Link href="/products/thermodrain_solid_top" onClick={closeMenu}>THERMODRAIN Solid Top Manhole Covers With Frame</Link></li>

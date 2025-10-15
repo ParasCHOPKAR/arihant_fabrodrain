@@ -50,18 +50,19 @@ export default function TestimonialsSection() {
         }}
         modules={[Autoplay]}
       >
-        {testimonials.map((t, index) => (
-          <SwiperSlide key={index}>
-            <div className={styles.testimonialCard}>
-              <div className={styles.stars}>
-                <span>★ ★ ★ ★ ★</span>
-              </div>
-              <p className={styles.message}>"{t.message}"</p>
-              <h4 className={styles.name}>{t.name}</h4>
-              <p className={styles.designation}>{t.designation}</p>
-            </div>
-          </SwiperSlide>
-        ))}
+{testimonials.map((t, index) => (
+  <SwiperSlide key={index}>
+    <div className={styles.testimonialCard}>
+      <div className={styles.stars}>
+        <span>★ ★ ★ ★ ★</span>
+      </div>
+      <p className={styles.message}>&quot;{t.message}&quot;</p>
+      <h4 className={styles.name}>{t.name}</h4>
+      <p className={styles.designation}>{t.designation}</p>
+    </div>
+  </SwiperSlide>
+))}
+
       </Swiper>
     </section>
   );

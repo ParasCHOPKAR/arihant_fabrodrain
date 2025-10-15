@@ -101,62 +101,64 @@ export default function ThermodrainProductPage() {
           <th>Square</th>
         </tr>
       </thead>
-      <tbody>
-        <tr>
-          <td>400</td>
-          <td>400 mm (16")</td>
-          <td>-</td>
-          <td>300 mm × 300 mm (12" × 12")</td>
-        </tr>
-        <tr>
-          <td>450</td>
-          <td>450 mm (17")</td>
-          <td>-</td>
-          <td>450 mm × 450 mm (18" × 18")</td>
-        </tr>
-        <tr>
-          <td>500</td>
-          <td>500 mm (20")</td>
-          <td>-</td>
-          <td>600 mm × 600 mm (24" × 24")</td>
-        </tr>
-        <tr>
-          <td>600</td>
-          <td>600 mm (24")</td>
-          <td>600 mm × 450 mm (24" × 18")</td>
-          <td>675 mm × 675 mm (27" × 27")</td>
-        </tr>
-        <tr>
-          <td>690</td>
-          <td>690 mm (27")</td>
-          <td>-</td>
-          <td>750 mm × 750 mm (29" × 29")</td>
-        </tr>
-        <tr>
-          <td>762</td>
-          <td>762 mm (30")</td>
-          <td>-</td>
-          <td>900 mm × 900 mm (36" × 36")</td>
-        </tr>
-        <tr>
-          <td>900</td>
-          <td>900 mm (36")</td>
-          <td>900 mm × 450 mm (36" × 18")</td>
-          <td>1000 mm × 1000 mm (40" × 40")</td>
-        </tr>
-        <tr>
-          <td>1000</td>
-          <td>1000 mm (40")</td>
-          <td>990 mm × 1220 mm (40" × 49")</td>
-          <td>1200 mm × 1200 mm (48" × 48")</td>
-        </tr>
-        <tr>
-          <td>1400</td>
-          <td>1400 mm (55") (2 covers with single frame)</td>
-          <td>-</td>
-          <td>1500 mm × 1500 mm (60" × 60")</td>
-        </tr>
-      </tbody>
+<tbody>
+  <tr>
+    <td>400</td>
+    <td>400 mm (16&quot;)</td>
+    <td>-</td>
+    <td>300 mm × 300 mm (12&quot; × 12&quot;)</td>
+  </tr>
+  <tr>
+    <td>450</td>
+    <td>450 mm (17&quot;)</td>
+    <td>-</td>
+    <td>450 mm × 450 mm (18&quot; × 18&quot;)</td>
+  </tr>
+  <tr>
+    <td>500</td>
+    <td>500 mm (20&quot;)</td>
+    <td>-</td>
+    <td>600 mm × 600 mm (24&quot; × 24&quot;)</td>
+  </tr>
+  <tr>
+    <td>600</td>
+    <td>600 mm (24&quot;)</td>
+    <td>600 mm × 450 mm (24&quot; × 18&quot;)</td>
+    <td>675 mm × 675 mm (27&quot; × 27&quot;)</td>
+  </tr>
+  <tr>
+    <td>690</td>
+    <td>690 mm (27&quot;)</td>
+    <td>-</td>
+    <td>750 mm × 750 mm (29&quot; × 29&quot;)</td>
+  </tr>
+  <tr>
+    <td>762</td>
+    <td>762 mm (30&quot;)</td>
+    <td>-</td>
+    <td>900 mm × 900 mm (36&quot; × 36&quot;)</td>
+  </tr>
+  <tr>
+    <td>900</td>
+    <td>900 mm (36&quot;)</td>
+    <td>900 mm × 450 mm (36&quot; × 18&quot;)</td>
+    <td>1000 mm × 1000 mm (40&quot; × 40&quot;)</td>
+  </tr>
+  <tr>
+    <td>1000</td>
+    <td>1000 mm (40&quot;)</td>
+    <td>990 mm × 1220 mm (40&quot; × 49&quot;)</td>
+    <td>1200 mm × 1200 mm (48&quot; × 48&quot;)</td>
+  </tr>
+  <tr>
+    <td>1400</td>
+    <td>1400 mm (55&quot;) (2 covers with single frame)</td>
+    <td>-</td>
+    <td>1500 mm × 1500 mm (60&quot; × 60&quot;)</td>
+  </tr>
+</tbody>
+
+
     </table>
   </div>
 
