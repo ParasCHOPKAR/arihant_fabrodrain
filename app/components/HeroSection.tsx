@@ -2,23 +2,21 @@
 
 import { useState, useEffect } from "react";
 import styles from "./heroSection.module.css";
-import Link from "next/link";
 
 export default function HeroSection() {
   const slides = [
     "/images/pr.jpg",
     "/images/pr_1.jpg",
-     "/images/pr_2.jpg",
-      "/images/pr_3.jpg",
-       "/images/pr_4.jpg",
-        "/images/pr_5.jpg",
-         "/images/pr_6.jpg",
-          "/images/pr_7.jpg",
-           "/images/pr_8.jpg",
-            "/images/pr_9.jpg",
-             "/images/pr_10.jpg",
-              "/images/pr_11.jpg",
-
+    "/images/pr_2.jpg",
+    "/images/pr_3.jpg",
+    "/images/pr_4.jpg",
+    "/images/pr_5.jpg",
+    "/images/pr_6.jpg",
+    "/images/pr_7.jpg",
+    "/images/pr_8.jpg",
+    "/images/pr_9.jpg",
+    "/images/pr_10.jpg",
+    "/images/pr_11.jpg",
   ];
 
   const [current, setCurrent] = useState(0);
@@ -35,9 +33,7 @@ export default function HeroSection() {
       {slides.map((src, index) => (
         <div
           key={index}
-          className={`${styles.slide} ${
-            index === current ? styles.active : ""
-          }`}
+          className={`${styles.slide} ${index === current ? styles.active : ""}`}
           style={{ backgroundImage: `url(${src})` }}
         ></div>
       ))}
@@ -52,9 +48,7 @@ export default function HeroSection() {
             Empowering industries with durable, efficient, and innovative
             products designed to meet the most demanding standards.
           </p> */}
-          <div className={styles.buttons}>
-
-          </div>
+          <div className={styles.buttons}></div>
         </div>
       </div>
     </section>
