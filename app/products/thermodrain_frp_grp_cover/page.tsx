@@ -81,7 +81,7 @@ export default function ThermodrainProductPage() {
         className={styles.imageWrapper}
       >
         <Image
-          src="/product_img/pruduct_04.jpg"
+          src="/product_img/pruduct_07.jpg"
           alt="Thermodrain Drain Channel"
           width={600}
           height={600}

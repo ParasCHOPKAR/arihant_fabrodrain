@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import styles from "./Thermodrain_air_Page.module.css";
+import styles from "./Thermodrain_hinged_Page.module.css";
 
 export default function ThermodrainProductPage() {
   return (
@@ -15,7 +15,7 @@ export default function ThermodrainProductPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
         >
- THERMODRAIN AIR & WATERTIGHT (PRESSFIT) COVERS WITH FRAME
+Hinged Overhead and u.g. Water Tank Covers
         </motion.h1>
 
         <motion.p
@@ -23,11 +23,9 @@ export default function ThermodrainProductPage() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
         >
-          THERMODRAIN Solid Top Manhole Covers are tested as per BS EN 124, IS1726
-          & AASHTO M306 standards for drainage and utility services meeting all
-          requirements of the code. They perform better than Cast Iron, Ductile
-          Iron, and RCC manhole covers, offering superior durability, strength, and
-          long service life.
+THERMODRAIN Water Tank Covers are tested as per BS EN 124.THERMODRAIN Water Tank Covers are better performing than Cast Iron, Ductile Iron and RCC manhole covers.
+
+
         </motion.p>
       </section>
 
@@ -40,7 +38,7 @@ export default function ThermodrainProductPage() {
           className={styles.imageWrapper}
         >
           <Image
-            src="/product_img/pruduct_04.jpg"
+            src="/product_img/pruduct_10.jpg"
             alt="Thermodrain Solid Top Manhole Cover"
             width={600}
             height={600}
@@ -56,27 +54,23 @@ export default function ThermodrainProductPage() {
         >
           <h2>Salient Features</h2>
           <ul>
-            <li>Double Sealed Arrangement</li>
-            <li>Q-Turn Locking or Bolt Locking Available</li>
+            <li> Immune to algae, moss and rusting contaminants</li>
+            <li>Covers have a provision for gasket fitting</li>
             <li>
-              Closed Bottom Keyhole prevents mosquito breeding and emission of foul smell
-            </li>
+         Self pigmented, Non painted</li>
             <li>
-              Permanent set is as per BS EN 124 for all sizes and load bearing
+            500 kg rated covers have a provision for locking as a standard feature
             </li>
-            <li>Self-Pigmented and Non-Brittle Construction</li>
+            <li> Comes with a double FRP hinge, with 270 degree opening.</li>
           </ul>
 
           <h2>Key Highlights</h2>
           <ul>
-            <li>Material: FRP / GRP / Composite Material</li>
-            <li>Load Bearing Capacity: 2.5T (2.5 Tons) to F900 (90 Tons)</li>
-            <li>Shapes: Circular, Square, and Rectangular</li>
-            <li>Seal: Double Seal Arrangements</li>
-            <li>
-              Closed Bottom Keyholes with Stainless Steel or High-Strength Plastic Alloy
-              Inserts (Prevents Cracking)
-            </li>
+            <li>Load Bearing : 500 kgs for Overhead Application 500 kgs - 60 Tons (E600) for Underground applications</li>
+            <li> Shapes : Circular, square and rectangular shapes available</li>
+            <li> Seal : Single seal and Double seal arrangements</li>
+            <li> Material : FRP / GRP / Composite material</li>
+        
           </ul>
 
           <Link href="/contact">
@@ -88,7 +82,7 @@ export default function ThermodrainProductPage() {
       </div>
 
       {/* SPECIFICATIONS TABLE */}
-<section className={styles.specifications}>
+{/* <section className={styles.specifications}>
   <h2>Frame Opening Sizes</h2>
 
   <div className={styles.tableWrapper}>
@@ -161,7 +155,7 @@ export default function ThermodrainProductPage() {
   </div>
 
 
-</section>
+</section> */}
 
 
       {/* CTA SECTION */}

@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import styles from "./Thermodrain_water_Page.module.css";
+import styles from "./Thermodrain_tree_Page.module.css";
 
 export default function ThermodrainProductPage() {
   return (
@@ -15,7 +15,8 @@ export default function ThermodrainProductPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
         >
-THERMODRAIN WATER GULLY COVERS
+Thermodrain Tree Gratings
+
         </motion.h1>
 
         <motion.p
@@ -36,7 +37,7 @@ THERMODRAIN Water Gully Covers are tested as per BS EN 124, IS1726 & AASHTO M306
           className={styles.imageWrapper}
         >
           <Image
-            src="/product_img/pruduct_06.jpg"
+            src="/product_img/pruduct_08.jpg"
             alt="Thermodrain Solid Top Manhole Cover"
             width={600}
             height={600}
@@ -52,33 +53,28 @@ THERMODRAIN Water Gully Covers are tested as per BS EN 124, IS1726 & AASHTO M306
         >
           <h2>Salient Features</h2>
           <ul>
-            <li>Permanent set is as per BSEN 124 for all sizes and load bearing</li>
-            <li>Self pigmented, non-painted</li>
+            <li>Tree Gratings are self pigmented , non painted.</li>
+            <li>Tree Gratings are available in two piece or four piece for ease of installation.</li>
             <li>
-            Minimum opening is more than 30% of clear opening size for smooth flow of water
+           Tree Gratings protect the soil and allow pedestrians to walk near the tree without compacting the soil.
             </li>
+                 <li>Tree Gratings allow the rain water to penetrate the soil.</li>
+                     <li>Tree Gratings allow the rain water to penetrate the soil.</li>
          
           </ul>
 
-          <h2>Key Highlights</h2>
-          <ul>
-            <li>Material: FRP / GRP / Composite Material</li>
-            <li>Load Bearing Capacity: 2.5T (2.5 Tons) to F900 (90 Tons)</li>
-            <li>Sizes : Available in all standard sizes</li>
-        
-         
-          </ul>
+     
 
            <h2>Areas of Application :</h2>
           <ul>
-            <li>Storm water drain trenches</li>
-            <li>Basement Car Park</li>
-            <li>Podiums</li>
-             <li>Industrial plants</li>
+            <li>Sidewalks and Pedestrain Zones</li>
+            <li>Parks and Plazas</li>
+            <li>Commercial and Shopping Areas</li>
+             <li>Municipal Roads</li>
           </ul>
 
           <Link href="/contact">
-              {/* <motion.button whileHover={{ scale: 1.05 }}>
+            {/* <motion.button whileHover={{ scale: 1.05 }}>
               Get a Quote
             </motion.button> */}
           </Link>

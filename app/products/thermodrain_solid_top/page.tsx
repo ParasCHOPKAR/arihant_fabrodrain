@@ -80,9 +80,9 @@ export default function ThermodrainProductPage() {
           </ul>
 
           <Link href="/contact">
-            <motion.button whileHover={{ scale: 1.05 }}>
+              {/* <motion.button whileHover={{ scale: 1.05 }}>
               Get a Quote
-            </motion.button>
+            </motion.button> */}
           </Link>
         </motion.div>
       </div>

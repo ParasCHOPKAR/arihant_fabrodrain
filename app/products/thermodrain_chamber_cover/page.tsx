@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import styles from "./Thermodrain_water_Page.module.css";
+import styles from "./Thermodrain_chamber_Page.module.css";
 
 export default function ThermodrainProductPage() {
   return (
@@ -15,7 +15,7 @@ export default function ThermodrainProductPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
         >
-THERMODRAIN WATER GULLY COVERS
+       THERMODRAIN CHAMBERS
         </motion.h1>
 
         <motion.p
@@ -23,7 +23,9 @@ THERMODRAIN WATER GULLY COVERS
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
         >
-THERMODRAIN Water Gully Covers are tested as per BS EN 124, IS1726 & AASHTO M306 standards for drainage and Utility services meeting all requirements of the code. THERMODRAIN Water Gully Covers are better performing than Cast Iron, Ductile Iron and RCC manhole covers.
+      THERMODRAIN recess covers with frame are tested as per BS EN 124, IS1726 & AASHTO M306 standards for drainage and Utility services meeting all requirements of the code. THERMODRAIN Covers are better performing than Cast Iron, Ductile Iron and RCC recess covers.
+
+
         </motion.p>
       </section>
 
@@ -36,7 +38,7 @@ THERMODRAIN Water Gully Covers are tested as per BS EN 124, IS1726 & AASHTO M306
           className={styles.imageWrapper}
         >
           <Image
-            src="/product_img/pruduct_06.jpg"
+            src="/product_img/pruduct_11.jpg"
             alt="Thermodrain Solid Top Manhole Cover"
             width={600}
             height={600}
@@ -52,29 +54,27 @@ THERMODRAIN Water Gully Covers are tested as per BS EN 124, IS1726 & AASHTO M306
         >
           <h2>Salient Features</h2>
           <ul>
-            <li>Permanent set is as per BSEN 124 for all sizes and load bearing</li>
-            <li>Self pigmented, non-painted</li>
+            <li>High strength chambers made out of specially prepared resin.</li>
+            <li>UV Stabilised</li>
             <li>
-            Minimum opening is more than 30% of clear opening size for smooth flow of water
+ Can take any type of traffic load
             </li>
-         
+            <li>
+          Load tested up to 60 Tons
+            </li>
+            <li>Can withstand earth vibrations due to traffic
+</li>
           </ul>
 
-          <h2>Key Highlights</h2>
+          <h2>ADVANTAGES OF THERMODRAIN CHAMBERS :</h2>
           <ul>
-            <li>Material: FRP / GRP / Composite Material</li>
-            <li>Load Bearing Capacity: 2.5T (2.5 Tons) to F900 (90 Tons)</li>
-            <li>Sizes : Available in all standard sizes</li>
-        
-         
-          </ul>
-
-           <h2>Areas of Application :</h2>
-          <ul>
-            <li>Storm water drain trenches</li>
-            <li>Basement Car Park</li>
-            <li>Podiums</li>
-             <li>Industrial plants</li>
+            <li>100% Corrosion Free.</li>
+            <li> Can be readily mounted by digging the Earth, making the concrete at the bottom & fixing it.</li>
+            <li> Concrete bottom</li>
+            <li>Completely leak proof.</li>
+            <li>All sizes are available.</li>
+                 <li>THERMODRAIN FRP Chambers are relocatable.</li>
+            <li>Can also be used as Inspection Chambers.</li>
           </ul>
 
           <Link href="/contact">
@@ -86,6 +86,7 @@ THERMODRAIN Water Gully Covers are tested as per BS EN 124, IS1726 & AASHTO M306
       </div>
 
       {/* SPECIFICATIONS TABLE */}
+
 
       {/* CTA SECTION */}
       <section className={styles.cta}>

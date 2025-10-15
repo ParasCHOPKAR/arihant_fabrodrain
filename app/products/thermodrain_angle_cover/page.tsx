@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import styles from "./Thermodrain_water_Page.module.css";
+import styles from "./Thermodrain_angle_Page.module.css";
 
 export default function ThermodrainProductPage() {
   return (
@@ -15,7 +15,7 @@ export default function ThermodrainProductPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
         >
-THERMODRAIN WATER GULLY COVERS
+THERMODRAIN L ANGLE
         </motion.h1>
 
         <motion.p
@@ -23,7 +23,7 @@ THERMODRAIN WATER GULLY COVERS
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
         >
-THERMODRAIN Water Gully Covers are tested as per BS EN 124, IS1726 & AASHTO M306 standards for drainage and Utility services meeting all requirements of the code. THERMODRAIN Water Gully Covers are better performing than Cast Iron, Ductile Iron and RCC manhole covers.
+     
         </motion.p>
       </section>
 
@@ -36,7 +36,7 @@ THERMODRAIN Water Gully Covers are tested as per BS EN 124, IS1726 & AASHTO M306
           className={styles.imageWrapper}
         >
           <Image
-            src="/product_img/pruduct_06.jpg"
+            src="/product_img/pruduct_09.jpg"
             alt="Thermodrain Solid Top Manhole Cover"
             width={600}
             height={600}
@@ -50,31 +50,22 @@ THERMODRAIN Water Gully Covers are tested as per BS EN 124, IS1726 & AASHTO M306
           transition={{ duration: 0.6, delay: 0.2 }}
           className={styles.details}
         >
-          <h2>Salient Features</h2>
-          <ul>
-            <li>Permanent set is as per BSEN 124 for all sizes and load bearing</li>
-            <li>Self pigmented, non-painted</li>
-            <li>
-            Minimum opening is more than 30% of clear opening size for smooth flow of water
-            </li>
-         
-          </ul>
-
+        
           <h2>Key Highlights</h2>
           <ul>
-            <li>Material: FRP / GRP / Composite Material</li>
-            <li>Load Bearing Capacity: 2.5T (2.5 Tons) to F900 (90 Tons)</li>
-            <li>Sizes : Available in all standard sizes</li>
-        
-         
-          </ul>
-
-           <h2>Areas of Application :</h2>
-          <ul>
-            <li>Storm water drain trenches</li>
-            <li>Basement Car Park</li>
-            <li>Podiums</li>
-             <li>Industrial plants</li>
+            <li> Corrosion resistance</li>
+            <li>Self Pigmented, no painting required</li>
+            <li> Chemical resistance</li>
+            <li>Non-conductivity (thermally and electrically)</li>
+            <li>
+           Having non-magnetic electromagnetic transparency Being
+            </li>
+            <li>  Lightweight</li>
+            <li> High-strength & durability</li>
+            <li> Impact resistant</li>
+                  <li>   Dimensional stability</li>
+            <li>A long life cycle</li>
+            <li>  Low-maintenance</li>
           </ul>
 
           <Link href="/contact">
@@ -86,6 +77,7 @@ THERMODRAIN Water Gully Covers are tested as per BS EN 124, IS1726 & AASHTO M306
       </div>
 
       {/* SPECIFICATIONS TABLE */}
+
 
       {/* CTA SECTION */}
       <section className={styles.cta}>

@@ -53,12 +53,7 @@ export default function HeroSection() {
             products designed to meet the most demanding standards.
           </p> */}
           <div className={styles.buttons}>
-            <Link href="/products" className={styles.primaryBtn}>
-              Explore Products
-            </Link>
-            <Link href="/contact" className={styles.secondaryBtn}>
-              Contact Us
-            </Link>
+
           </div>
         </div>
       </div>

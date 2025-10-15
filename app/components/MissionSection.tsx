@@ -66,7 +66,7 @@ export default function MissionSection() {
             </div>
             <div className={styles.shape}>
               <Image
-                src="/images/about__011.jpg"
+                src="/images/about_01.jpg"
                 alt="Mission"
                 width={200}
                 height={200}
@@ -75,7 +75,7 @@ export default function MissionSection() {
             </div>
             <div className={styles.shape}>
               <Image
-                src="/images/about__011.jpg"
+                src="/images/about__22.jpg"
                 alt="Mission"
                 width={200}
                 height={200}
@@ -84,7 +84,7 @@ export default function MissionSection() {
             </div>
             <div className={styles.shapeLarge}>
               <Image
-                src="/images/about__011.jpg"
+                src="/images/about__33.jpg"
                 alt="Mission"
                 width={400}
                 height={400}

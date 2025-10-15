@@ -85,11 +85,11 @@ const Navbar = () => {
               <li><Link href="/products/thermodrain_gratings" onClick={closeMenu}>THERMODRAIN Gratings</Link></li>
               <li><Link href="/products/thermodrain_water_cover" onClick={closeMenu}>Thermodrain Water Gully Covers</Link></li>
               <li><Link href="/products/thermodrain_frp_grp_cover" onClick={closeMenu}>Thermodrain FRP/GRP Drain Channels With Grating / Gully Covers</Link></li>
-              <li><Link href="#" onClick={closeMenu}>THERMODRAIN Tree Gratings</Link></li>
-              <li><Link href="#" onClick={closeMenu}>THERMODRAIN L Angle</Link></li>
-              <li><Link href="#" onClick={closeMenu}>THERMODRAIN Hinged Overhead And U.G. Water Tank Covers</Link></li>
-              <li><Link href="#" onClick={closeMenu}>THERMODRAIN Chambers</Link></li>
-              <li><Link href="#" onClick={closeMenu}>THERMODRAIN Lifting Accessories</Link></li>
+              <li><Link href="/products/thermodrain_tree_cover" onClick={closeMenu}>THERMODRAIN Tree Gratings</Link></li>
+              <li><Link href="/products/thermodrain_angle_cover" onClick={closeMenu}>THERMODRAIN L Angle</Link></li>
+              <li><Link href="/products/thermodrain_hinged_cover" onClick={closeMenu}>THERMODRAIN Hinged Overhead And U.G. Water Tank Covers</Link></li>
+              <li><Link href="/products/thermodrain_chamber_cover" onClick={closeMenu}>THERMODRAIN Chambers</Link></li>
+              <li><Link href="/products/thermodrain_lifting_cover" onClick={closeMenu}>THERMODRAIN Lifting Accessories</Link></li>
             </ul>
           </li>
 
