@@ -1,9 +1,11 @@
 "use client";
+
+import React from "react";
 import styles from "./whyChooseUs.module.css";
 import { FaCheckCircle, FaShieldAlt, FaHandsHelping, FaIndustry } from "react-icons/fa";
 
 interface Feature {
-  icon: JSX.Element;
+  icon: React.ReactNode; // ✅ Changed from JSX.Element to React.ReactNode
   title: string;
   description: string;
 }
