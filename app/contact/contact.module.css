@@ -1,181 +1,260 @@
 .contactPage {
-  font-family: 'Poppins', sans-serif;
-  color: #444;
+   font-family: "Playfair Display", serif;
+  color: white;
   background-color: #ffffff;
 }
-
 /* ---------- HERO SECTION ---------- */
 .hero {
-  text-align: center;
-  padding: 100px 20px 60px;
-  background: url('/icons/contact.jpg') center/cover no-repeat; /* Add your background image path */
-  height: 50vh;
-  color: #F58220;
-  border-bottom: 2px solid #f7e0c7;
+  padding: 120px 20px;
   position: relative;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  color: #fff;
+  background: 
+
+    url('/icons/texture.jpg') center/cover no-repeat;
+  /* Replace 'your-image.jpg' with your actual background image path */
 }
 
-/* Optional: Add a subtle overlay for better readability */
+/* Overlay (optional subtle effect) */
 .hero::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.85); /* light overlay */
-  z-index: 0;
-}
-
-.hero h1,
-.hero p {
-  position: relative; /* bring text above overlay */
+  inset: 0;
+  background: rgba(0, 0, 0, 0.0);
   z-index: 1;
 }
 
-.hero h1 {
+.heroContent {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.heroText {
+  flex: 1 1 500px;
+  color: #fff;
+}
+
+.heroText h1 {
   font-size: 3rem;
   font-weight: 700;
-  color: #F58220;
   margin-bottom: 25px;
   letter-spacing: 0.5px;
+  color: #F58220;
 }
 
-.hero p {
+.heroText p {
   font-size: 1.15rem;
-  max-width: 700px;
-  margin: auto;
   line-height: 1.7;
-  color: #666;
+  color: #444;
+  max-width: 600px;
 }
 
+/* Circular Hero Image */
+.heroImage {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-/* ---------- CONTACT SECTION ---------- */
+.heroImage img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 50%;
+  border: 6px solid #F58220;
+  box-shadow: 0 10px 35px rgba(245, 130, 32, 0.3);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 1024px) {
+  .hero {
+    padding: 100px 20px;
+    background-position: center;
+  }
+
+  .heroContent {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .heroText h1 {
+    font-size: 2.5rem;
+  }
+
+  .heroText p {
+    font-size: 1.05rem;
+  }
+
+  .heroImage img {
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 80px 15px;
+  }
+
+  .heroText h1 {
+    font-size: 2rem;
+  }
+
+  .heroText p {
+    font-size: 0.95rem;
+  }
+
+  .heroImage img {
+    max-width: 250px;
+    border-width: 4px;
+  }
+}
+
+/* ---------- CONTACT FORM SECTION ---------- */
 .contactFormSection {
-  padding: 80px 20px;
-  background: #fffaf5;
+  padding: 100px 20px;
+  background: #fff;
 }
 
 .container {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
   gap: 50px;
   flex-wrap: wrap;
 }
 
-/* ---------- CONTACT FORM ---------- */
-.contactForm {
+/* ---------- LEFT SIDE FORM ---------- */
+.formWrapper {
   flex: 1 1 500px;
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
-  background: #ffffff;
+  background: linear-gradient(135deg,  #F58220,#ffb770);
+  color: white;
   padding: 40px 35px;
-  border-radius: 16px;
-  box-shadow: 0 10px 35px rgba(245, 130, 32, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 18px;
+  box-shadow: 0 10px 35px rgba(245, 130, 32, 0.25);
 }
 
-.contactForm:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 15px 45px rgba(245, 130, 32, 0.25);
+.formWrapper h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
-.contactForm label {
+.formWrapper p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  color: #fff9f4;
+}
+
+.contactForm {
   display: flex;
   flex-direction: column;
-  font-weight: 500;
-  font-size: 15px;
-  color: #111;
+  gap: 15px;
 }
 
 .contactForm input,
 .contactForm textarea {
-  margin-top: 8px;
-  padding: 14px;
-  border: 1px solid #f4c69f;
-  border-radius: 8px;
-  font-size: 15px;
   width: 100%;
-  resize: vertical;
+  padding: 14px 15px;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
   transition: all 0.3s ease;
-  background-color: #fff8f2; /* soft orange tint */
-  color: #333;
 }
 
 .contactForm input::placeholder,
 .contactForm textarea::placeholder {
-  color: #999;
+  color: #fff;
+  opacity: 0.85;
 }
 
 .contactForm input:focus,
 .contactForm textarea:focus {
-  border-color: #F58220;
-  box-shadow: 0 0 8px rgba(245, 130, 32, 0.35);
-  outline: none;
-  background-color: #ffffff;
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .contactForm button {
-  background: linear-gradient(90deg, #F58220, #ff9f50);
-  color: #fff;
-  border: none;
-  padding: 14px;
-  font-size: 16px;
-  border-radius: 8px;
-  cursor: pointer;
+  background: #fff;
+  color: #F58220;
   font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  box-shadow: 0 6px 20px rgba(245, 130, 32, 0.3);
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .contactForm button:hover {
-  background: linear-gradient(90deg, #ff8a25, #ffb366);
+  background: #ffe2cc;
   transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(245, 130, 32, 0.5);
 }
 
-/* ---------- CONTACT INFO ---------- */
-.contactInfo {
+/* ---------- RIGHT SIDE INFO + MAP ---------- */
+.infoWrapper {
   flex: 1 1 500px;
   display: flex;
   flex-direction: column;
   gap: 25px;
-  padding: 20px 10px;
 }
 
-.contactInfo h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-  color: #444;
+.infoWrapper h2 {
+  font-size: 1.8rem;
+  color: #333;
 }
 
-.contactInfo p {
-  margin-bottom: 8px;
-  font-size: 1rem;
+.infoWrapper p {
   color: #555;
+  font-size: 1rem;
   line-height: 1.6;
 }
 
-.contactInfo strong {
-  color: #F58220;
-}
-
-/* ---------- MAP ---------- */
 .mapWrapper {
   width: 100%;
-  height: 320px;
-  border-radius: 14px;
+  height: 300px;
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
   border: 2px solid #f4c69f;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- SOCIAL MEDIA ---------- */
+.socialMedia {
+  display: flex;
+  gap: 15px;
+}
+
+.socialMedia a {
+  background: #F58220;
+  color: #fff;
+  font-size: 1.2rem;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.socialMedia a:hover {
+  background: #ff9933;
+  transform: translateY(-3px);
 }
 
 /* ---------- RESPONSIVE ---------- */
@@ -184,19 +263,15 @@
     flex-direction: column;
   }
 
-  .contactForm, .contactInfo {
+  .formWrapper, .infoWrapper {
     flex: 1 1 100%;
   }
 
-  .hero h1 {
-    font-size: 2.3rem;
+  .mapWrapper {
+    height: 250px;
   }
 
-  .hero p {
-    font-size: 1rem;
-  }
-
-  .contactForm {
-    padding: 30px 25px;
+  .formWrapper {
+    text-align: center;
   }
 }

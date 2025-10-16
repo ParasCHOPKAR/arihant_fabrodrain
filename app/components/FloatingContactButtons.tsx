@@ -24,11 +24,11 @@ export default function FloatingContactButtons() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          color: "#fff",
+          color: "#f58220",
           fontSize: "24px",
           textDecoration: "none",
           boxShadow: "0 4px 10px rgba(0,0,0,0.3)",
-          background: "#0d4a55",
+          background: "#fff",
           transition: "transform 0.2s ease-in-out",
         }}
         onMouseEnter={(e) =>

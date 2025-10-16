@@ -4,7 +4,7 @@
   height: 90vh; /* 50% of viewport height */
   display: flex;
   align-items: center;
-  font-family: "Poppins", sans-serif;
+  font-family: "Playfair Display", serif;
   overflow: hidden;
   color: #fff;
 }

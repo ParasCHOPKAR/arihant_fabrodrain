@@ -16,18 +16,18 @@ interface Product {
 }
 
 const products: Product[] = [
-  { name: "THERMODRAIN Solid Top Manhole Covers With Frame", img: "/images/product_01.jpg", link: "/products/thermodrain-solid-top" },
-  { name: "THERMODRAIN Multiple Covers With Frame", img: "/images/product_02.jpg", link: "/products/thermodrain-multiple-covers" },
-  { name: "Thermodrain Recess Manhole Covers (With Frame)", img: "/images/product_03.jpg", link: "/products/thermodrain-recess" },
-  { name: "THERMODRAIN Air & Watertight (Pressfit) Covers With Frame", img: "/images/product_04.jpg", link: "/products/thermodrain-air-watertight" },
-  { name: "THERMODRAIN Gratings", img: "/images/product_05.jpg", link: "/products/thermodrain-gratings" },
-  { name: "Thermodrain Water Gully Covers", img: "/images/product_06.jpg", link: "/products/thermodrain-water-gully" },
-  { name: "Thermodrain FRP/GRP Drain Channels With Grating / Gully Covers", img: "/images/product_07.jpg", link: "/products/thermodrain-frp-grp" },
-  { name: "THERMODRAIN Tree Gratings", img: "/images/product_08.jpg", link: "/products/thermodrain-tree-gratings" },
-  { name: "THERMODRAIN L Angle", img: "/images/product_09.jpg", link: "/products/thermodrain-l-angle" },
-  { name: "THERMODRAIN Hinged Overhead And U.G. Water Tank Covers", img: "/images/product_10.jpg", link: "/products/thermodrain-hinged-overhead" },
-  { name: "THERMODRAIN Chambers", img: "/images/product_11.jpg", link: "/products/thermodrain-chambers" },
-  { name: "THERMODRAIN Lifting Accessories", img: "/images/product_12.jpg", link: "/products/thermodrain-lifting-accessories" },
+  { name: "THERMODRAIN Solid Top Manhole Covers With Frame", img: "/images/product_01.jpg", link: "/products/thermodrain_air_cover" },
+  { name: "THERMODRAIN Multiple Covers With Frame", img: "/images/product_02.jpg", link: "/products/thermodrain_angle_cover" },
+  { name: "Thermodrain Recess Manhole Covers (With Frame)", img: "/images/product_03.jpg", link: "/products/thermodrain_chamber_cover" },
+  { name: "THERMODRAIN Air & Watertight (Pressfit) Covers With Frame", img: "/images/product_04.jpg", link: "/products/thermodrain_frp_grp_cover" },
+  { name: "THERMODRAIN Gratings", img: "/images/product_05.jpg", link: "/products/thermodrain_gratings" },
+  { name: "Thermodrain Water Gully Covers", img: "/images/product_06.jpg", link: "/products/thermodrain_hinged_cover" },
+  { name: "Thermodrain FRP/GRP Drain Channels With Grating / Gully Covers", img: "/images/product_07.jpg", link: "/products/thermodrain_lifting_cover" },
+  { name: "THERMODRAIN Tree Gratings", img: "/images/product_08.jpg", link: "/products/thermodrain_multi_cover" },
+  { name: "THERMODRAIN L Angle", img: "/images/product_09.jpg", link: "/products/thermodrain_recess" },
+  { name: "THERMODRAIN Hinged Overhead And U.G. Water Tank Covers", img: "/images/product_10.jpg", link: "/products/thermodrain_solid_top" },
+  { name: "THERMODRAIN Chambers", img: "/images/product_11.jpg", link: "/products/thermodrain_tree_covers" },
+  { name: "THERMODRAIN Lifting Accessories", img: "/images/product_12.jpg", link: "/products/thermodrain_water_cover" },
 ];
 
 export default function ProductsSection() {

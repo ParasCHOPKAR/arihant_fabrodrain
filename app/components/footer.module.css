@@ -1,133 +1,240 @@
+/* ====== FOOTER MAIN ====== */
 .footer {
   position: relative;
-  overflow: hidden;
+  background: url('/icons/comparative_hero.gif') center/cover no-repeat;
   color: #fff;
-  background: linear-gradient(135deg, #1f2a30 0%, #0d1318 100%);
-  padding: 120px 20px 60px;
-  font-family: "Poppins", sans-serif;
-  border-top: 6px solid #f58220;
+  padding: 80px 20px 40px; /* slightly reduced padding for mobile */
+  font-family: "Playfair Display", serif;
+  overflow: hidden;
 }
 
-/* ===== Bold Abstract Background Shapes ===== */
 .footer::before {
   content: "";
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(circle at  bottom right, rgba(245,130,32,0.25), transparent 60%),
-    radial-gradient(circle at  top left, rgba(0,174,239,0.2), transparent 60%),
-    repeating-linear-gradient(45deg, rgba(255,255,255,0.05), rgba(255,255,255,0.05) 2px, transparent 2px, transparent 20px),
-    repeating-linear-gradient(-45deg, rgba(255,255,255,0.03), rgba(255,255,255,0.03) 2px, transparent 2px, transparent 20px);
+  background: rgba(0, 0, 0, 0.75);
   z-index: 0;
-  pointer-events: none;
 }
 
-/* ===== Container ===== */
 .container {
   position: relative;
   z-index: 2;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 50px;
   max-width: 1200px;
   margin: auto;
-  gap: 50px;
 }
 
-/* ===== Logo & About ===== */
+/* ====== LOGO & ABOUT ====== */
 .logoSection {
-  flex: 1 1 300px;
+  text-align: left;
 }
 .logoSection .logo {
-  height: 80px;
-  margin-bottom: 15px;
-  border-radius: 8px;
-  filter: drop-shadow(0 0 8px rgba(245,130,32,0.7));
+  height: 60px;
+  width: auto;
+  margin-bottom: 20px;
 }
 .logoSection .about {
+  color: white;
   font-size: 14px;
-  line-height: 1.7;
-  color: #ccc;
-  background: rgba(255,255,255,0.05);
-  padding: 12px 15px;
-  border-radius: 8px;
-  border-left: 4px solid #f58220;
+  line-height: 1.8;
+  margin-bottom: 20px;
 }
 
-/* ===== Links ===== */
-.linksSection {
-  flex: 1 1 200px;
-}
-.linksSection h4 {
-  color: #f58220;
-  font-size: 16px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-.linksSection ul li a {
-  color: #ddd;
-  text-decoration: none;
-  font-size: 14px;
-  transition: all 0.3s ease;
-}
-.linksSection ul li a:hover {
-  color: #00aeef;
-  transform: translateX(4px);
-}
-
-/* ===== Contact ===== */
-.contactSection {
-  flex: 1 1 250px;
-}
-.contactSection h4 {
-  color: #f58220;
-  font-size: 16px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-}
-.contactSection p {
-  font-size: 14px;
-  margin-bottom: 8px;
-  color: #ccc;
-}
-
-/* ===== Socials ===== */
+/* ====== SOCIAL ICONS ====== */
 .socials {
   display: flex;
-  gap: 12px;
-  margin-top: 12px;
-}
-.socials a img {
-  width: 28px;
-  height: 28px;
-  filter: brightness(0.9);
-  transition: transform 0.3s, filter 0.3s;
-}
-.socials a:hover img {
-  transform: scale(1.2);
-  filter: brightness(1.3);
+  gap: 18px;
+  margin-top: 20px;
 }
 
-/* ===== Bottom ===== */
+.socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  transition: all 0.4s ease;
+}
+
+.socials a img {
+  width: 22px;
+  height: 22px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.socials a:hover {
+  background: rgba(245, 130, 32, 0.2);
+  transform: translateY(-3px);
+}
+
+.socials a:hover img {
+  filter: brightness(1.3) saturate(150%);
+  transform: scale(1.15);
+}
+
+/* ====== LINKS ====== */
+.linksSection,
+.contactSection {
+  text-align: left;
+}
+
+.linksSection h4,
+.contactSection h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: white;
+  text-transform: capitalize;
+}
+
+/* LINKS LIST */
+.linksSection ul {
+  list-style: none;
+  padding: 0;
+}
+.linksSection ul li {
+  margin-bottom: 8px;
+}
+.linksSection ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+.linksSection ul li a:hover {
+  color: #f58220;
+}
+
+/* ====== CONTACT SECTION ====== */
+.contactSection {
+  color: #ddd;
+  font-size: 14px;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.contactIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.contactSection a {
+  display: inline-block;
+  margin-top: 20px;
+  background: #f58220;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+.contactSection a:hover {
+  background: #ff8b33;
+}
+
+/* ====== BOTTOM BAR ====== */
 .bottom {
+  position: relative;
+  z-index: 2;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
   text-align: center;
-  border-top: 1px solid rgba(255,255,255,0.15);
   margin-top: 60px;
   padding-top: 20px;
   font-size: 13px;
-  color: #aaa;
+  color: white;
 }
 .bottom .developer {
   color: #f58220;
   font-weight: 500;
-  letter-spacing: 0.5px;
+}
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; /* stack sections vertically */
+    gap: 40px;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  /* Center logo and about section */
+  .logoSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Center links section */
+  .linksSection ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  /* Center contact section items */
+  .contactSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactItem {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .contactSection a {
+    margin: 20px 0 0 0; /* center button with spacing */
+  }
+
+  /* Center socials */
+  .socials {
+    justify-content: center;
+    margin-top: 25px;
+  }
 }
 
-/* ===== Responsive ===== */
-@media (max-width: 768px) {
-  .container { flex-direction: column; text-align: center; gap: 30px; }
-  .socials { justify-content: center; }
+@media (max-width: 480px) {
+  .footer {
+    padding: 50px 15px 25px; /* reduced padding */
+  }
+
+  .logoSection .about,
+  .linksSection ul li a,
+  .contactSection {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .socials a {
+    width: 36px;
+    height: 36px;
+  }
+
+  .socials a img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .bottom {
+    font-size: 12px;
+  }
+
+  /* Reduce gap for stacked sections */
+  .container {
+    gap: 30px;
+  }
 }

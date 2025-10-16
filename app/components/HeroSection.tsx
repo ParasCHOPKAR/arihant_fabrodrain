@@ -5,18 +5,18 @@ import styles from "./heroSection.module.css";
 
 export default function HeroSection() {
   const slides = [
-    "/images/pr.jpg",
-    "/images/pr_1.jpg",
-    "/images/pr_2.jpg",
-    "/images/pr_3.jpg",
-    "/images/pr_4.jpg",
-    "/images/pr_5.jpg",
-    "/images/pr_6.jpg",
-    "/images/pr_7.jpg",
-    "/images/pr_8.jpg",
-    "/images/pr_9.jpg",
-    "/images/pr_10.jpg",
-    "/images/pr_11.jpg",
+    "/product_img/1.jpg",
+    "/product_img/2.jpg",
+    "/product_img/3.jpg",
+    "/product_img/4.jpg",
+    "/product_img/5.jpg",
+    "/product_img/6.jpg",
+    "/product_img/7.jpg",
+    "/product_img/8.jpg",
+    "/product_img/9.jpg",
+    "/product_img/11.jpg",
+    "/product_img/10.jpg",
+    "/product_img/12.jpg",
   ];
 
   const [current, setCurrent] = useState(0);
