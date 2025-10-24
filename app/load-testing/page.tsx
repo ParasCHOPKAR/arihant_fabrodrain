@@ -132,33 +132,34 @@ const LoadTesting = () => {
       </section>
 
       {/* ===== DO's & DON'Ts SPLIT ===== */}
-      <section className="dosDontsSplit">
-        <h2>DO's & DON'Ts</h2>
-        <div className="dosDontsSplitWrapper">
+<section className="dosDontsSplit">
+  <h2>DO&apos;s & DON&apos;Ts</h2>
+  <div className="dosDontsSplitWrapper">
 
-          {/* DO COLUMN */}
-          <div className="dosColumn">
-            <div className="circleLabel">DO</div>
-            {doDontsData.do.map((text, index) => (
-              <div key={index} className="dosItem">
-                <div className="dosNumber">{index + 1}</div>
-                <p>{text}</p>
-              </div>
-            ))}
-          </div>
-
-          {/* DON'T COLUMN */}
-          <div className="dontColumn">
-            <div className="circleLabel dontLabel">DON'T</div>
-            {doDontsData.dont.map((text, index) => (
-              <div key={index} className="dontItem">
-                <div className="dontNumber">{index + 1}</div>
-                <p>{text}</p>
-              </div>
-            ))}
-          </div>
+    {/* DO COLUMN */}
+    <div className="dosColumn">
+      <div className="circleLabel">DO</div>
+      {doDontsData.do.map((text, index) => (
+        <div key={index} className="dosItem">
+          <div className="dosNumber">{index + 1}</div>
+          <p>{text}</p>
         </div>
-      </section>
+      ))}
+    </div>
+
+    {/* DON'T COLUMN */}
+    <div className="dontColumn">
+      <div className="circleLabel dontLabel">DON&apos;T</div>
+      {doDontsData.dont.map((text, index) => (
+        <div key={index} className="dontItem">
+          <div className="dontNumber">{index + 1}</div>
+          <p>{text}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
     </div>
   );
 };

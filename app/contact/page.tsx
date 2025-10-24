@@ -1,5 +1,7 @@
 "use client";
+
 import styles from "./contact.module.css";
+import Image from "next/image";
 
 export default function ContactPage() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -9,7 +11,7 @@ export default function ContactPage() {
 
   return (
     <div className={styles.contactPage}>
-      {/* HERO */}
+      {/* HERO SECTION */}
       <section className={styles.hero}>
         <div className={styles.heroContent}>
           <div className={styles.heroText}>
@@ -19,8 +21,14 @@ export default function ContactPage() {
               project consultation. Our team is ready to assist you!
             </p>
           </div>
-          <div className={styles.heroImage}>
-            <img src="/icons/contact.jpg" alt="Contact Us" />
+          <div className={styles.heroImage} style={{ position: "relative", width: "100%", height: "400px" }}>
+            <Image
+              src="/icons/contact.jpg"
+              alt="Contact Us"
+              fill
+              style={{ objectFit: "cover" }}
+              priority
+            />
           </div>
         </div>
       </section>
