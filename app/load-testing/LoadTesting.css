@@ -103,7 +103,7 @@
 
 /* ====== LOAD BEARING TABLE ====== */
 .loadBearing {
-  padding: 150px 20px 60px 20px; /* added top padding to move down */
+  padding: 10px 20px; /* reduced top padding */
   max-width: 1200px;
   margin: auto;
 }
@@ -111,7 +111,7 @@
 .loadBearing h2 {
   font-size: 2.2rem;
   color: #f58220;
-  margin-bottom: 30px;
+  margin-bottom:50px;
   text-align: center;
   position: relative;
 }
@@ -274,7 +274,7 @@
 .dosNumber, .dontNumber {
   width: 40px;
   height: 40px;
-  background: #f58220;
+  background: #444;
   color: #fff;
   font-weight: bold;
   border-radius: 50%;
@@ -287,7 +287,7 @@
 }
 
 .dontNumber {
-  background: #ff4b3e;
+  background: #444;
 }
 
 .dosItem p, .dontItem p {
@@ -302,5 +302,66 @@
   .dosDontsSplitWrapper {
     flex-direction: column;
     gap: 50px;
+  }
+}
+/* ====== FIBRODRAIN INTRO SECTION ====== */
+.fibrodrainIntro {
+  max-width: 1100px;
+  margin: 100px auto 60px auto;
+  padding: 60px 40px;
+  background: linear-gradient(120deg, #fff7f0, #fff1e0);
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  text-align: center;
+  animation: fadeInUp 0.8s ease;
+}
+
+.fibrodrainIntro h2 {
+  color: #f58220;
+  font-size: 2.4rem;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.fibrodrainIntro h2::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #f58220, #ff9c42);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.fibrodrainIntro p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .fibrodrainIntro {
+    padding: 40px 20px;
+  }
+
+  .fibrodrainIntro h2 {
+    font-size: 2rem;
+  }
+
+  .fibrodrainIntro p {
+    font-size: 0.95rem;
   }
 }

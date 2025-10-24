@@ -15,7 +15,7 @@ export default function ThermodrainProductPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
         >
-          THERMODRAIN AIR &amp; WATERTIGHT (PRESSFIT) COVERS WITH FRAME
+         FIBRODRAIN AIR & WATER TIGHT COVERS
         </motion.h1>
 
         <motion.p
@@ -23,11 +23,10 @@ export default function ThermodrainProductPage() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
         >
-          THERMODRAIN Solid Top Manhole Covers are tested as per BS EN 124, IS1726
-          &amp; AASHTO M306 standards for drainage and utility services meeting all
-          requirements of the code. They perform better than Cast Iron, Ductile
-          Iron, and RCC manhole covers, offering superior durability, strength, and
-          long service life.
+      Fibrodrain air and water tight covers are tested as per BS EN 124,
+ IS 1726 & AASHTO M306 standards, ensuring top performance for
+ drainage and utility services. They provide better durability and
+ reliability compared to Cast Iron, Ductile Iron, and RCC covers.
         </motion.p>
       </section>
 
@@ -40,7 +39,7 @@ export default function ThermodrainProductPage() {
           className={styles.imageWrapper}
         >
           <Image
-            src="/product_img/pruduct_04.jpg"
+            src="/product_img/pruduct_01.jpg"
             alt="Thermodrain Solid Top Manhole Cover"
             width={600}
             height={600}
@@ -54,36 +53,20 @@ export default function ThermodrainProductPage() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className={styles.details}
         >
-          <h2>Salient Features</h2>
+    
+
+          <h2>Key  Features</h2>
           <ul>
-            <li>Double Sealed Arrangement</li>
-            <li>Q-Turn Locking or Bolt Locking Available</li>
-            <li>
-              Closed Bottom Keyhole prevents mosquito breeding and emission of foul smell
-            </li>
-            <li>
-              Permanent set is as per BS EN 124 for all sizes and load bearing
-            </li>
-            <li>Self-Pigmented and Non-Brittle Construction</li>
+            <li>Load bearing capacity: From 2.5 tons up to F900 (90 tons).</li>
+            <li>Available in circular, square, and rectangular shapes.</li>
+            <li>Double seal design for extra protection.</li>
+            <li>Available without bolting for easy use.</li>
+            <li>Fitted with replaceable local gaskets in case of damage.</li>
+               <li>Ensures no foul smell or water seepage.</li>
           </ul>
 
-          <h2>Key Highlights</h2>
-          <ul>
-            <li>Material: FRP / GRP / Composite Material</li>
-            <li>Load Bearing Capacity: 2.5T (2.5 Tons) to F900 (90 Tons)</li>
-            <li>Shapes: Circular, Square, and Rectangular</li>
-            <li>Seal: Double Seal Arrangements</li>
-            <li>
-              Closed Bottom Keyholes with Stainless Steel or High-Strength Plastic Alloy
-              Inserts (Prevents Cracking)
-            </li>
-          </ul>
 
-          <Link href="/contact">
-            <motion.button whileHover={{ scale: 1.05 }}>
-              Get a Quote
-            </motion.button>
-          </Link>
+          <Link href="/contact"></Link>
         </motion.div>
       </div>
 
@@ -166,7 +149,7 @@ export default function ThermodrainProductPage() {
         <h2>Need THERMODRAIN Covers for Your Project?</h2>
         <p>
           Contact us today for bulk inquiries, customization options, or detailed
-          technical data sheets. We&apos;re here to help you choose the right product
+          technical data sheets. We’re here to help you choose the right product
           for your application.
         </p>
         <Link href="/contact">

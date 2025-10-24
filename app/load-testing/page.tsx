@@ -60,7 +60,7 @@ const loadData: LoadItem[] = [
     classLoad: "A15",
     load: "1.5 Ton (15kN)",
     installation: "Areas which can only be used by pedestrian and pedal cycles",
-    example: "Bikes &amp; pedestrians",
+    example: "Bikes & pedestrians",
   },
 ];
 
@@ -82,6 +82,25 @@ const doDontsData = {
 const LoadTesting = () => {
   return (
     <div className="loadTestingPage">
+
+      {/* ===== FIBRODRAIN INTRO SECTION ===== */}
+      <section className="fibrodrainIntro">
+        <h2>Fibrodrain Load Testing</h2>
+        <p>
+          Fibrodrain FRP/GRP/Composite products are tested for different load
+          classes: <strong>2.5 tons, 5 tons, B125 (12.5 tons), C250 (25 tons),
+          D400 (40 tons), E600 (60 tons), and F900 (90 tons)</strong>.
+        </p>
+        <p>
+          Testing is done as per international and Indian standards: 
+          <strong> BS EN 124, IS 1726, and AASHTO</strong>. BS EN 124 is the globally accepted testing 
+          standard for manhole covers made of cast iron, ductile iron, FRP, and other materials.
+        </p>
+        <p>
+          Products also undergo a <strong>Permanent Set Test</strong> – this means they are repeatedly 
+          loaded in a short time to check if the cover permanently deforms or loses strength.
+        </p>
+      </section>
 
       {/* ===== LOAD BEARING TABLE ===== */}
       <section className="loadBearing">
@@ -112,9 +131,9 @@ const LoadTesting = () => {
         </table>
       </section>
 
-      {/* ===== DO&#39;s &amp; DON&#39;Ts SPLIT ===== */}
+      {/* ===== DO's & DON'Ts SPLIT ===== */}
       <section className="dosDontsSplit">
-        <h2>DO&#39;s &amp; DON&#39;Ts</h2>
+        <h2>DO's & DON'Ts</h2>
         <div className="dosDontsSplitWrapper">
 
           {/* DO COLUMN */}
@@ -128,9 +147,9 @@ const LoadTesting = () => {
             ))}
           </div>
 
-          {/* DON&#39;T COLUMN */}
+          {/* DON'T COLUMN */}
           <div className="dontColumn">
-            <div className="circleLabel dontLabel">DON&#39;T</div>
+            <div className="circleLabel dontLabel">DON'T</div>
             {doDontsData.dont.map((text, index) => (
               <div key={index} className="dontItem">
                 <div className="dontNumber">{index + 1}</div>
@@ -138,7 +157,6 @@ const LoadTesting = () => {
               </div>
             ))}
           </div>
-
         </div>
       </section>
     </div>

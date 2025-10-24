@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./Thermodrain_recess_Page.module.css";
 
-export default function ThermodrainProductPage() {
+export default function FibrodrainRecessPage() {
   return (
     <div className={styles.page}>
       {/* HERO SECTION */}
@@ -15,7 +15,7 @@ export default function ThermodrainProductPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
         >
-       Thermodrain Recess Manhole Covers (with Frame)
+          FIBRODRIAN RECESS MANHOLE COVERS
         </motion.h1>
 
         <motion.p
@@ -23,7 +23,11 @@ export default function ThermodrainProductPage() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
         >
-   THERMODRAIN Multiple Covers with Frame are tested as per BS EN 124, IS1726 & AASHTO M306 standards for drainage and Utility services meeting all requirements of the code. THERMODRAIN Covers are better performing than Cast Iron, Ductile Iron and RCC manhole covers.
+          FIBRODRAIN Recess Manhole Covers with frames are tested as per BS EN 124, 
+          IS 1726 & AASHTO M306 standards for drainage and utility services, ensuring 
+          reliable performance. They provide superior strength, durability, and 
+          long-lasting performance compared to Cast Iron, Ductile Iron, and RCC 
+          recess covers.
         </motion.p>
       </section>
 
@@ -36,8 +40,8 @@ export default function ThermodrainProductPage() {
           className={styles.imageWrapper}
         >
           <Image
-            src="/product_img/pruduct_03.jpg"
-            alt="Thermodrain Solid Top Manhole Cover"
+            src="/product_img/pruduct_01.jpg"
+            alt="Fibrodrain Recess Manhole Cover"
             width={600}
             height={600}
             className={styles.productImage}
@@ -50,44 +54,99 @@ export default function ThermodrainProductPage() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className={styles.details}
         >
-          <h2>Salient Features</h2>
+          <h2>Material: FRP / GRP / Composite</h2>
           <ul>
-            <li>Double Sealed Arrangement</li>
-            <li>Q-Turn Locking or Bolt Locking Available</li>
-            <li>
-              Closed Bottom Keyhole prevents mosquito breeding and emission of foul smell
-            </li>
-            <li>
-              Permanent set is as per BS EN 124 for all sizes and load bearing
-            </li>
-            <li>Self-Pigmented and Non-Brittle Construction</li>
+            <li>Load bearing capacity: From 2.5 tons up to D400 (40 tons)</li>
+            <li>Available in circular, square, and rectangular shapes</li>
+            <li>Double seal arrangement for added safety</li>
+            <li>Lightweight and easy to handle, superior to conventional materials</li>
+            <li>Zero permanent set – retains shape and strength under load</li>
+            <li>65 mm recess depth for fixing cement, tiles, blocks, or other finishes</li>
+            <li>All keyholes have closed bottoms (not through & through) for longer life</li>
           </ul>
 
-          <h2>Key Highlights</h2>
+          <h2>Properties of Fibrodrain Recess Covers</h2>
           <ul>
-            <li>Material: FRP / GRP / Composite Material</li>
-            <li>Load Bearing Capacity: 2.5T (2.5 Tons) to F900 (90 Tons)</li>
-            <li>Shapes: Circular, Square, and Rectangular</li>
-            <li>Seal: Double Seal Arrangements</li>
             <li>
-              Closed Bottom Keyholes with Stainless Steel or High-Strength Plastic Alloy
-              Inserts (Prevents Cracking)
+              <strong>Closed Keyholes –</strong> All lifting keyholes are closed at the bottom,
+              preventing foul smell and dust from entering the chamber.
+            </li>
+            <li>
+              <strong>Double Seal Design –</strong> Each manhole cover has a double seal for
+              extra safety and protection.
+            </li>
+            <li>
+              <strong>Reinforced Keyhole Inserts –</strong> High-strength plastic alloy or
+              stainless steel inserts ensure durability around keyholes during repeated use.
             </li>
           </ul>
-
-          <Link href="/contact">
-              {/* <motion.button whileHover={{ scale: 1.05 }}>
-              Get a Quote
-            </motion.button> */}
-          </Link>
         </motion.div>
       </div>
 
-
+      {/* SPECIFICATIONS TABLE */}
+      <section className={styles.specifications}>
+        <h2>Frame Opening Sizes</h2>
+        <div className={styles.tableWrapper}>
+          <table className={styles.specTable}>
+            <thead>
+              <tr>
+                <th>Size (mm)</th>
+                <th>Circular</th>
+                <th>Rectangular</th>
+                <th>Square</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>500</td>
+                <td>500 mm (20")</td>
+                <td>-</td>
+                <td>300 mm × 300 mm (12" × 12")</td>
+              </tr>
+              <tr>
+                <td>600</td>
+                <td>600 mm (24")</td>
+                <td>600 mm × 450 mm (24" × 18")</td>
+                <td>450 mm × 450 mm (18" × 18")</td>
+              </tr>
+              <tr>
+                <td>690</td>
+                <td>690 mm (27")</td>
+                <td>-</td>
+                <td>600 mm × 600 mm (24" × 24")</td>
+              </tr>
+              <tr>
+                <td>762</td>
+                <td>762 mm (30")</td>
+                <td>-</td>
+                <td>750 mm × 750 mm (29" × 29")</td>
+              </tr>
+              <tr>
+                <td>900</td>
+                <td>900 mm (36")</td>
+                <td>900 mm × 450 mm (36" × 18")</td>
+                <td>900 mm × 900 mm (36" × 36")</td>
+              </tr>
+              <tr>
+                <td>1000</td>
+                <td>1000 mm (40")</td>
+                <td>990 mm × 1220 mm (40" × 49")</td>
+                <td>1000 mm × 1000 mm (40" × 40")</td>
+              </tr>
+              <tr>
+                <td>1200</td>
+                <td>-</td>
+                <td>-</td>
+                <td>1200 mm × 1200 mm (48" × 48")</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
 
       {/* CTA SECTION */}
       <section className={styles.cta}>
-        <h2>Need THERMODRAIN Covers for Your Project?</h2>
+        <h2>Need FIBRODRAIN Covers for Your Project?</h2>
         <p>
           Contact us today for bulk inquiries, customization options, or detailed
           technical data sheets. We’re here to help you choose the right product

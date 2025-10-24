@@ -35,12 +35,7 @@ export default function Loader() {
           We deliver a wide range of FRP drainage solutions designed with unmatched strength,
           durability, and load-bearing capacity, all tested to meet international standards.
         </p>
-        <ul className={styles.features}>
-          <li>🔹 High-Tech Composite Development</li>
-          <li>🔹 Sustainable Product Integration</li>
-          <li>🔹 Lasting Quality Commitment</li>
-          <li>🔹 Tailored Drainage Solutions</li>
-        </ul>
+  
         <div className={styles.spinner}></div>
       </div>
     </div>

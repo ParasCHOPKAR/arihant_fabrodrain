@@ -248,3 +248,51 @@
     font-size: 2rem;
   }
 }
+
+
+
+/* Grid Table Styling */
+.gridTable {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.gridRow {
+  display: flex;
+  gap: 10px;
+}
+
+.gridCell {
+  flex: 1;
+  background: linear-gradient(145deg, #fff8f0, #ffeacc);
+  color: #f58220;
+  font-weight: 600;
+  text-align: center;
+  padding: 12px 0;
+  border-radius: 8px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.gridCell:hover {
+  background: linear-gradient(90deg, #f58220, #ffae42);
+  color: #fff;
+  transform: translateY(-3px);
+  cursor: default;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .gridRow {
+    gap: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gridRow {
+    flex-direction: column;
+  }
+}

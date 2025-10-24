@@ -95,17 +95,24 @@
 .rotate {
   transform: rotate(180deg);
 }
-
 /* ===== MOBILE ===== */
 @media (max-width: 768px) {
   .navbar {
     padding: 15px 20px;
-    background: #111;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    background: #fff;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08); /* smoother shadow */
+    position: relative;
+    z-index: 1002;
+    transition: all 0.3s ease;
   }
 
   .logo img {
     height: 60px;
+    transition: transform 0.3s ease;
+  }
+
+  .logo img:hover {
+    transform: scale(1.05);
   }
 
   /* Hamburger */
@@ -113,32 +120,36 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 25px;
-    height: 20px;
+    width: 28px;
+    height: 22px;
     cursor: pointer;
-    z-index: 1001;
+    z-index: 1003;
+    transition: all 0.3s ease;
   }
 
   .menuToggle span {
     display: block;
     height: 3px;
-    background: #fff;
-    border-radius: 2px;
-    transition: all 0.3s ease;
+    background: #111;
+    border-radius: 3px;
+    transition: all 0.4s ease;
   }
 
   .navLinks {
     position: fixed;
     top: 0;
-    left: -300px;
+    left: -280px;
     height: 100vh;
     width: 260px;
-    background: #111;
+    background: #fff;
     flex-direction: column;
-    padding: 80px 20px;
-    transition: left 0.3s ease-in-out;
+    padding: 90px 20px;
+    transition: left 0.4s cubic-bezier(0.77, 0, 0.175, 1);
     overflow-y: auto;
     z-index: 1000;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 5px 0 25px rgba(0, 0, 0, 0.1);
   }
 
   .navLinks.active {
@@ -147,13 +158,15 @@
 
   .overlay {
     position: fixed;
-    top:0;
-    left:0;
-    width:100vw;
-    height:100vh;
-    background: rgba(0,0,0,0.5);
-    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.25); /* softer overlay */
+    z-index: 998;
     display: none;
+    backdrop-filter: blur(3px);
+    transition: all 0.3s ease;
   }
 
   .overlay.show {
@@ -161,25 +174,33 @@
   }
 
   .navLinks > li > a {
-    color: #fff;
-    padding: 14px 20px;
+    color: #111;
+    padding: 16px 20px;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid rgba(255,255,255,0.08);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+
+  .navLinks > li > a:hover {
+    background: linear-gradient(90deg, #f58220, #ffae42);
+    color: #fff;
   }
 
   .dropdownMenu {
     position: relative;
     top: 0;
-    background: #1a1a1a;
+    background: #f9f9f9;
     margin: 0;
-    border-radius: 6px;
+    border-radius: 12px;
     overflow: hidden;
     max-height: 0;
     flex-direction: column;
-    transition: max-height 0.4s ease;
+    transition: max-height 0.4s ease, background 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   }
 
   .dropdownMenu.show {
@@ -188,14 +209,17 @@
   }
 
   .dropdownMenu a {
-    color: #ddd;
+    color: #111;
     font-size: 15px;
-    padding: 12px 18px;
-    line-height: 1.4em;
+    padding: 14px 18px;
+    line-height: 1.5em;
+    transition: all 0.3s ease;
+    border-radius: 8px;
   }
 
   .dropdownMenu a:hover {
-    background: #262626;
-  color: #ffb84d;
+    background: linear-gradient(90deg, #f58220, #ffae42);
+    color: #fff;
+    transform: translateX(5px);
   }
 }

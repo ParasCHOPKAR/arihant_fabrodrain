@@ -47,10 +47,9 @@ const ComparativePage = () => {
             <Image
               src={img}
               alt={`Comparison ${idx + 1}`}
-              width={400}          // Adjust width as needed
-              height={300}         // Adjust height as needed
-              className={styles.imageCardImg}
-              priority             // Optional: preload important images
+              fill // Fills the container, making it square
+              style={{ objectFit: "cover" }}
+              priority
             />
           </div>
         ))}
@@ -69,9 +68,9 @@ const ComparativePage = () => {
             <Image
               src={currentImg}
               alt="Open Comparison"
-              width={800}           // Adjust width as needed
-              height={600}          // Adjust height as needed
-              className={styles.modalImage}
+              width={800}
+              height={600}
+              style={{ objectFit: "contain" }}
             />
           </div>
         </div>

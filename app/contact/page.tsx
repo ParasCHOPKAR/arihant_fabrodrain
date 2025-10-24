@@ -37,6 +37,13 @@ export default function ContactPage() {
             <form onSubmit={handleSubmit} className={styles.contactForm}>
               <input type="text" placeholder="First Name" required />
               <input type="email" placeholder="Email" required />
+              <input
+                type="tel"
+                placeholder="Mobile Number"
+                pattern="[0-9]{10}"
+                maxLength={10}
+                required
+              />
               <input type="text" placeholder="Subject" required />
               <textarea placeholder="Message" required></textarea>
               <button type="submit">Submit</button>
@@ -45,7 +52,7 @@ export default function ContactPage() {
 
           {/* RIGHT SIDE — GET IN TOUCH INFO */}
           <div className={styles.infoWrapper}>
-            <h2>GET IN TOUCH</h2>
+            <h2>Get In Touch</h2>
             <div className={styles.getInTouchCard}>
               <p><strong>Phone:</strong> +91 9637819378</p>
               <p><strong>Website:</strong> arihantcorp.co.in</p>
@@ -57,9 +64,7 @@ export default function ContactPage() {
 
         {/* MAP BELOW FORM */}
         <div className={styles.mapWrapperBelow}>
-          <h2 style={{ color: "#F58220", marginBottom: "15px", textAlign: "center" }}>
-            OUR LOCATION
-          </h2>
+          <h2 className={styles.mapHeading}>Our Location</h2>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3779.4881389195765!2d73.8780771!3d18.4585846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2ebefbdeffd67%3A0x41563099a603bb11!2sUltima%20Business%20Centre!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
             width="100%"

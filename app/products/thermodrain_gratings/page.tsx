@@ -5,7 +5,18 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./Thermodrain_grating_Page.module.css";
 
-export default function ThermodrainProductPage() {
+export default function FibrodrainRecessPage() {
+  const gratingSizes = [
+    6, 44, 82, 120, 158, 196, 234, 272, 310, 348, 386, 424, 462, 500, 538, 576,
+    614, 652, 690, 728, 766, 804, 842, 880, 918, 20, 25, 30, 956, 993, 1032, 1070,
+    1108, 1146, 1184, 1221, 1222, 1260, 1298, 1336, 1374, 1412, 1450, 1488, 1526,
+    1564, 1602, 1678, 1716, 1754, 1792, 1830, 1868, 1906, 1944, 1982, 2020, 2058,
+    2096, 2134, 2172, 2210, 2248, 2286, 2324, 2362, 2400, 2438, 2476, 2514, 2552,
+    2590, 2628, 2666, 2704, 2742, 2780, 2818, 2856, 2894, 2932, 2970, 3008, 3046,
+    3084, 3122, 3160, 3198, 3236, 3274, 3312, 3350, 3388, 3426, 3464, 3502, 3540,
+    3578, 3616, 3654
+  ];
+
   return (
     <div className={styles.page}>
       {/* HERO SECTION */}
@@ -15,7 +26,7 @@ export default function ThermodrainProductPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
         >
-         Thermodrain Gratings
+          FIBRODRAIN GRATINGS
         </motion.h1>
 
         <motion.p
@@ -23,11 +34,11 @@ export default function ThermodrainProductPage() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
         >
-          THERMODRAIN Solid Top Manhole Covers are tested as per BS EN 124, IS1726
-          & AASHTO M306 standards for drainage and utility services meeting all
-          requirements of the code. They perform better than Cast Iron, Ductile
-          Iron, and RCC manhole covers, offering superior durability, strength, and
-          long service life.
+          FIBRODRAIN Recess Manhole Covers with frames are tested as per BS EN 124, 
+          IS 1726 & AASHTO M306 standards for drainage and utility services, ensuring 
+          reliable performance. They provide superior strength, durability, and 
+          long-lasting performance compared to Cast Iron, Ductile Iron, and RCC 
+          recess covers.
         </motion.p>
       </section>
 
@@ -40,8 +51,8 @@ export default function ThermodrainProductPage() {
           className={styles.imageWrapper}
         >
           <Image
-            src="/product_img/pruduct_05.jpg"
-            alt="Thermodrain Solid Top Manhole Cover"
+            src="/product_img/pruduct_01.jpg"
+            alt="Fibrodrain Recess Manhole Cover"
             width={600}
             height={600}
             className={styles.productImage}
@@ -54,120 +65,51 @@ export default function ThermodrainProductPage() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className={styles.details}
         >
-          <h2>Salient Features</h2>
+          <h2>Key Features</h2>
           <ul>
-            <li>Double Sealed Arrangement</li>
-            <li>Q-Turn Locking or Bolt Locking Available</li>
-            <li>
-              Closed Bottom Keyhole prevents mosquito breeding and emission of foul smell
-            </li>
-            <li>
-              Permanent set is as per BS EN 124 for all sizes and load bearing
-            </li>
-            <li>Self-Pigmented and Non-Brittle Construction</li>
+            <li>Made with zero filler, so no air pockets, no need for extra painting or coating.</li>
+            <li>High impact strength compared to filler-based gratings.</li>
+            <li>Self-colored (not painted), long-lasting finish.</li>
+            <li>Single-piece moulded, jointless design for extra durability.</li>
           </ul>
 
-          <h2>Key Highlights</h2>
+          <h2>Applications</h2>
           <ul>
-            <li>Material: FRP / GRP / Composite Material</li>
-            <li>Load Bearing Capacity: 2.5T (2.5 Tons) to F900 (90 Tons)</li>
-            <li>Shapes: Circular, Square, and Rectangular</li>
-            <li>Seal: Double Seal Arrangements</li>
-            <li>
-              Closed Bottom Keyholes with Stainless Steel or High-Strength Plastic Alloy
-              Inserts (Prevents Cracking)
-            </li>
+            <li>Swimming pools</li>
+            <li>Industrial plants</li>
+            <li>Podiums</li>
+            <li>Basement car parks</li>
+            <li>Stormwater drain trenches</li>
+            <li>Cable trenches</li>
           </ul>
-
-          <Link href="/contact">
-              {/* <motion.button whileHover={{ scale: 1.05 }}>
-              Get a Quote
-            </motion.button> */}
-          </Link>
         </motion.div>
       </div>
 
       {/* SPECIFICATIONS TABLE */}
-<section className={styles.specifications}>
-  <h2>Frame Opening Sizes</h2>
-
+      <section className={styles.specifications}>
+  <h2>Available Grating Sizes (mm)</h2>
   <div className={styles.tableWrapper}>
-    <table className={styles.specTable}>
-      <thead>
-        <tr>
-          <th>Size (mm)</th>
-          <th>Circular</th>
-          <th>Rectangular</th>
-          <th>Square</th>
-        </tr>
-      </thead>
-<tbody>
-  <tr>
-    <td>400</td>
-    <td>400 mm (16&quot;)</td>
-    <td>-</td>
-    <td>300 mm × 300 mm (12&quot; × 12&quot;)</td>
-  </tr>
-  <tr>
-    <td>450</td>
-    <td>450 mm (17&quot;)</td>
-    <td>-</td>
-    <td>450 mm × 450 mm (18&quot; × 18&quot;)</td>
-  </tr>
-  <tr>
-    <td>500</td>
-    <td>500 mm (20&quot;)</td>
-    <td>-</td>
-    <td>600 mm × 600 mm (24&quot; × 24&quot;)</td>
-  </tr>
-  <tr>
-    <td>600</td>
-    <td>600 mm (24&quot;)</td>
-    <td>600 mm × 450 mm (24&quot; × 18&quot;)</td>
-    <td>675 mm × 675 mm (27&quot; × 27&quot;)</td>
-  </tr>
-  <tr>
-    <td>690</td>
-    <td>690 mm (27&quot;)</td>
-    <td>-</td>
-    <td>750 mm × 750 mm (29&quot; × 29&quot;)</td>
-  </tr>
-  <tr>
-    <td>762</td>
-    <td>762 mm (30&quot;)</td>
-    <td>-</td>
-    <td>900 mm × 900 mm (36&quot; × 36&quot;)</td>
-  </tr>
-  <tr>
-    <td>900</td>
-    <td>900 mm (36&quot;)</td>
-    <td>900 mm × 450 mm (36&quot; × 18&quot;)</td>
-    <td>1000 mm × 1000 mm (40&quot; × 40&quot;)</td>
-  </tr>
-  <tr>
-    <td>1000</td>
-    <td>1000 mm (40&quot;)</td>
-    <td>990 mm × 1220 mm (40&quot; × 49&quot;)</td>
-    <td>1200 mm × 1200 mm (48&quot; × 48&quot;)</td>
-  </tr>
-  <tr>
-    <td>1400</td>
-    <td>1400 mm (55&quot;) (2 covers with single frame)</td>
-    <td>-</td>
-    <td>1500 mm × 1500 mm (60&quot; × 60&quot;)</td>
-  </tr>
-</tbody>
-
-    </table>
+    <div className={styles.gridTable}>
+      {Array.from({ length: Math.ceil(gratingSizes.length / 4) }).map((_, rowIdx) => (
+        <div key={rowIdx} className={styles.gridRow}>
+          {[0, 1, 2, 3].map(colIdx => {
+            const size = gratingSizes[rowIdx + colIdx * Math.ceil(gratingSizes.length / 4)];
+            return (
+              <div key={colIdx} className={styles.gridCell}>
+                {size || "-"}
+              </div>
+            );
+          })}
+        </div>
+      ))}
+    </div>
   </div>
-
-
 </section>
 
 
       {/* CTA SECTION */}
       <section className={styles.cta}>
-        <h2>Need THERMODRAIN Covers for Your Project?</h2>
+        <h2>Need FIBRODRAIN Covers for Your Project?</h2>
         <p>
           Contact us today for bulk inquiries, customization options, or detailed
           technical data sheets. We’re here to help you choose the right product

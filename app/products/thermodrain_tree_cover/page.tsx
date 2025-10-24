@@ -15,7 +15,7 @@ export default function ThermodrainProductPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
         >
-Thermodrain Tree Gratings
+FIBRODRAIN TREE GRATINGS
 
         </motion.h1>
 
@@ -24,7 +24,7 @@ Thermodrain Tree Gratings
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
         >
-THERMODRAIN Water Gully Covers are tested as per BS EN 124, IS1726 & AASHTO M306 standards for drainage and Utility services meeting all requirements of the code. THERMODRAIN Water Gully Covers are better performing than Cast Iron, Ductile Iron and RCC manhole covers.
+FIBRODRAIN Water Gully Covers are tested as per BS EN 124, IS1726 & AASHTO M306 standards for drainage and Utility services meeting all requirements of the code. THERMODRAIN Water Gully Covers are better performing than Cast Iron, Ductile Iron and RCC manhole covers.
         </motion.p>
       </section>
 
@@ -51,27 +51,17 @@ THERMODRAIN Water Gully Covers are tested as per BS EN 124, IS1726 & AASHTO M306
           transition={{ duration: 0.6, delay: 0.2 }}
           className={styles.details}
         >
-          <h2>Salient Features</h2>
+          <h2> Key Features</h2>
           <ul>
-            <li>Tree Gratings are self pigmented , non painted.</li>
-            <li>Tree Gratings are available in two piece or four piece for ease of installation.</li>
-            <li>
-           Tree Gratings protect the soil and allow pedestrians to walk near the tree without compacting the soil.
-            </li>
-                 <li>Tree Gratings allow the rain water to penetrate the soil.</li>
-                     <li>Tree Gratings allow the rain water to penetrate the soil.</li>
-         
+            <li>Self-pigmented (not painted), long-lasting finish.</li>
+            <li>Available in two-piece or four-piece design for easy installation.</li>
+            <li>Protects soil while allowing safe pedestrian movement aroundtrees.</li>
+                 <li>Allows rainwater to reach the soil naturally.</li>
+                     <li>Enhances landscaping and aesthetics with artistic designs</li>
           </ul>
 
      
 
-           <h2>Areas of Application :</h2>
-          <ul>
-            <li>Sidewalks and Pedestrain Zones</li>
-            <li>Parks and Plazas</li>
-            <li>Commercial and Shopping Areas</li>
-             <li>Municipal Roads</li>
-          </ul>
 
           <Link href="/contact">
             {/* <motion.button whileHover={{ scale: 1.05 }}>
@@ -98,3 +88,52 @@ THERMODRAIN Water Gully Covers are tested as per BS EN 124, IS1726 & AASHTO M306
     </div>
   );
 }
+{/* SPECIFICATIONS TABLE */}
+<section className={styles.specifications}>
+  <h2>FIBRODRAIN Tree Grating Sizes</h2>
+
+  <h3>Rectangular Covers</h3>
+  <div className={styles.tableWrapper}>
+    <table className={styles.specTable}>
+      <thead>
+        <tr>
+          <th>S.No</th>
+          <th>Frame Clear Opening</th>
+          <th>Cover Out to Out</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>640 mm x 240 mm</td><td>700 mm x 300 mm</td></tr>
+        <tr><td>2</td><td>385 mm x 317 mm</td><td>445 mm x 377 mm</td></tr>
+        <tr><td>3</td><td>500 mm x 600 mm</td><td>560 mm x 660 mm</td></tr>
+        <tr><td>4</td><td>900 mm x 600 mm</td><td>960 mm x 660 mm</td></tr>
+        <tr><td>5</td><td>450 mm x 450 mm</td><td>515 mm x 515 mm</td></tr>
+        <tr><td>6</td><td>600 mm x 600 mm</td><td>660 mm x 660 mm</td></tr>
+        <tr><td>7</td><td>750 mm x 700 mm</td><td>816 mm x 816 mm</td></tr>
+        <tr><td>8</td><td>900 mm x 900 mm</td><td>966 mm x 966 mm</td></tr>
+        <tr><td>9</td><td>966 mm x 966 mm</td><td>1032 mm x 1032 mm</td></tr>
+        <tr><td>10</td><td>...</td><td>...</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Square Covers</h3>
+  <div className={styles.tableWrapper}>
+    <table className={styles.specTable}>
+      <thead>
+        <tr>
+          <th>S.No</th>
+          <th>Frame Clear Opening</th>
+          <th>Cover Out to Out</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>300 mm x 300 mm</td><td>360 mm x 360 mm</td></tr>
+        <tr><td>2</td><td>450 mm x 450 mm</td><td>515 mm x 515 mm</td></tr>
+        <tr><td>3</td><td>600 mm x 600 mm</td><td>660 mm x 660 mm</td></tr>
+        <tr><td>4</td><td>750 mm x 750 mm</td><td>816 mm x 816 mm</td></tr>
+        <tr><td>5</td><td>900 mm x 900 mm</td><td>966 mm x 966 mm</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>

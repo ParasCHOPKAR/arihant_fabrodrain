@@ -179,12 +179,12 @@
     padding: 30px 20px;
   }
 }
-/* Image Styling */
+/* Image Styling - Square Shape */
 .imageWrapper {
-  width: 100px;
-  height: 100px;
+  width: 180px;
+  height: 160px;
   margin: 0 auto 20px;
-  border-radius: 50%;
+  border-radius: 22px; /* Changed from 50% to 18px for square */
   overflow: hidden;
   box-shadow: 0 8px 20px rgba(245, 130, 32, 0.25);
   border: 3px solid #fff3e6;
