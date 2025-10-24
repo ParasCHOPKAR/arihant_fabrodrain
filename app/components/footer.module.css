@@ -3,7 +3,7 @@
   position: relative;
   background: url('/icons/comparative_hero.gif') center/cover no-repeat;
   color: #fff;
-  padding: 80px 20px 40px; /* slightly reduced padding for mobile */
+  padding: 90px 30px 50px;
   font-family: "Playfair Display", serif;
   overflow: hidden;
 }
@@ -21,7 +21,7 @@
   z-index: 2;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 50px;
+  gap: 55px;
   max-width: 1200px;
   margin: auto;
 }
@@ -31,78 +31,99 @@
   text-align: left;
 }
 .logoSection .logo {
-  height: 60px;
+  height: 80px; /* slightly larger logo */
   width: auto;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 .logoSection .about {
   color: white;
-  font-size: 14px;
-  line-height: 1.8;
-  margin-bottom: 20px;
+  font-size: 18px; /* increased */
+  line-height: 2.1;
+  margin-bottom: 25px;
 }
 
 /* ====== SOCIAL ICONS ====== */
 .socials {
   display: flex;
-  gap: 18px;
-  margin-top: 20px;
+  gap: 20px;
+  margin-top: 25px;
 }
 
 .socials a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 42px;
-  height: 42px;
+  width: 50px; /* increased */
+  height: 50px; /* increased */
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.08);
   transition: all 0.4s ease;
 }
 
 .socials a img {
-  width: 22px;
-  height: 22px;
+  width: 28px; /* increased */
+  height: 28px; /* increased */
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .socials a:hover {
-  background: rgba(245, 130, 32, 0.2);
-  transform: translateY(-3px);
+  background: rgba(245, 130, 32, 0.25);
+  transform: translateY(-4px);
 }
 
 .socials a:hover img {
-  filter: brightness(1.3) saturate(150%);
-  transform: scale(1.15);
+  filter: brightness(1.4) saturate(160%);
+  transform: scale(1.2);
 }
 
-/* ====== LINKS ====== */
-.linksSection,
-.contactSection {
-  text-align: left;
-}
-
+/* ====== LINKS & CONTACT HEADINGS ====== */
 .linksSection h4,
 .contactSection h4 {
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  color: white;
-  text-transform: capitalize;
+  font-size: 22px; /* increased */
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #f58220;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+  transition: all 0.3s ease;
 }
 
-/* LINKS LIST */
+/* Animated underline - DESKTOP ONLY */
+@media (min-width: 769px) {
+  .linksSection h4::after,
+  .contactSection h4::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 3px;
+    background: #ff8b33;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+  }
+
+  .linksSection h4:hover::after,
+  .contactSection h4:hover::after {
+    width: 60%;
+  }
+}
+
+/* ====== LINKS LIST ====== */
 .linksSection ul {
   list-style: none;
   padding: 0;
 }
 .linksSection ul li {
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 .linksSection ul li a {
   color: white;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 18px; /* increased */
   transition: color 0.3s ease;
 }
 .linksSection ul li a:hover {
@@ -112,34 +133,36 @@
 /* ====== CONTACT SECTION ====== */
 .contactSection {
   color: #ddd;
-  font-size: 14px;
+  font-size: 18px; /* increased */
 }
 
 .contactItem {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 12px;
+  gap: 14px; /* slightly increased */
+  margin-bottom: 16px;
 }
 
 .contactIcon {
-  width: 20px;
-  height: 20px;
+  width: 24px; /* increased */
+  height: 24px; /* increased */
 }
 
 .contactSection a {
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 25px;
   background: #f58220;
   color: #fff;
-  padding: 8px 18px;
+  padding: 12px 26px; /* increased */
   border-radius: 25px;
   text-decoration: none;
-  font-size: 14px;
-  transition: background 0.3s ease;
+  font-size: 16px; /* increased */
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 .contactSection a:hover {
   background: #ff8b33;
+  transform: scale(1.05);
 }
 
 /* ====== BOTTOM BAR ====== */
@@ -148,25 +171,27 @@
   z-index: 2;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
   text-align: center;
-  margin-top: 60px;
-  padding-top: 20px;
-  font-size: 13px;
+  margin-top: 70px;
+  padding-top: 25px;
+  font-size: 16px; /* increased */
   color: white;
 }
 .bottom .developer {
   color: #f58220;
-  font-weight: 500;
+  font-weight: 600;
 }
+
 /* ====== RESPONSIVE ====== */
+
+/* Tablet */
 @media (max-width: 768px) {
   .container {
-    grid-template-columns: 1fr; /* stack sections vertically */
-    gap: 40px;
-    padding: 0 20px;
+    grid-template-columns: 1fr;
+    gap: 45px;
+    padding: 0 25px;
     text-align: center;
   }
 
-  /* Center logo and about section */
   .logoSection {
     display: flex;
     flex-direction: column;
@@ -174,17 +199,13 @@
     justify-content: center;
   }
 
-  /* Center links section */
   .linksSection ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px;
-    padding: 0;
-    margin: 0 auto;
+    gap: 12px;
   }
 
-  /* Center contact section items */
   .contactSection {
     display: flex;
     flex-direction: column;
@@ -197,44 +218,70 @@
   }
 
   .contactSection a {
-    margin: 20px 0 0 0; /* center button with spacing */
+    margin: 25px 0 0 0;
+    width: 80%;
+    text-align: center;
   }
 
-  /* Center socials */
   .socials {
     justify-content: center;
     margin-top: 25px;
   }
+
+  .linksSection h4,
+  .contactSection h4 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 20px; /* slightly bigger on tablet */
+  }
 }
 
+/* Mobile */
 @media (max-width: 480px) {
   .footer {
-    padding: 50px 15px 25px; /* reduced padding */
+    padding: 60px 15px 30px;
   }
 
   .logoSection .about,
   .linksSection ul li a,
   .contactSection {
-    font-size: 13px;
-    line-height: 1.6;
+    font-size: 16px;
+    line-height: 1.7;
   }
 
   .socials a {
-    width: 36px;
-    height: 36px;
+    width: 44px; /* increased slightly */
+    height: 44px;
   }
 
   .socials a img {
-    width: 18px;
-    height: 18px;
+    width: 22px;
+    height: 22px;
   }
 
   .bottom {
-    font-size: 12px;
+    font-size: 14px;
+    padding-top: 15px;
   }
 
-  /* Reduce gap for stacked sections */
   .container {
     gap: 30px;
+  }
+
+  .linksSection.products ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .linksSection h4,
+  .contactSection h4 {
+    text-align: center;
+    font-size: 18px; /* slightly bigger */
+    font-weight: 800;
+  }
+
+  .contactSection a {
+    width: 100%;
   }
 }

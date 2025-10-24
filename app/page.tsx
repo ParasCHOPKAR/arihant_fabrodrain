@@ -3,6 +3,7 @@ import AboutSection from "./components/AboutSection";
 import CTASection from "./components/CTASection";
 import ProductsSection from "./components/ProductsSection";
 import TestimonialsSection from "./components/TestimonialsSection";
+import Loader from "./components/Loader";
 
 
 // import IndustriesSection from "./components/IndustriesSection";
@@ -12,6 +13,8 @@ import TestimonialsSection from "./components/TestimonialsSection";
 export default function Home() {
   return (
     <>
+
+         <Loader />
       <HeroSection />
       <AboutSection />
          

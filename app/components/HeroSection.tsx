@@ -24,7 +24,7 @@ export default function HeroSection() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
-    }, 5000); // Change slide every 5 seconds
+    }, 5000);
     return () => clearInterval(interval);
   }, [slides.length]);
 
@@ -41,14 +41,13 @@ export default function HeroSection() {
       <div className={styles.overlay}></div>
 
       <div className={styles.container}>
-        {/* Left Content */}
         <div className={styles.leftContent}>
-          {/* <h1>High-Quality Industrial Products & Solutions</h1>
-          <p>
-            Empowering industries with durable, efficient, and innovative
-            products designed to meet the most demanding standards.
-          </p> */}
-          <div className={styles.buttons}></div>
+
+     
+          <div className={styles.buttons}>
+            <a href="#products" className={styles.primaryBtn}>Explore Products</a>
+            <a href="#contact" className={styles.secondaryBtn}>Contact Us</a>
+          </div>
         </div>
       </div>
     </section>

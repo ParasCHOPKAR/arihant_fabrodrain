@@ -1,38 +1,144 @@
 "use client";
-
 import React from "react";
-import Image from "next/image"; // Import Next.js Image
+import Image from "next/image";
 import "./LoadTesting.css";
+
+interface LoadItem {
+  group: string;
+  groupImg: string;
+  classLoad: string;
+  load: string;
+  installation: string;
+  example: string;
+}
+
+const loadData: LoadItem[] = [
+  {
+    group: "F900",
+    groupImg: "/icons/aeroplain_02.jpg",
+    classLoad: "F900",
+    load: "90 Ton (900kN)",
+    installation: "Areas imposing high wheel loads",
+    example: "Airports",
+  },
+  {
+    group: "E600",
+    groupImg: "/icons/see_port.jpg",
+    classLoad: "E600",
+    load: "60 Ton (600kN)",
+    installation: "Areas imposing high wheel loads",
+    example: "Sea ports",
+  },
+  {
+    group: "D400",
+    groupImg: "/icons/vehical.jpeg",
+    classLoad: "D400",
+    load: "40 Ton (400kN)",
+    installation:
+      "Carriageway of roads, including pedestrian ways and parking areas for all types of road vehicles",
+    example: "Truck roads",
+  },
+  {
+    group: "C250",
+    groupImg: "/icons/car.avif",
+    classLoad: "C250",
+    load: "25 Ton (250kN)",
+    installation: "Areas imposing high wheel loads",
+    example: "Cars",
+  },
+  {
+    group: "B125",
+    groupImg: "/icons/car_01.avif",
+    classLoad: "B125",
+    load: "12.5 Ton (125kN)",
+    installation: "Footways, pedestrian areas and areas with light duty",
+    example: "Cars",
+  },
+  {
+    group: "A15",
+    groupImg: "/icons/bike.avif",
+    classLoad: "A15",
+    load: "1.5 Ton (15kN)",
+    installation: "Areas which can only be used by pedestrian and pedal cycles",
+    example: "Bikes & pedestrians",
+  },
+];
+
+const doDontsData = {
+  do: [
+    "Ensure proper installation with complete civil support.",
+    "Use appropriate tools for handling.",
+    "Check load class before installation.",
+    "Regularly inspect drain covers for safety.",
+  ],
+  dont: [
+    "Do not place load before grouting is complete.",
+    "Avoid throwing or dragging the covers.",
+    "Do not exceed specified load limits.",
+    "Avoid installation in unsafe or wet conditions.",
+  ],
+};
 
 const LoadTesting = () => {
   return (
     <div className="loadTestingPage">
-      {/* HERO SECTION */}
-      <section className="loadHero">
-        <div className="heroContent">
-          <div className="textContent">
-            <h1>Load Testing of THERMODRAIN Products</h1>
-            <p>
-              THERMODRAIN FRP / GRP / COMPOSITE products are tested for 2.5 tons,
-              5 tons, B125 (12.5 tons), C250 (25 tons), D400 (40 tons), E600 (60
-              tons) and F900 (90 tons) class load bearing and permanent set as per
-              BS EN124, IS 1726 and AASHTO. BS EN 124 is a testing code worldwide
-              for manhole covers in cast iron, ductile iron and other materials.
-              Permanent Set is a multiple loading test to determine the permanent
-              deformation in cover after multiple loading within a short time as
-              specified in the code.
-            </p>
+
+      {/* ===== LOAD BEARING TABLE ===== */}
+      <section className="loadBearing">
+        <h2>Applicable Load Bearing</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Group</th>
+              <th>Class</th>
+              <th>Load</th>
+              <th>Installation Areas</th>
+              <th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            {loadData.map((item, index) => (
+              <tr key={index}>
+                <td>
+                  <Image src={item.groupImg} alt={item.group} width={60} height={60} />
+                </td>
+                <td>{item.classLoad}</td>
+                <td>{item.load}</td>
+                <td>{item.installation}</td>
+                <td>{item.example}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </section>
+
+      {/* ===== DO's & DON'Ts SPLIT ===== */}
+      <section className="dosDontsSplit">
+        <h2>DO's & DON'Ts</h2>
+        <div className="dosDontsSplitWrapper">
+
+          {/* DO COLUMN */}
+          <div className="dosColumn">
+            <div className="circleLabel">DO</div>
+            {doDontsData.do.map((text, index) => (
+              <div key={index} className="dosItem">
+                <div className="dosNumber">{index + 1}</div>
+                <p>{text}</p>
+              </div>
+            ))}
           </div>
-          <div className="imageContent">
-            <Image
-              src="/images/load-testing.jpg"
-              alt="Load Testing"
-              width={600}   // Adjust width
-              height={400}  // Adjust height
-              className="loadImage"
-              priority      // Optional: preload for LCP
-            />
+
+          {/* DON'T COLUMN */}
+          <div className="dontColumn">
+            <div className="circleLabel dontLabel">DON'T</div>
+            {doDontsData.dont.map((text, index) => (
+              <div key={index} className="dontItem">
+                <div className="dontNumber">{index + 1}</div>
+                <p>{text}</p>
+              </div>
+            ))}
           </div>
+
         </div>
       </section>
     </div>

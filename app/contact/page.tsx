@@ -10,68 +10,67 @@ export default function ContactPage() {
   return (
     <div className={styles.contactPage}>
       {/* HERO */}
-   <section className={styles.hero}>
-  <div className={styles.heroContent}>
-    <div className={styles.heroText}>
-      <h1>Contact Us</h1>
-      <p>
-        We would love to hear from you. Reach out for quotes, inquiries, or 
-        project consultation. Our team is ready to assist you!
-      </p>
-    </div>
-    <div className={styles.heroImage}>
-      <img src="/icons/contact.jpg" alt="Contact Us" />
-    </div>
-  </div>
-</section>
-
-
+      <section className={styles.hero}>
+        <div className={styles.heroContent}>
+          <div className={styles.heroText}>
+            <h1>Contact Us</h1>
+            <p>
+              We would love to hear from you. Reach out for quotes, inquiries, or 
+              project consultation. Our team is ready to assist you!
+            </p>
+          </div>
+          <div className={styles.heroImage}>
+            <img src="/icons/contact.jpg" alt="Contact Us" />
+          </div>
+        </div>
+      </section>
 
       {/* CONTACT FORM + INFO */}
-  <section className={styles.contactFormSection}>
-  <div className={styles.container}>
-    {/* LEFT SIDE — FORM */}
-    <div className={styles.formWrapper}>
-      <h2>Get In Touch!</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, 
-        luctus nec ullamcorper mattis, pulvinar dapibus leo.
-      </p>
+      <section className={styles.contactFormSection}>
+        <div className={styles.container}>
+          {/* LEFT SIDE — FORM */}
+          <div className={styles.formWrapper}>
+            <p>
+              Fill out the form below and we will get back to you as soon as possible.
+            </p>
 
-      <form onSubmit={handleSubmit} className={styles.contactForm}>
-        <input type="email" placeholder="Email" required />
-        <input type="text" placeholder="Name" required />
-     <textarea placeholder="Message" required></textarea>
+            <form onSubmit={handleSubmit} className={styles.contactForm}>
+              <input type="text" placeholder="First Name" required />
+              <input type="email" placeholder="Email" required />
+              <input type="text" placeholder="Subject" required />
+              <textarea placeholder="Message" required></textarea>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
 
-        <button type="submit">Submit Button</button>
-      </form>
-    </div>
+          {/* RIGHT SIDE — GET IN TOUCH INFO */}
+          <div className={styles.infoWrapper}>
+            <h2>GET IN TOUCH</h2>
+            <div className={styles.getInTouchCard}>
+              <p><strong>Phone:</strong> +91 9637819378</p>
+              <p><strong>Website:</strong> arihantcorp.co.in</p>
+              <p><strong>Email:</strong> krunal3399@gmail.com</p>
+              <p><strong>Address:</strong> Shop no. 120+121, 1st Floor, Ultima Business Centre</p>
+            </div>
+          </div>
+        </div>
 
-    {/* RIGHT SIDE — MAP + INFO + SOCIAL */}
-    <div className={styles.infoWrapper}>
-      <h2>Our Location</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus 
-        nec ullamcorper mattis, pulvinar dapibus leo.
-      </p>
-
-      <div className={styles.mapWrapper}>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.834200123!2d73.85625511511214!3d18.520430387402047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c092f0b12345%3A0xabcdef1234567890!2s123%20Industrial%20Road%2C%20Pune!5e0!3m2!1sen!2sin!4v1697369420000!5m2!1sen!2sin"
-          width="100%"
-          height="100%"
-          style={{ border: 0 }}
-          allowFullScreen
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
-
-
-    </div>
-  </div>
-</section>
-
+        {/* MAP BELOW FORM */}
+        <div className={styles.mapWrapperBelow}>
+          <h2 style={{ color: "#F58220", marginBottom: "15px", textAlign: "center" }}>
+            OUR LOCATION
+          </h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3779.4881389195765!2d73.8780771!3d18.4585846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2ebefbdeffd67%3A0x41563099a603bb11!2sUltima%20Business%20Centre!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+            width="100%"
+            height="400"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
     </div>
   );
 }

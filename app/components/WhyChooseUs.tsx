@@ -2,10 +2,10 @@
 
 import React from "react";
 import styles from "./whyChooseUs.module.css";
-import { FaCheckCircle, FaShieldAlt, FaHandsHelping, FaIndustry } from "react-icons/fa";
+import { FaCheckCircle, FaCloudSun, FaLeaf, FaCubes } from "react-icons/fa";
 
 interface Feature {
-  icon: React.ReactNode; // ✅ Changed from JSX.Element to React.ReactNode
+  icon: React.ReactNode;
   title: string;
   description: string;
 }
@@ -13,23 +13,23 @@ interface Feature {
 const features: Feature[] = [
   {
     icon: <FaCheckCircle />,
-    title: "High Quality",
-    description: "Our products are made using top-grade materials ensuring long-lasting durability."
+    title: "FRP Technology",
+    description: "Stronger than concrete & lighter than metal — offering superior performance and longevity."
   },
   {
-    icon: <FaShieldAlt />,
-    title: "Reliability",
-    description: "Trusted by clients for consistent performance and precision in every product."
+    icon: <FaCloudSun />,
+    title: "Corrosion & Weather Resistant",
+    description: "Built to last in all conditions, ensuring durability and reliability even in harsh environments."
   },
   {
-    icon: <FaHandsHelping />,
-    title: "Customer Support",
-    description: "Dedicated team available to assist you with inquiries, quotes, and project needs."
+    icon: <FaLeaf />,
+    title: "Eco-Friendly Manufacturing",
+    description: "Sustainably made using recyclable materials, reducing carbon footprint and promoting a greener planet."
   },
   {
-    icon: <FaIndustry />,
-    title: "Industrial Expertise",
-    description: "Years of experience in manufacturing concrete chamber covers and drain solutions."
+    icon: <FaCubes />,
+    title: "Tailored Solutions",
+    description: "Available in multiple sizes, shapes, and load capacities to meet diverse project requirements."
   }
 ];
 
@@ -37,9 +37,9 @@ export default function WhyChooseUs() {
   return (
     <section className={styles.whyChooseUs}>
       <div className={styles.container}>
-        <h2 className={styles.heading}>Why Choose Us</h2>
+        <h2 className={styles.heading}>Why Choose Fibrodrain?</h2>
         <p className={styles.subheading}>
-          At Arihant Industries, we are committed to excellence in every product and service.
+          At Fibrodrain, we’re not just supplying drainage products — we’re building safer, smarter, and more sustainable infrastructure for tomorrow.
         </p>
         <div className={styles.cards}>
           {features.map((feature, index) => (

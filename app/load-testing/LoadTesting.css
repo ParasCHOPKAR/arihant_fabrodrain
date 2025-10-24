@@ -1,72 +1,306 @@
+/* ====== PAGE STYLING ====== */
 .loadTestingPage {
   font-family: "Playfair Display", serif;
   color: #333;
-  background-color: #fdf9f5;
+  background: linear-gradient(120deg, #fdf9f5 0%, #fff6f0 100%);
+  padding-bottom: 50px;
 }
 
-/* HERO SECTION */
-.loadHero {
-  background: #ffffff;
-  padding: 100px 20px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-}
-
-.heroContent {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+/* ====== DO's & DON'Ts SECTION ====== */
+.dosDonts {
+  padding: 60px 20px;
   max-width: 1200px;
-  margin: 0 auto;
-  gap: 50px;
+  margin: auto;
+  background: linear-gradient(120deg, #fff9f2, #fff3e6);
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+}
+
+.dosDonts h2 {
+  font-size: 2.4rem;
+  color: #f58220;
+  margin-bottom: 50px;
+  text-align: center;
+  position: relative;
+}
+
+.dosDonts h2::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #f58220, #ff9c42);
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+.dosDontsGrid {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
   flex-wrap: wrap;
 }
 
-.textContent {
-  flex: 1 1 500px;
+.dosDontsGrid div {
+  background: #fff;
+  padding: 35px 25px 25px 25px;
+  border-radius: 20px;
+  flex: 1 1 300px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
 }
 
-.textContent h1 {
-  font-size: 2.8rem;
-  font-weight: 800;
-  color: #f58220;
+.dosDontsGrid div:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.dosDontsGrid div::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, #f58220, #ff9c42);
+  border-radius: 50%;
+  top: -30px;
+  left: calc(50% - 60px);
+  z-index: 0;
+  opacity: 0.2;
+}
+
+.dosDontsGrid div img {
+  position: relative;
+  z-index: 1;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
   margin-bottom: 20px;
+  transition: transform 0.3s;
 }
 
-.textContent p {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  color: #555;
+.dosDontsGrid div img:hover {
+  transform: scale(1.15) rotate(5deg);
 }
 
-.imageContent {
-  flex: 1 1 500px;
+.dosDontsGrid h3 {
+  margin-bottom: 15px;
+  color: #f58220;
+  font-size: 1.4rem;
+  z-index: 1;
+  position: relative;
+}
+
+.dosDontsGrid p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  z-index: 1;
+  position: relative;
+}
+
+/* ====== LOAD BEARING TABLE ====== */
+.loadBearing {
+  padding: 150px 20px 60px 20px; /* added top padding to move down */
+  max-width: 1200px;
+  margin: auto;
+}
+
+.loadBearing h2 {
+  font-size: 2.2rem;
+  color: #f58220;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.loadBearing h2::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: #f58220;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.loadBearing table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s;
+}
+
+.loadBearing table:hover {
+  transform: translateY(-3px);
+}
+
+.loadBearing th,
+.loadBearing td {
+  padding: 15px 12px;
+  text-align: left;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.loadBearing th {
+  background: linear-gradient(90deg, #f58220, #ff9c42);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.loadBearing tr {
+  transition: background 0.3s, transform 0.3s;
+}
+
+.loadBearing tr:nth-child(even) {
+  background-color: #fff7f1;
+}
+
+.loadBearing tr:hover {
+  background-color: #fff3e6;
+  transform: scale(1.02);
+}
+
+.loadBearing td img {
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+  max-width: 60px;
+  transition: transform 0.3s;
+}
+
+.loadBearing td img:hover {
+  transform: scale(1.1);
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 900px) {
+  .dosDontsGrid {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .dosDonts h2 {
+    font-size: 2rem;
+  }
+
+  .loadBearing table {
+    font-size: 0.9rem;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .loadBearing th,
+  .loadBearing td {
+    min-width: 150px;
+  }
+}
+/* ====== DO's & DON'Ts SPLIT DESIGN ====== */
+.dosDontsSplit {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.dosDontsSplit h2 {
+  font-size: 2.6rem;
+  color: #f58220;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.dosDontsSplit h2::after {
+  content: "";
+  display: block;
+  width: 140px;
+  height: 5px;
+  background: linear-gradient(90deg, #f58220, #ff9c42);
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+.dosDontsSplitWrapper {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  flex-wrap: wrap;
+  position: relative;
 }
 
-.imageContent img {
-  max-width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  transition: transform 0.4s ease;
+/* Central Circle Labels */
+.circleLabel {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #28a745, #1c7c3b);
+  color: #fff;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 40px auto;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
 }
 
-.imageContent img:hover {
-  transform: scale(1.05);
+.dontLabel {
+  background: linear-gradient(135deg, #dc3545, #a71d2a);
 }
 
-/* RESPONSIVE */
+/* Columns */
+.dosColumn,
+.dontColumn {
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+
+/* Item Styling */
+.dosItem, .dontItem {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 25px;
+  gap: 15px;
+}
+
+.dosNumber, .dontNumber {
+  width: 40px;
+  height: 40px;
+  background: #f58220;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 1rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.dontNumber {
+  background: #ff4b3e;
+}
+
+.dosItem p, .dontItem p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* Responsive */
 @media (max-width: 900px) {
-  .heroContent {
+  .dosDontsSplitWrapper {
     flex-direction: column;
-    text-align: center;
-  }
-
-  .textContent h1 {
-    font-size: 2.2rem;
-  }
-
-  .textContent p {
-    font-size: 1rem;
+    gap: 50px;
   }
 }

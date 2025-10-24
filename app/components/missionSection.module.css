@@ -86,7 +86,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  perspective: 1000px; /* for subtle depth */
 }
 
 .grid {
@@ -106,8 +105,8 @@
 
 .shape:hover,
 .shapeLarge:hover {
-  transform: scale(1.05) rotate(0deg);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+  transform: scale(1.08) rotate(0deg);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 
 .shape {

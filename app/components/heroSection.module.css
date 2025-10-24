@@ -1,7 +1,7 @@
 .hero {
   position: relative;
   width: 100%;
-  height: 90vh; /* 50% of viewport height */
+  height: 90vh;
   display: flex;
   align-items: center;
   font-family: "Playfair Display", serif;
@@ -9,7 +9,6 @@
   color: #fff;
 }
 
-/* Make slides fill the section */
 .slide {
   position: absolute;
   top: 0;
@@ -21,6 +20,7 @@
   opacity: 0;
   transition: opacity 1.5s ease-in-out;
   z-index: 0;
+  filter: brightness(1.05); /* increased brightness */
 }
 
 .slide.active {
@@ -31,39 +31,47 @@
 .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.05);
+
   z-index: 1;
 }
 
-/* Container adjusts based on content */
 .container {
   position: relative;
   z-index: 2;
   max-width: 1200px;
   margin: auto;
   padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
 }
 
-/* Left Content */
 .leftContent {
   max-width: 600px;
   z-index: 2;
+  animation: fadeInUp 1.2s ease forwards;
 }
 
 .leftContent h1 {
   font-size: 3rem;
   margin-bottom: 20px;
+  line-height: 1.2;
+  background: linear-gradient(90deg, #f58220, #ff9c42);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .leftContent p {
   font-size: 1.2rem;
   margin-bottom: 30px;
+  color: #fff;
 }
 
 .buttons {
   display: flex;
   gap: 15px;
-  margin-top: 400px;
+  margin-top: 500px;
 }
 
 .primaryBtn {
@@ -74,16 +82,18 @@
   text-decoration: none;
   font-weight: 600;
   transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 .primaryBtn:hover {
   background: #ff9c42;
+  transform: translateY(-2px);
 }
 
 .secondaryBtn {
   background: transparent;
   border: 2px solid #f58220;
-  color: white;
+  color: #444;
   padding: 12px 28px;
   border-radius: 6px;
   text-decoration: none;
@@ -94,9 +104,14 @@
 .secondaryBtn:hover {
   background: #f58220;
   color: #fff;
+  transform: translateY(-2px);
 }
 
-/* Responsive */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
 @media (max-width: 900px) {
   .leftContent h1 {
     font-size: 2.2rem;

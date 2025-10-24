@@ -1,0 +1,151 @@
+/* Loader Overlay */
+.loaderOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #fff, #fef3e7); /* subtle gradient */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertically center content */
+  align-items: center;
+  z-index: 9999;
+  text-align: center;
+  padding: 20px;
+  overflow: hidden;
+  animation: fadeIn 0.8s ease forwards;
+  background-size: 200% 200%;
+  font-family: "Playfair Display", serif;
+  animation: gradientMove 6s ease infinite; /* animated gradient */
+}
+
+/* Loader Content */
+.loaderContent {
+  max-width: 600px;
+  color: #f58220;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Logo */
+.logo {
+  width: 300px; /* increased from 240px */
+  margin-bottom: 20px;
+  transform: scale(0);
+  animation: logoPop 0.8s ease forwards 0.2s;
+}
+
+/* Description */
+.description {
+  font-size: 1.2rem; /* increased from 1rem */
+  line-height: 1.8;  /* slightly increased */
+  margin-bottom: 20px;
+  color: #f58220;
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards 0.5s;
+}
+
+/* Features list */
+.features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 40px; /* space for spinner */
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards 0.7s;
+}
+
+.features li {
+  font-size: 1.2rem; /* increased from 1rem */
+  margin: 6px 0;
+  color: #f58220;
+  opacity: 0;
+  animation: fadeInLeft 0.8s ease forwards;
+  animation-delay: calc(0.8s + var(--i) * 0.1s);
+}
+
+/* Simple standard spinner below text */
+.spinnerWrapper {
+  width: 60px; /* increased from 50px */
+  height: 60px;
+  margin: 0 auto;
+}
+
+.spinner {
+  width: 60px; /* increased */
+  height: 60px; /* increased */
+  border: 6px solid #f3f3f3; /* light grey */
+  border-top: 6px solid #f58220; /* main color */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Spinner animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Logo pop animation */
+@keyframes logoPop {
+  0% { transform: scale(0); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Fade-in animations */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInLeft {
+  0% { opacity: 0; transform: translateX(-20px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+/* Shutter animation on exit */
+.loaderHide {
+  animation: shutterUp 1s forwards;
+}
+
+@keyframes shutterUp {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-100%); }
+}
+
+/* Animated gradient background */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .description, .features li {
+    font-size: 1.1rem; /* increased from 0.9rem */
+  }
+
+  .logo {
+    width: 220px; /* increased from 180px */
+  }
+
+  .spinnerWrapper {
+    width: 50px; /* increased from 40px */
+    height: 50px;
+  }
+
+  .spinner {
+    width: 50px; /* increased from 40px */
+    height: 50px;
+    border-width: 5px; /* increased from 4px */
+  }
+}

@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
-import styles from "./missionSection.module.css";
 import { FaBinoculars, FaLightbulb, FaBullseye } from "react-icons/fa";
+import styles from "./missionSection.module.css";
 
 export default function MissionSection() {
   return (
@@ -12,44 +12,31 @@ export default function MissionSection() {
           <h2 className={styles.heading}>Our Mission</h2>
           <div className={styles.underline}></div>
 
-          <div className={styles.card}>
-            <div className={styles.iconWrapper}>
-              <FaBinoculars className={styles.icon} />
+          {[
+            {
+              icon: <FaBinoculars className={styles.icon} />,
+              title: "Vision",
+              text: "We envision a future driven by innovation, sustainability, and growth—where our solutions empower businesses to thrive.",
+            },
+            {
+              icon: <FaLightbulb className={styles.icon} />,
+              title: "Mission",
+              text: "To deliver reliable, efficient, and high-quality products and services that exceed customer expectations every time.",
+            },
+            {
+              icon: <FaBullseye className={styles.icon} />,
+              title: "Goals",
+              text: "To continuously innovate and optimize our processes, ensuring long-term value creation for clients and communities.",
+            },
+          ].map((item, index) => (
+            <div className={styles.card} key={index}>
+              <div className={styles.iconWrapper}>{item.icon}</div>
+              <div>
+                <h3 className={styles.title}>{item.title}</h3>
+                <p className={styles.text}>{item.text}</p>
+              </div>
             </div>
-            <div>
-              <h3 className={styles.title}>Vision</h3>
-              <p className={styles.text}>
-                We envision a future driven by innovation, sustainability, and
-                growth—where our solutions empower businesses to thrive.
-              </p>
-            </div>
-          </div>
-
-          <div className={styles.card}>
-            <div className={styles.iconWrapper}>
-              <FaLightbulb className={styles.icon} />
-            </div>
-            <div>
-              <h3 className={styles.title}>Mission</h3>
-              <p className={styles.text}>
-                To deliver reliable, efficient, and high-quality products and
-                services that exceed customer expectations every time.
-              </p>
-            </div>
-          </div>
-
-          <div className={styles.card}>
-            <div className={styles.iconWrapper}>
-              <FaBullseye className={styles.icon} />
-            </div>
-            <div>
-              <h3 className={styles.title}>Goals</h3>
-              <p className={styles.text}>
-                To continuously innovate and optimize our processes, ensuring
-                long-term value creation for clients and communities.
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
 
         {/* Right Images */}
@@ -97,3 +84,4 @@ export default function MissionSection() {
     </section>
   );
 }
+      

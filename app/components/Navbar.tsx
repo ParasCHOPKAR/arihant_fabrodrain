@@ -74,22 +74,22 @@ const Navbar = () => {
           <li><Link href="/about" onClick={closeMenu}>About Us</Link></li>
 
           <li>
-            <a href="#" onClick={toggleDropdown}>
+            <a href="/product_page" onClick={toggleDropdown}>
               Products <span className={styles.arrow}>▼</span>
             </a>
             <ul className={styles.dropdownMenu}>
-              <li><Link href="/products/thermodrain_solid_top" onClick={closeMenu}>THERMODRAIN Solid Top Manhole Covers With Frame</Link></li>
-              <li><Link href="/products/thermodrain_multi_cover" onClick={closeMenu}>THERMODRAIN Multiple Covers With Frame</Link></li>
-              <li><Link href="/products/thermodrain_recess" onClick={closeMenu}>Thermodrain Recess Manhole Covers (With Frame)</Link></li>
-              <li><Link href="/products/thermodrain_air_cover" onClick={closeMenu}>THERMODRAIN Air & Watertight (Pressfit) Covers With Frame</Link></li>
-              <li><Link href="/products/thermodrain_gratings" onClick={closeMenu}>THERMODRAIN Gratings</Link></li>
-              <li><Link href="/products/thermodrain_water_cover" onClick={closeMenu}>Thermodrain Water Gully Covers</Link></li>
-              <li><Link href="/products/thermodrain_frp_grp_cover" onClick={closeMenu}>Thermodrain FRP/GRP Drain Channels With Grating / Gully Covers</Link></li>
-              <li><Link href="/products/thermodrain_tree_cover" onClick={closeMenu}>THERMODRAIN Tree Gratings</Link></li>
-              <li><Link href="/products/thermodrain_angle_cover" onClick={closeMenu}>THERMODRAIN L Angle</Link></li>
-              <li><Link href="/products/thermodrain_hinged_cover" onClick={closeMenu}>THERMODRAIN Hinged Overhead And U.G. Water Tank Covers</Link></li>
-              <li><Link href="/products/thermodrain_chamber_cover" onClick={closeMenu}>THERMODRAIN Chambers</Link></li>
-              <li><Link href="/products/thermodrain_lifting_cover" onClick={closeMenu}>THERMODRAIN Lifting Accessories</Link></li>
+              <li><Link href="/products/thermodrain_solid_top" onClick={closeMenu}>Solid top manhole covers with frame </Link></li>
+              <li><Link href="/products/thermodrain_multi_cover" onClick={closeMenu}>Multiple covers with frame</Link></li>
+              <li><Link href="/products/thermodrain_recess" onClick={closeMenu}> Recess manhole cover sizes </Link></li>
+              <li><Link href="/products/thermodrain_air_cover" onClick={closeMenu}>Air and watertight covers with frame </Link></li>
+              <li><Link href="/products/thermodrain_gratings" onClick={closeMenu}>Gratings</Link></li>
+              <li><Link href="/products/thermodrain_water_cover" onClick={closeMenu}>Water Gully Covers</Link></li>
+              <li><Link href="/products/thermodrain_frp_grp_cover" onClick={closeMenu}>Drain channels with grating/gully cover</Link></li>
+              <li><Link href="/products/thermodrain_tree_cover" onClick={closeMenu}>Tree Gratings</Link></li>
+              <li><Link href="/products/thermodrain_angle_cover" onClick={closeMenu}> L Angle</Link></li>
+              <li><Link href="/products/thermodrain_hinged_cover" onClick={closeMenu}> Hinged Overhead And U.G. Water Tank Covers</Link></li>
+              <li><Link href="/products/thermodrain_chamber_cover" onClick={closeMenu}> Chambers</Link></li>
+              <li><Link href="/products/thermodrain_lifting_cover" onClick={closeMenu}> Lifting Accessories</Link></li>
             </ul>
           </li>
 

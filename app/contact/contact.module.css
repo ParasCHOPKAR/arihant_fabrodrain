@@ -275,3 +275,33 @@
     text-align: center;
   }
 }
+/* Map below the form */
+.mapWrapperBelow {
+  width: 100%;
+  margin-top: 40px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 2px solid #f4c69f;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Get In Touch card styling */
+.infoWrapper h2 {
+  font-size: 1.8rem;
+  color: #F58220;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.getInTouchCard {
+  background: #fff;
+  padding: 25px 20px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.getInTouchCard p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}

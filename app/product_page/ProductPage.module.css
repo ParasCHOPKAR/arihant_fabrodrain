@@ -1,0 +1,86 @@
+.productSection {
+  padding: 100px 20px;
+   font-family: "Playfair Display", serif;
+  background: #fff;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  color: #111;
+  position: relative;
+}
+
+.heading::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #ff7a00; /* orange underline */
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #f7f7f7;
+  border: 2px solid #111;
+  border-radius: 16px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.imageWrapper {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.05);
+}
+
+.name {
+  font-size: 1.2rem;
+  color: #111;
+  margin-top: 15px;
+  font-weight: 600;
+  min-height: 50px;
+}
+
+.viewBtn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 25px;
+  border: 2px solid #ff7a00;
+  color: #fff;
+  background: #ff7a00;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.viewBtn:hover {
+  background: #fff;
+  color: #111;
+  border: 2px solid #111;
+}

@@ -14,29 +14,20 @@ export default function AboutSection() {
         <h2 className={styles.aboutTitle}>FibroDrain</h2>
 
         <p className={styles.aboutText}>
-          Established in the year XXXX at Pune, Maharashtra,{" "}
-          <b>FibroDrain</b> is a leading manufacturer and supplier of
-          high-quality <b>FRP, RCC, and Polymer Concrete Drain Covers</b>,
-          Chamber Covers, and other Precast Infrastructure Products.
+          At <b>FibroDrain</b>, we specialize in designing and manufacturing <b>FRP (Fiber Reinforced Polymer)</b> drainage solutions built for strength, durability, and sustainability. With decades of expertise, we deliver high-performance FRP manhole covers, water gully covers, and customized drainage products that meet international standards of quality and safety.
         </p>
 
         <p className={styles.aboutText}>
-          Our products are designed for superior strength, long life, and
-          sustainability. Using advanced technology and precision moulding
-          techniques, we ensure durability, corrosion resistance, and load-bearing
-          performance that meets industry standards.
+          Our mission is to provide lightweight, rust-proof, load-bearing alternatives to traditional drainage covers, offering industries, builders, and infrastructure projects long-lasting and cost-effective solutions.
         </p>
 
         <p className={styles.aboutText}>
-          At FibroDrain, we take pride in delivering customized drainage
-          solutions for residential, commercial, and industrial applications.
-          Our focus on <b>quality, innovation, and timely delivery</b> has earned
-          us a strong reputation and a loyal client base across India.
+          Trusted by engineers, architects, and contractors, FibroDrain products are tested, certified, and crafted for modern urban needs—from residential and commercial spaces to large-scale industrial and municipal projects.
         </p>
 
         <div className={styles.aboutHighlight}>
           <span className={styles.highlightIcon}>★</span>
-          <span className={styles.highlightText}>Trusted Since XXXX</span>
+          <span className={styles.highlightText}>Trusted by Professionals Nationwide</span>
         </div>
 
         <Link href="/about" className={styles.aboutBtnLink}>
@@ -48,7 +39,7 @@ export default function AboutSection() {
       <div className={styles.aboutRight}>
         <div className={styles.imageWrapper}>
           <Image
-            src="/images/about__011.jpg"
+            src="/gallery/about_02.jpg"
             alt="FibroDrain"
             width={500}
             height={500}
@@ -63,22 +54,23 @@ export default function AboutSection() {
           </h3>
           <p className={styles.boxTitle}>Client Satisfaction</p>
           <p className={styles.boxDesc}>
-            We ensure quality assurance and long-lasting products that exceed
-            customer expectations across every project.
+            We ensure quality assurance and long-lasting products that exceed customer expectations across every project.
           </p>
         </div>
 
         {/* Experience Box */}
-        <div className={`${styles.aboutBox} ${styles.expBox}`}>
-          <h3>
-            <span className={styles.count}>10+</span>
-          </h3>
-          <p className={styles.boxTitle}>Years of Expertise</p>
-          <p className={styles.boxDesc}>
-            Delivering strong, reliable, and sustainable drainage solutions since
-            xxxx — trusted by clients nationwide.
-          </p>
-        </div>
+{/* FibroDrain Overview Box */}
+<div className={`${styles.aboutBox} ${styles.expBox}`}>
+  <h3>
+    <span className={styles.count}>FibroDrain</span>
+  </h3>
+
+  <p className={styles.boxDesc}>
+    We specialize in designing and manufacturing <b>FRP (Fiber Reinforced Polymer)</b> drainage solutions — including manhole covers etc.
+  </p>
+
+</div>
+
       </div>
     </section>
   );
