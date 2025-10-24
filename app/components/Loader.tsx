@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import styles from "./loader.module.css";
 
 export default function Loader() {
@@ -20,7 +21,14 @@ export default function Loader() {
   return (
     <div className={`${styles.loaderOverlay} ${hide ? styles.loaderHide : ""}`}>
       <div className={styles.loaderContent}>
-        <img src="/images/logo_2.png" alt="Fibrodrain Logo" className={styles.logo} />
+        <Image
+          src="/images/logo_2.png"
+          alt="Fibrodrain Logo"
+          className={styles.logo}
+          width={150} // ✅ specify width
+          height={150} // ✅ specify height
+          priority // ✅ ensures it's loaded quickly for better LCP
+        />
         <p className={styles.description}>
           At Fibrodrain, we take pride in housing one of the largest load testing machines,
           a true testament to our commitment to engineering excellence.<br /><br />

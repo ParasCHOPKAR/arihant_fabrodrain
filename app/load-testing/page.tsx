@@ -60,7 +60,7 @@ const loadData: LoadItem[] = [
     classLoad: "A15",
     load: "1.5 Ton (15kN)",
     installation: "Areas which can only be used by pedestrian and pedal cycles",
-    example: "Bikes & pedestrians",
+    example: "Bikes &amp; pedestrians",
   },
 ];
 
@@ -112,9 +112,9 @@ const LoadTesting = () => {
         </table>
       </section>
 
-      {/* ===== DO's & DON'Ts SPLIT ===== */}
+      {/* ===== DO&#39;s &amp; DON&#39;Ts SPLIT ===== */}
       <section className="dosDontsSplit">
-        <h2>DO's & DON'Ts</h2>
+        <h2>DO&#39;s &amp; DON&#39;Ts</h2>
         <div className="dosDontsSplitWrapper">
 
           {/* DO COLUMN */}
@@ -128,9 +128,9 @@ const LoadTesting = () => {
             ))}
           </div>
 
-          {/* DON'T COLUMN */}
+          {/* DON&#39;T COLUMN */}
           <div className="dontColumn">
-            <div className="circleLabel dontLabel">DON'T</div>
+            <div className="circleLabel dontLabel">DON&#39;T</div>
             {doDontsData.dont.map((text, index) => (
               <div key={index} className="dontItem">
                 <div className="dontNumber">{index + 1}</div>
