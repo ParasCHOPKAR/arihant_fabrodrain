@@ -89,12 +89,12 @@ const LoadTesting = () => {
         <p>
           Fibrodrain FRP/GRP/Composite products are tested for different load
           classes: <strong>2.5 tons, 5 tons, B125 (12.5 tons), C250 (25 tons),
-          D400 (40 tons), E600 (60 tons), and F900 (90 tons)</strong>.
+          D400 (40 tons), E600 (60 tons) and F900 (90 tons)</strong>.
         </p>
         <p>
           Testing is done as per international and Indian standards: 
-          <strong> BS EN 124, IS 1726, and AASHTO</strong>. BS EN 124 is the globally accepted testing 
-          standard for manhole covers made of cast iron, ductile iron, FRP, and other materials.
+          <strong> BS EN 124, IS 1726 and AASHTO</strong>. BS EN 124 is the globally accepted testing 
+          standard for manhole covers made of cast iron, ductile iron, FRP and other materials.
         </p>
         <p>
           Products also undergo a <strong>Permanent Set Test</strong> – this means they are repeatedly 
@@ -138,7 +138,7 @@ const LoadTesting = () => {
 
     {/* DO COLUMN */}
     <div className="dosColumn">
-      <div className="circleLabel">DO</div>
+      <div className="circleLabel">Do</div>
       {doDontsData.do.map((text, index) => (
         <div key={index} className="dosItem">
           <div className="dosNumber">{index + 1}</div>
@@ -149,7 +149,7 @@ const LoadTesting = () => {
 
     {/* DON'T COLUMN */}
     <div className="dontColumn">
-      <div className="circleLabel dontLabel">DON&apos;T</div>
+      <div className="circleLabel dontLabel">Don&apos;t</div>
       {doDontsData.dont.map((text, index) => (
         <div key={index} className="dontItem">
           <div className="dontNumber">{index + 1}</div>

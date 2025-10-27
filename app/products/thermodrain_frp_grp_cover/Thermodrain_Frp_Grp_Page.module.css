@@ -1,9 +1,7 @@
 .page {
-  font-family: "Playfair Display", serif;
-  background-color: #fdf9f5;
+font-family: "Raleway", sans-serif;  background-color: #fdf9f5;
   color: #333;
   line-height: 1.6;
-  scroll-behavior: smooth;
 }
 
 /* ========== HERO SECTION ========== */
@@ -31,72 +29,6 @@
   color: #555;
 }
 
-/* ========== INSTALLATION METHOD SECTION ========== */
-/* ========== INSTALLATION METHOD SECTION WITH IMAGE ========== */
-.installation {
-  background-color: #fff;
-  padding: 80px 20px;
-  max-width: 1100px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  align-items: flex-start;
-}
-
-.method {
-  flex: 1 1 500px;
-}
-
-.method h2 {
-  font-size: 2rem;
-  color: #f58220;
-  margin-bottom: 20px;
-}
-
-.method ol {
-  padding-left: 20px;
-  margin-bottom: 40px;
-  color: #444;
-}
-
-.method li {
-  margin-bottom: 12px;
-  line-height: 1.7;
-}
-
-.imageWrapper {
-  flex: 1 1 400px;
-  max-width: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  margin-top: 20px;
-}
-
-.productImage {
-  width: 100%;
-  border-radius: 16px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-  object-fit: cover;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .installation {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .imageWrapper {
-    margin-top: 40px;
-  }
-
-  .method ol {
-    text-align: left;
-  }
-}
-
 /* ========== MAIN CONTENT ========== */
 .mainContent {
   display: flex;
@@ -121,7 +53,47 @@
   object-fit: cover;
 }
 
-/* ========== SPECIFICATIONS TABLE ========== */
+.details {
+  flex: 1 1 400px;
+  max-width: 600px;
+}
+
+.details h2 {
+  font-size: 1.8rem;
+  color: #f58220;
+  margin-bottom: 14px;
+}
+
+.details ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 24px;
+  color: #444;
+}
+
+.details li {
+  margin-bottom: 8px;
+}
+
+.details button {
+  padding: 12px 28px;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(90deg, #f58220, #ffae42);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.details button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(245, 130, 32, 0.3);
+}
+
+/* ========== SPECIFICATIONS SECTION ========== */
+/* ========== SPECIFICATIONS SECTION ========== */
+/* ========== SPECIFICATIONS SECTION TABLE ========== */
 .specifications {
   background-color: #fff;
   padding: 100px 20px;
@@ -137,6 +109,7 @@
   margin-bottom: 50px;
 }
 
+/* Table Styling */
 .tableWrapper {
   overflow-x: auto;
   margin-top: 40px;
@@ -173,29 +146,22 @@
   transition: all 0.3s ease;
 }
 
-/* ========== ADVANTAGES / DISADVANTAGES TABLE ========== */
-.advDisadv {
-  background-color: #fff;
-  padding: 80px 20px;
-  max-width: 1100px;
-  margin: 0 auto;
-  text-align: center;
+/* Responsive */
+@media (max-width: 992px) {
+  .specTable th,
+  .specTable td {
+    padding: 10px 8px;
+  }
 }
 
-.advDisadv h2 {
-  font-size: 2rem;
-  color: #f58220;
-  margin-bottom: 30px;
-}
+@media (max-width: 768px) {
+  .tableWrapper {
+    overflow-x: auto;
+  }
 
-.advDisadv .specTable th,
-.advDisadv .specTable td {
-  text-align: left;
-  padding: 12px 15px;
-}
-
-.advDisadv .specTable th {
-  font-size: 1.2rem;
+  .specTable {
+    min-width: 500px;
+  }
 }
 
 /* ========== CTA SECTION ========== */
@@ -243,12 +209,12 @@
     font-size: 2.4rem;
   }
 
-  .installation h2 {
-    font-size: 1.8rem;
-  }
-
   .details h2 {
     font-size: 1.6rem;
+  }
+
+  .tableContainer {
+    gap: 20px;
   }
 
   .tableCard {
@@ -262,9 +228,8 @@
     text-align: center;
   }
 
-  .installation ol {
+  .details ul {
     text-align: left;
-    padding-left: 20px;
   }
 
   .tableCard {
@@ -278,9 +243,7 @@
   }
 
   .specifications h2,
-  .cta h2,
-  .installation h2,
-  .advDisadv h2 {
+  .cta h2 {
     font-size: 2rem;
   }
 }

@@ -31,7 +31,7 @@ const products: Product[] = [
 export default function ProductsSection() {
   return (
     <section className={styles.productSection}>
-      <h2 className={styles.heading}>OUR PRODUCTS</h2>
+      <h2 className={styles.heading}>Our Products</h2>
 
       <Swiper
         spaceBetween={30}

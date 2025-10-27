@@ -1,8 +1,9 @@
 .contactPage {
-   font-family: "Playfair Display", serif;
+  font-family: "Raleway", sans-serif;
   color: white;
   background-color: #ffffff;
 }
+
 /* ---------- HERO SECTION ---------- */
 .hero {
   padding: 120px 20px;
@@ -12,18 +13,15 @@
   align-items: center;
   overflow: hidden;
   color: #fff;
-  background: 
-
-    url('/icons/texture.jpg') center/cover no-repeat;
-  /* Replace 'your-image.jpg' with your actual background image path */
+  background: url('/icons/texture.jpg') center/cover no-repeat;
 }
 
-/* Overlay (optional subtle effect) */
+/* Dim overlay (for readability) */
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.0);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
@@ -55,7 +53,7 @@
 .heroText p {
   font-size: 1.15rem;
   line-height: 1.7;
-  color: #444;
+  color: #f0f0f0;
   max-width: 600px;
 }
 
@@ -75,7 +73,7 @@
   box-shadow: 0 10px 35px rgba(245, 130, 32, 0.3);
 }
 
-/* ---------- RESPONSIVE ---------- */
+/* ---------- TABLET VIEW ---------- */
 @media (max-width: 1024px) {
   .hero {
     padding: 100px 20px;
@@ -89,11 +87,12 @@
   }
 
   .heroText h1 {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
   }
 
   .heroText p {
     font-size: 1.05rem;
+    margin: 0 auto;
   }
 
   .heroImage img {
@@ -101,21 +100,45 @@
   }
 }
 
+/* ---------- MOBILE VIEW ---------- */
 @media (max-width: 600px) {
   .hero {
     padding: 80px 15px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero::before {
+    background: rgba(0, 0, 0, 0.45); /* darker overlay for better text contrast */
+  }
+
+  .heroContent {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .heroText {
+    flex: 1 1 100%;
   }
 
   .heroText h1 {
-    font-size: 2rem;
+    font-size: 1.9rem;
+    margin-bottom: 15px;
+    line-height: 1.3;
   }
 
   .heroText p {
     font-size: 0.95rem;
+    color: #f0f0f0;
+    line-height: 1.6;
+    max-width: 90%;
+    margin: 0 auto;
   }
 
   .heroImage img {
-    max-width: 250px;
+    max-width: 230px;
     border-width: 4px;
   }
 }
@@ -139,7 +162,7 @@
 /* ---------- LEFT SIDE FORM ---------- */
 .formWrapper {
   flex: 1 1 500px;
-  background: linear-gradient(135deg,  #F58220,#ffb770);
+  background: linear-gradient(135deg, #F58220, #ffb770);
   color: white;
   padding: 40px 35px;
   border-radius: 18px;
@@ -172,6 +195,8 @@
   border-radius: 10px;
   border: none;
   font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
   outline: none;
   background: rgba(255, 255, 255, 0.2);
   color: #fff;
@@ -182,6 +207,10 @@
 .contactForm textarea::placeholder {
   color: #fff;
   opacity: 0.85;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.3px;
 }
 
 .contactForm input:focus,
@@ -215,7 +244,9 @@
 
 .infoWrapper h2 {
   font-size: 1.8rem;
-  color: #333;
+  color: #F58220;
+  margin-bottom: 20px;
+  text-align: left;
 }
 
 .infoWrapper p {
@@ -263,7 +294,8 @@
     flex-direction: column;
   }
 
-  .formWrapper, .infoWrapper {
+  .formWrapper,
+  .infoWrapper {
     flex: 1 1 100%;
   }
 
@@ -275,6 +307,7 @@
     text-align: center;
   }
 }
+
 /* Map below the form */
 .mapWrapperBelow {
   width: 100%;
@@ -286,18 +319,11 @@
 }
 
 /* Get In Touch card styling */
-.infoWrapper h2 {
-  font-size: 1.8rem;
-  color: #F58220;
-  margin-bottom: 20px;
-  text-align: left;
-}
-
 .getInTouchCard {
   background: #fff;
   padding: 25px 20px;
   border-radius: 18px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
 .getInTouchCard p {
@@ -305,12 +331,14 @@
   line-height: 1.7;
   margin-bottom: 10px;
 }
+
+/* Map Heading */
 .mapHeading {
   color: #F58220;
-  margin-top: 20px; /* Added top spacing */
+  margin-top: 20px;
   margin-bottom: 15px;
   text-align: center;
-  font-size: 2.5rem; /* Increased font size */
-  font-weight: 700; /* Bold for emphasis */
+  font-size: 2.5rem;
+  font-weight: 700;
   letter-spacing: 1px;
 }

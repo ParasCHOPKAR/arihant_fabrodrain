@@ -15,7 +15,7 @@ export default function ThermodrainProductPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
         >
-          THERMODRAIN Solid Top Manhole Covers with Frame
+        FIBRODRAIN Solid Top Manhole Covers with Frame
         </motion.h1>
 
         <motion.p
@@ -23,10 +23,10 @@ export default function ThermodrainProductPage() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
         >
-          THERMODRAIN Solid Top Manhole Covers are tested as per BS EN 124, IS1726
+          FIBRODRAIN Solid Top Manhole Covers are tested as per BS EN 124, IS1726
           & AASHTO M306 standards for drainage and utility services meeting all
           requirements of the code. They perform better than Cast Iron, Ductile
-          Iron, and RCC manhole covers, offering superior durability, strength, and
+          Iron and RCC manhole covers, offering superior durability, strength and
           long service life.
         </motion.p>
       </section>
@@ -71,7 +71,7 @@ export default function ThermodrainProductPage() {
           <ul>
             <li>Material: FRP / GRP / Composite Material</li>
             <li>Load Bearing Capacity: 2.5T (2.5 Tons) to F900 (90 Tons)</li>
-            <li>Shapes: Circular, Square, and Rectangular</li>
+            <li>Shapes: Circular, Square and Rectangular</li>
             <li>Seal: Double Seal Arrangements</li>
             <li>
               Closed Bottom Keyholes with Stainless Steel or High-Strength Plastic Alloy
@@ -178,7 +178,7 @@ export default function ThermodrainProductPage() {
 
       {/* CTA SECTION */}
       <section className={styles.cta}>
-        <h2>Need THERMODRAIN Covers for Your Project?</h2>
+   <h2>Need FIBRODRAIN Covers for Your Project?</h2>
         <p>
           Contact us today for bulk inquiries, customization options, or detailed
           technical data sheets. We’re here to help you choose the right product

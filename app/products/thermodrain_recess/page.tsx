@@ -25,8 +25,8 @@ export default function FibrodrainRecessPage() {
         >
           FIBRODRAIN Recess Manhole Covers with frames are tested as per BS EN 124, 
           IS 1726 &amp; AASHTO M306 standards for drainage and utility services, ensuring 
-          reliable performance. They provide superior strength, durability, and 
-          long-lasting performance compared to Cast Iron, Ductile Iron, and RCC 
+          reliable performance. They provide superior strength, durability and 
+          long-lasting performance compared to Cast Iron, Ductile Iron and RCC 
           recess covers.
         </motion.p>
       </section>
@@ -57,7 +57,7 @@ export default function FibrodrainRecessPage() {
           <h2>Material: FRP / GRP / Composite</h2>
           <ul>
             <li>Load bearing capacity: From 2.5 tons up to D400 (40 tons)</li>
-            <li>Available in circular, square, and rectangular shapes</li>
+            <li>Available in circular, square and rectangular shapes</li>
             <li>Double seal arrangement for added safety</li>
             <li>Lightweight and easy to handle, superior to conventional materials</li>
             <li>Zero permanent set – retains shape and strength under load</li>

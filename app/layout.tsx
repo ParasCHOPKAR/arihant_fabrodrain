@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Arihant Industries",
   description:
-    "Official website of Arihant Industries — Our Products, Applications, and Services",
+    "Official website of Arihant Industries — Our Products, Applications and Services",
 };
 
 export default function RootLayout({

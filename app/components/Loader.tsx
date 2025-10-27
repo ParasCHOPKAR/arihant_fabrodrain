@@ -30,10 +30,7 @@ export default function Loader() {
           priority // ✅ ensures it's loaded quickly for better LCP
         />
         <p className={styles.description}>
-          At Fibrodrain, we take pride in housing one of the largest load testing machines,
-          a true testament to our commitment to engineering excellence.<br /><br />
-          We deliver a wide range of FRP drainage solutions designed with unmatched strength,
-          durability, and load-bearing capacity, all tested to meet international standards.
+       Redefining Drainage with Strength, Precision and Durability.
         </p>
   
         <div className={styles.spinner}></div>

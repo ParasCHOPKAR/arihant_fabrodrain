@@ -15,7 +15,7 @@ export default function ThermodrainProductPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
         >
-THERMODRAIN L ANGLE
+FIBRODRAIN L ANGLE
         </motion.h1>
 
         <motion.p
@@ -51,21 +51,23 @@ THERMODRAIN L ANGLE
           className={styles.details}
         >
         
-          <h2>Key Highlights</h2>
+          <h2>Key Advantages of Fibrodrain FRP/GRP L Angles</h2>
           <ul>
-            <li> Corrosion resistance</li>
-            <li>Self Pigmented, no painting required</li>
-            <li> Chemical resistance</li>
-            <li>Non-conductivity (thermally and electrically)</li>
-            <li>
-           Having non-magnetic electromagnetic transparency Being
-            </li>
-            <li>  Lightweight</li>
-            <li> High-strength & durability</li>
-            <li> Impact resistant</li>
+            <li>Corrosion Resistant – Does not rust or decay, even in harsh conditions</li>
+            <li>No Painting Needed – Self-pigmented for long-lasting finish.</li>
+            <li>Chemical Resistant – Performs well in aggressive environments.</li>
+            <li>Non-Conductive – Safe from thermal and electrical conductivity.</li>
+            <li>Non-Magnetic – Offers electromagnetic transparency.</li>
+            <li> Lightweight & Strong – Easy to handle without compromising
+strength.</li>
+            <li>Durable & Impact Resistant – Withstands heavy usage and
+pressure.
+</li>
+            <li>Dimensionally Stable – Maintains shape without warping.
+</li>
                   <li>   Dimensional stability</li>
-            <li>A long life cycle</li>
-            <li>  Low-maintenance</li>
+            <li>Long Life Cycle – Designed for long-term performance.</li>
+            <li> Low Maintenance – Minimal upkeep required.</li>
           </ul>
 
           <Link href="/contact">
@@ -81,7 +83,7 @@ THERMODRAIN L ANGLE
 
       {/* CTA SECTION */}
       <section className={styles.cta}>
-        <h2>Need THERMODRAIN Covers for Your Project?</h2>
+   <h2>Need FIBRODRAIN Covers for Your Project?</h2>
         <p>
           Contact us today for bulk inquiries, customization options, or detailed
           technical data sheets. We’re here to help you choose the right product

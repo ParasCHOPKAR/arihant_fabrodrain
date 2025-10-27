@@ -14,15 +14,15 @@ export default function AboutSection() {
         <h2 className={styles.aboutTitle}>FibroDrain</h2>
 
         <p className={styles.aboutText}>
-          At <b>FibroDrain</b>, we specialize in designing and manufacturing <b>FRP (Fiber Reinforced Polymer)</b> drainage solutions built for strength, durability, and sustainability. With decades of expertise, we deliver high-performance FRP manhole covers, water gully covers, and customized drainage products that meet international standards of quality and safety.
+          At <b>FibroDrain</b>, we specialize in designing and manufacturing <b>FRP (Fiber Reinforced Polymer)</b> drainage solutions built for strength, durability and sustainability. With decades of expertise, we deliver high-performance FRP manhole covers, water gully covers and customized drainage products that meet international standards of quality and safety.
         </p>
 
         <p className={styles.aboutText}>
-          Our mission is to provide lightweight, rust-proof, load-bearing alternatives to traditional drainage covers, offering industries, builders, and infrastructure projects long-lasting and cost-effective solutions.
+          Our mission is to provide lightweight, rust-proof, load-bearing alternatives to traditional drainage covers, offering industries, builders and infrastructure projects long-lasting and cost-effective solutions.
         </p>
 
         <p className={styles.aboutText}>
-          Trusted by engineers, architects, and contractors, FibroDrain products are tested, certified, and crafted for modern urban needs—from residential and commercial spaces to large-scale industrial and municipal projects.
+          Trusted by engineers, architects and contractors, FibroDrain products are tested, certified and crafted for modern urban needs—from residential and commercial spaces to large-scale industrial and municipal projects.
         </p>
 
         <div className={styles.aboutHighlight}>

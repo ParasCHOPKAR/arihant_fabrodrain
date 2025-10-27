@@ -15,7 +15,7 @@ export default function ThermodrainProductPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
         >
-THERMODRAIN WATER GULLY COVERS
+          FIBRODRAIN WATER GULLY COVERS
         </motion.h1>
 
         <motion.p
@@ -23,7 +23,9 @@ THERMODRAIN WATER GULLY COVERS
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
         >
-THERMODRAIN Water Gully Covers are tested as per BS EN 124, IS1726 & AASHTO M306 standards for drainage and Utility services meeting all requirements of the code. THERMODRAIN Water Gully Covers are better performing than Cast Iron, Ductile Iron and RCC manhole covers.
+          FIBRODRAIN Water Gully Covers are tested as per BS EN 124, IS 1726 & AASHTO M306
+          standards for drainage and utility services meeting all requirements of the code.
+          THERMODRAIN Water Gully Covers perform better than Cast Iron, Ductile Iron, and RCC manhole covers.
         </motion.p>
       </section>
 
@@ -50,46 +52,154 @@ THERMODRAIN Water Gully Covers are tested as per BS EN 124, IS1726 & AASHTO M306
           transition={{ duration: 0.6, delay: 0.2 }}
           className={styles.details}
         >
-          <h2>Salient Features</h2>
+          <h2>Key Features</h2>
           <ul>
-            <li>Permanent set is as per BSEN 124 for all sizes and load bearing</li>
-            <li>Self pigmented, non-painted</li>
-            <li>
-            Minimum opening is more than 30% of clear opening size for smooth flow of water
-            </li>
-         
+            <li>Load bearing capacity: from 2.5T to E600 (60T).</li>
+            <li>Available in all standard sizes (refer specifications below).</li>
+            <li>Zero permanent set across all sizes and load ranges.</li>
+            <li>Self-pigmented (not painted) for lasting durability.</li>
+            <li>Minimum 30% clear opening ensures smooth water flow.</li>
           </ul>
 
-          <h2>Key Highlights</h2>
-          <ul>
-            <li>Material: FRP / GRP / Composite Material</li>
-            <li>Load Bearing Capacity: 2.5T (2.5 Tons) to F900 (90 Tons)</li>
-            <li>Sizes : Available in all standard sizes</li>
-        
-         
-          </ul>
-
-           <h2>Areas of Application :</h2>
+          <h2>Areas of Application :</h2>
           <ul>
             <li>Storm water drain trenches</li>
-            <li>Basement Car Park</li>
+            <li>Basement car parks</li>
             <li>Podiums</li>
-             <li>Industrial plants</li>
+            <li>Industrial plants</li>
           </ul>
 
-          <Link href="/contact">
-              {/* <motion.button whileHover={{ scale: 1.05 }}>
-              Get a Quote
-            </motion.button> */}
-          </Link>
+          <Link href="/contact"></Link>
         </motion.div>
       </div>
 
-      {/* SPECIFICATIONS TABLE */}
+      {/* SPECIFICATIONS SECTION */}
+      <section className={styles.specifications}>
+        <h2>Frame Clear Opening & Cover Out to Out Size</h2>
+
+        <div className={styles.tableWrapper}>
+          <table className={styles.specTable}>
+            <thead>
+              <tr>
+                <th>Type</th>
+                <th>Frame Clear Opening</th>
+                <th>Cover Out to Out</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Rectangular</td>
+                <td>640 mm × 240 mm</td>
+                <td>700 mm × 300 mm</td>
+              </tr>
+              <tr>
+                <td>Rectangular</td>
+                <td>385 mm × 317 mm</td>
+                <td>445 mm × 377 mm</td>
+              </tr>
+              <tr>
+                <td>Rectangular</td>
+                <td>500 mm × 600 mm</td>
+                <td>560 mm × 660 mm</td>
+              </tr>
+              <tr>
+                <td>Rectangular</td>
+                <td>900 mm × 600 mm</td>
+                <td>960 mm × 660 mm</td>
+              </tr>
+              <tr>
+                <td>Square</td>
+                <td>450 mm × 450 mm</td>
+                <td>515 mm × 515 mm</td>
+              </tr>
+              <tr>
+                <td>Square</td>
+                <td>600 mm × 600 mm</td>
+                <td>660 mm × 660 mm</td>
+              </tr>
+              <tr>
+                <td>Square</td>
+                <td>750 mm × 700 mm</td>
+                <td>816 mm × 816 mm</td>
+              </tr>
+              <tr>
+                <td>Square</td>
+                <td>900 mm × 900 mm</td>
+                <td>966 mm × 966 mm</td>
+              </tr>
+              <tr>
+                <td>Square</td>
+                <td>300 mm × 300 mm</td>
+                <td>360 mm × 360 mm</td>
+              </tr>
+              <tr>
+                <td>Square</td>
+                <td>450 mm × 450 mm</td>
+                <td>515 mm × 515 mm</td>
+              </tr>
+              <tr>
+                <td>Square</td>
+                <td>600 mm × 600 mm</td>
+                <td>660 mm × 660 mm</td>
+              </tr>
+              <tr>
+                <td>Square</td>
+                <td>750 mm × 750 mm</td>
+                <td>816 mm × 816 mm</td>
+              </tr>
+              <tr>
+                <td>Square</td>
+                <td>900 mm × 900 mm</td>
+                <td>966 mm × 966 mm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>Fibrodrain FRP/GRP Water Gully Covers – Sizes (With or Without Frame)</h2>
+        <div className={styles.tableWrapper}>
+          <table className={styles.specTable}>
+            <thead>
+              <tr>
+                <th>Sr. No.</th>
+                <th>Size (mm)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>640 × 240</td></tr>
+              <tr><td>2</td><td>700 × 300</td></tr>
+              <tr><td>3</td><td>385 × 317</td></tr>
+              <tr><td>4</td><td>445 × 377</td></tr>
+              <tr><td>5</td><td>500 × 600</td></tr>
+              <tr><td>6</td><td>560 × 660</td></tr>
+              <tr><td>7</td><td>900 × 600</td></tr>
+              <tr><td>8</td><td>960 × 660</td></tr>
+              <tr><td>9</td><td>450 × 450</td></tr>
+              <tr><td>10</td><td>515 × 515</td></tr>
+              <tr><td>11</td><td>600 × 600</td></tr>
+              <tr><td>12</td><td>660 × 660</td></tr>
+              <tr><td>13</td><td>750 × 700</td></tr>
+              <tr><td>14</td><td>816 × 816</td></tr>
+              <tr><td>15</td><td>900 × 900</td></tr>
+              <tr><td>16</td><td>966 × 966</td></tr>
+              <tr><td>17</td><td>300 × 300</td></tr>
+              <tr><td>18</td><td>360 × 360</td></tr>
+              <tr><td>19</td><td>450 × 450</td></tr>
+              <tr><td>20</td><td>515 × 515</td></tr>
+              <tr><td>21</td><td>600 × 600</td></tr>
+              <tr><td>22</td><td>660 × 660</td></tr>
+              <tr><td>23</td><td>750 × 750</td></tr>
+              <tr><td>24</td><td>816 × 816</td></tr>
+              <tr><td>25</td><td>900 × 900</td></tr>
+              <tr><td>26</td><td>966 × 966</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
 
       {/* CTA SECTION */}
       <section className={styles.cta}>
-        <h2>Need THERMODRAIN Covers for Your Project?</h2>
+   <h2>Need FIBRODRAIN Covers for Your Project?</h2>
         <p>
           Contact us today for bulk inquiries, customization options, or detailed
           technical data sheets. We’re here to help you choose the right product

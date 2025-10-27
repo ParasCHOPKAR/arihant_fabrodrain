@@ -26,7 +26,7 @@ export default function ThermodrainProductPage() {
       Fibrodrain air and water tight covers are tested as per BS EN 124,
  IS 1726 & AASHTO M306 standards, ensuring top performance for
  drainage and utility services. They provide better durability and
- reliability compared to Cast Iron, Ductile Iron, and RCC covers.
+ reliability compared to Cast Iron, Ductile Iron and RCC covers.
         </motion.p>
       </section>
 
@@ -58,7 +58,7 @@ export default function ThermodrainProductPage() {
           <h2>Key  Features</h2>
           <ul>
             <li>Load bearing capacity: From 2.5 tons up to F900 (90 tons).</li>
-            <li>Available in circular, square, and rectangular shapes.</li>
+            <li>Available in circular, square and rectangular shapes.</li>
             <li>Double seal design for extra protection.</li>
             <li>Available without bolting for easy use.</li>
             <li>Fitted with replaceable local gaskets in case of damage.</li>
@@ -146,7 +146,7 @@ export default function ThermodrainProductPage() {
 
       {/* CTA SECTION */}
       <section className={styles.cta}>
-        <h2>Need THERMODRAIN Covers for Your Project?</h2>
+   <h2>Need FIBRODRAIN Covers for Your Project?</h2>
         <p>
           Contact us today for bulk inquiries, customization options, or detailed
           technical data sheets. We’re here to help you choose the right product

@@ -135,7 +135,7 @@ export default function TestimonialsSection() {
   return (
     <section className={styles.testimonialsFlow} aria-label="Testimonials">
       <div className={styles.container}>
-        <h2 className={styles.sectionTitle}>TESTIMONIALS</h2>
+        <h2 className={styles.sectionTitle}>Testimonial</h2>
         <div className={styles.tflow} id="tflow">
           <div className={styles.tflowStage}>
             {testimonials.map((t, i) => (

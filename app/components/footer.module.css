@@ -5,6 +5,7 @@
   color: #fff;
   padding: 90px 30px 50px;
   font-family: "Playfair Display", serif;
+
   overflow: hidden;
 }
 
@@ -83,7 +84,7 @@
   font-weight: 700;
   margin-bottom: 24px;
   color: #f58220;
-  text-transform: uppercase;
+
   letter-spacing: 1px;
   position: relative;
   display: inline-block;

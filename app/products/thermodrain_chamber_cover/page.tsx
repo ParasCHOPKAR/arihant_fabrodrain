@@ -15,7 +15,7 @@ export default function ThermodrainProductPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
         >
-       THERMODRAIN CHAMBERS
+Fibrodrain FRP Chambers
         </motion.h1>
 
         <motion.p
@@ -23,7 +23,7 @@ export default function ThermodrainProductPage() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
         >
-      THERMODRAIN recess covers with frame are tested as per BS EN 124, IS1726 & AASHTO M306 standards for drainage and Utility services meeting all requirements of the code. THERMODRAIN Covers are better performing than Cast Iron, Ductile Iron and RCC recess covers.
+   Fibrodrain recess covers with frame are tested as per BS EN 124, IS1726 & AASHTO M306 standards for drainage and Utility services meeting all requirements of the code. THERMODRAIN Covers are better performing than Cast Iron, Ductile Iron and RCC recess covers.
 
 
         </motion.p>
@@ -52,29 +52,31 @@ export default function ThermodrainProductPage() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className={styles.details}
         >
-          <h2>Salient Features</h2>
+          <h2>Specifications</h2>
           <ul>
-            <li>High strength chambers made out of specially prepared resin.</li>
-            <li>UV Stabilised</li>
+            <li>Made from specially formulated high-strength resin</li>
+            <li>UV stabilised for long-lasting performance
+</li>
             <li>
- Can take any type of traffic load
+Load tested up to 60 Tons – suitable for all traffic conditions
             </li>
             <li>
-          Load tested up to 60 Tons
+    Withstands earth vibrations caused by traffic
             </li>
-            <li>Can withstand earth vibrations due to traffic
+            <li>Tested as per ASTM D 3753 & IS 12592-2008 standards
+
 </li>
           </ul>
 
-          <h2>ADVANTAGES OF THERMODRAIN CHAMBERS :</h2>
+          <h2>Key Advantages of Fibrodrain FRP Chambers:</h2>
           <ul>
-            <li>100% Corrosion Free.</li>
-            <li> Can be readily mounted by digging the Earth, making the concrete at the bottom & fixing it.</li>
-            <li> Concrete bottom</li>
-            <li>Completely leak proof.</li>
-            <li>All sizes are available.</li>
-                 <li>THERMODRAIN FRP Chambers are relocatable.</li>
-            <li>Can also be used as Inspection Chambers.</li>
+            <li>100% Corrosion-Free – No rusting, no decay.</li>
+            <li>Easy Installation – Just dig, concrete the base and fix.</li>
+            <li> Leak-Proof Design – Ensures safe and clean operation</li>
+            <li>Relocatable – Can be shifted when required.</li>
+            <li>All Sizes Available – Wide range to suit different needs.</li>
+            
+            <li>Multi-Purpose – Also usable as inspection chamb.</li>
           </ul>
 
           <Link href="/contact">
@@ -90,7 +92,7 @@ export default function ThermodrainProductPage() {
 
       {/* CTA SECTION */}
       <section className={styles.cta}>
-        <h2>Need THERMODRAIN Covers for Your Project?</h2>
+   <h2>Need FIBRODRAIN Covers for Your Project?</h2>
         <p>
           Contact us today for bulk inquiries, customization options, or detailed
           technical data sheets. We’re here to help you choose the right product

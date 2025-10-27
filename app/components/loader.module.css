@@ -16,7 +16,7 @@
   overflow: hidden;
   animation: fadeIn 0.8s ease forwards;
   background-size: 200% 200%;
-  font-family: "Playfair Display", serif;
+font-family: "Raleway", sans-serif;
   animation: gradientMove 6s ease infinite; /* animated gradient */
 }
 
@@ -41,7 +41,7 @@
 
 /* Description */
 .description {
-  font-size: 1.2rem; /* increased from 1rem */
+  font-size: 1.9rem; /* increased from 1rem */
   line-height: 1.8;  /* slightly increased */
   margin-bottom: 20px;
   color: #f58220;
@@ -135,7 +135,7 @@
   }
 
   .logo {
-    width: 220px; /* increased from 180px */
+    width: 250px; /* increased from 180px */
   }
 
   .spinnerWrapper {

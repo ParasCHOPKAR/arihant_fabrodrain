@@ -30,7 +30,7 @@ const IndustriesServed = () => {
         <h1>Industries We Serve</h1>
         <p>
           Delivering reliable chamber and infrastructure solutions across
-          multiple sectors with quality, innovation, and trust.
+          multiple sectors with quality, innovation and trust.
         </p>
       </div>
 

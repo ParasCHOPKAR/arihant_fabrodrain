@@ -29,7 +29,7 @@ const features: Feature[] = [
   {
     icon: <FaCubes />,
     title: "Tailored Solutions",
-    description: "Available in multiple sizes, shapes, and load capacities to meet diverse project requirements."
+    description: "Available in multiple sizes, shapes and load capacities to meet diverse project requirements."
   }
 ];
 
@@ -39,7 +39,7 @@ export default function WhyChooseUs() {
       <div className={styles.container}>
         <h2 className={styles.heading}>Why Choose Fibrodrain?</h2>
         <p className={styles.subheading}>
-          At Fibrodrain, we’re not just supplying drainage products — we’re building safer, smarter, and more sustainable infrastructure for tomorrow.
+          At Fibrodrain, we’re not just supplying drainage products — we’re building safer, smarter and more sustainable infrastructure for tomorrow.
         </p>
         <div className={styles.cards}>
           {features.map((feature, index) => (

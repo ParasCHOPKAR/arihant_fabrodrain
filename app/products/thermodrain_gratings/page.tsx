@@ -36,8 +36,8 @@ export default function FibrodrainRecessPage() {
         >
           FIBRODRAIN Recess Manhole Covers with frames are tested as per BS EN 124, 
           IS 1726 & AASHTO M306 standards for drainage and utility services, ensuring 
-          reliable performance. They provide superior strength, durability, and 
-          long-lasting performance compared to Cast Iron, Ductile Iron, and RCC 
+          reliable performance. They provide superior strength, durability and 
+          long-lasting performance compared to Cast Iron, Ductile Iron and RCC 
           recess covers.
         </motion.p>
       </section>

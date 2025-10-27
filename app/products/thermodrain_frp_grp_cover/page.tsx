@@ -15,7 +15,7 @@ export default function ThermodrainProductPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
         >
-          THERMODRAIN FRP/GRP DRAIN CHANNELS WITH GRATING / GULLY COVERS
+          FIBRODRAIN FRP/GRP DRAIN CHANNELS WITH GRATING / GULLY COVER
         </motion.h1>
 
         <motion.p
@@ -23,145 +23,106 @@ export default function ThermodrainProductPage() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
         >
-          Method Of Installation Of Thermodrain (1 Piece Type) For Surface Drainage For Exterior And Basements (recommended For Short Length Upto 30 Mtrs)
+          Fibrodrain recess covers with frame are tested as per BS EN 124, IS1726 & AASHTO M306
+          standards for drainage and utility services meeting all requirements of the code.
+          THERMODRAIN Covers are better performing than Cast Iron, Ductile Iron and RCC recess covers.
         </motion.p>
       </section>
 
-      {/* INSTALLATION METHOD SECTION */}
-      <section className={styles.installation}>
-        <div className={styles.method}>
-          <h2>1 Piece Type Installation Steps</h2>
-          <ol>
-            <li>Prepare a trench of 200 mm extra width than the drain channel width.</li>
-            <li>
-              Before laying the Drain channel, check the compactness of the soil and ensure that it is compact enough 
-              and will not sink due to load. If soil is insufficient, create a concrete bed with slope of 1 mm/m for water flow.
-            </li>
-            <li>
-              Place the Drain channel in position from the starting point to exit point.
-            </li>
-            <li>
-              Apply silicone sealant on the step in the channel for joining connecting pieces like Bend, Tee, or Four-way Tee.
-            </li>
-            <li>
-              Use connectors like 90° Bend, Tee, and Four-way Tee as per site layout requirements.
-            </li>
-            <li>
-              Refill the empty space around the channel with concrete/soil, compact it, level with grating, clean, and place grating/gully covers.
-            </li>
-          </ol>
+      {/* MAIN CONTENT */}
+      <div className={styles.mainContent}>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6 }}
+          className={styles.imageWrapper}
+        >
+          <Image
+            src="/product_img/pruduct_07.jpg"
+            alt="Thermodrain FRP GRP Drain Channel"
+            width={600}
+            height={600}
+            className={styles.productImage}
+          />
+        </motion.div>
 
-          <h2>2 Piece Type Installation Steps</h2>
-          <ol>
-            <li>Prepare a trench of 200 mm extra width than the drain channel width.</li>
-            <li>
-              Check soil compactness. If inadequate, create a concrete bed with slope of 1 mm/m.
-            </li>
-            <li>
-              Place the Drain channel in position from start to exit.
-            </li>
-            <li>
-              Apply silicone sealant for joining connecting pieces.
-            </li>
-            <li>
-              Use connectors as per site layout (90° Bend, Tee, Four-way Tee).
-            </li>
-            <li>
-              Refill around the channel with concrete/soil, compact, level, clean, and place gratings/gully covers.
-            </li>
-          </ol>
-        </div>
-      </section>
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className={styles.details}
+        >
+          <h2>Key Advantages of Fibrodrain FRP Drain Channels</h2>
+          <ul>
+            <li>High strength and long-lasting performance</li>
+            <li>100% corrosion and rust free</li>
+            <li>Lightweight and easy to install</li>
+            <li>Load tested up to 90 Tons (F900)</li>
+            <li>UV and weather resistant</li>
+            <li>Leak-proof and stable design</li>
+            <li>Low maintenance, no moss or algae growth</li>
+            <li>Eco-friendly and sustainable</li>
+            <li>Customizable in sizes and load classes</li>
+          </ul>
 
-      {/* PRODUCT IMAGE */}
-      <motion.div
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.6 }}
-        className={styles.imageWrapper}
-      >
-        <Image
-          src="/product_img/pruduct_07.jpg"
-          alt="Thermodrain Drain Channel"
-          width={600}
-          height={600}
-          className={styles.productImage}
-        />
-      </motion.div>
+          <h2>Disadvantages of Cement/Concrete Drain Channels</h2>
+          <ul>
+            <li>Heavy weight makes handling and installation difficult.</li>
+            <li>Prone to cracking and breakage under heavy load or vibrations.</li>
+            <li>Susceptible to corrosion and chemical damage over time.</li>
+            <li>Allows moss, algae, and bacterial growth.</li>
+            <li>Higher maintenance and frequent replacement needed.</li>
+            <li>Limited design flexibility and customization.</li>
+            <li>Shorter lifespan compared to FRP/GRP alternatives.</li>
+          </ul>
 
-      {/* CHANNEL SIZES TABLE */}
+          <Link href="/contact"></Link>
+        </motion.div>
+      </div>
+
+      {/* SPECIFICATIONS SECTION */}
       <section className={styles.specifications}>
-        <h2>THERMODRAIN FRP/GRP/COMPOSITE DRAIN CHANNEL WITH GRATING / GULLY COVER</h2>
-        <div className={styles.tableWrapper}>
-          <table className={styles.specTable}>
-            <thead>
-              <tr>
-                <th>Sr. No</th>
-                <th>OUT TO OUT DRAIN CHANNEL SIZE</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>1</td><td>128 mm(w) x 155 mm(ht.) x 1000 mm(It.)</td></tr>
-              <tr><td>2</td><td>167 mm(w) x 155 mm(ht.) x 1000 mm(It.)</td></tr>
-              <tr><td>3</td><td>326 mm(w) x 300 mm(ht.) x 1000 mm(It.)</td></tr>
-              <tr><td>4</td><td>525 mm(w) x 300 mm(ht.) x 1000 mm(It.)</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
+        <h2>OUT TO OUT DRAIN CHANNEL SIZE</h2>
 
-      {/* ADVANTAGES / DISADVANTAGES TABLE */}
-      <section className={styles.advDisadv}>
-        <h2>Advantages vs Disadvantages</h2>
         <div className={styles.tableWrapper}>
-          <table className={styles.specTable}>
+          <motion.table
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+            className={styles.specTable}
+          >
             <thead>
               <tr>
-                <th>ADVANTAGES OF FRP/GRP DRAIN CHANNELS</th>
-                <th>DISADVANTAGES OF CEMENT / CONCRETE DRAIN CHANNELS</th>
+                <th>Sr. No.</th>
+                <th>Size (mm)</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Blocks site space for minimum time</td>
-                <td>Site remains blocked due to larger preparation time</td>
+                <td>1</td>
+                <td>120 × 60</td>
               </tr>
               <tr>
-                <td>Quick to install</td>
-                <td>Long installation time due to large civil work</td>
+                <td>2</td>
+                <td>170 × 120</td>
               </tr>
               <tr>
-                <td>Minimum manpower required</td>
-                <td>Huge manpower required</td>
+                <td>3</td>
+                <td>200 × 200</td>
               </tr>
               <tr>
-                <td>Very low labour cost</td>
-                <td>Very high labour cost</td>
-              </tr>
-              <tr>
-                <td>Fast & simple installation</td>
-                <td>Highly dependent on manpower availability</td>
-              </tr>
-              <tr>
-                <td>No waterproofing required</td>
-                <td>Waterproofing is required</td>
-              </tr>
-              <tr>
-                <td>No separate MS/FRP angles required</td>
-                <td>Separate MS/FRP angles required</td>
-              </tr>
-              <tr>
-                <td>No hidden cost</td>
-                <td>Hidden cost due to labour-oriented installation</td>
+                <td>4</td>
+                <td>310 × 150</td>
               </tr>
             </tbody>
-          </table>
+          </motion.table>
         </div>
       </section>
 
       {/* CTA SECTION */}
       <section className={styles.cta}>
-        <h2>Need THERMODRAIN Covers for Your Project?</h2>
+   <h2>Need FIBRODRAIN Covers for Your Project?</h2>
+          
         <p>
           Contact us today for bulk inquiries, customization options, or detailed
           technical data sheets. We’re here to help you choose the right product

@@ -23,7 +23,7 @@ Hinged Overhead and u.g. Water Tank Covers
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
         >
-THERMODRAIN Water Tank Covers are tested as per BS EN 124.THERMODRAIN Water Tank Covers are better performing than Cast Iron, Ductile Iron and RCC manhole covers.
+FIBRODRAIN Water Tank Covers are tested as per BS EN 124.THERMODRAIN Water Tank Covers are better performing than Cast Iron, Ductile Iron and RCC manhole covers.
 
 
         </motion.p>
@@ -160,7 +160,7 @@ THERMODRAIN Water Tank Covers are tested as per BS EN 124.THERMODRAIN Water Tank
 
       {/* CTA SECTION */}
       <section className={styles.cta}>
-        <h2>Need THERMODRAIN Covers for Your Project?</h2>
+   <h2>Need FIBRODRAIN Covers for Your Project?</h2>
         <p>
           Contact us today for bulk inquiries, customization options, or detailed
           technical data sheets. We’re here to help you choose the right product

@@ -18,7 +18,7 @@ const Footer = () => {
             className={styles.logo}
           />
           <p className={styles.about}>
-            At <b>THERMODRAIN</b>, we engineer durable and innovative solutions
+            At <b>FIBRODRAIN</b>, we engineer durable and innovative solutions
             for industrial drainage — from precision manhole covers to
             high-load utility systems.
           </p>

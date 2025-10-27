@@ -70,7 +70,7 @@ export default function ContactPage() {
           </div>
         </div>
 
-        {/* MAP BELOW FORM */}
+        {/* MAP BELOW FORM */}     
         <div className={styles.mapWrapperBelow}>
           <h2 className={styles.mapHeading}>Our Location</h2>
           <iframe

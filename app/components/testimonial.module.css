@@ -9,7 +9,7 @@
 .testimonialsFlow {
   background: linear-gradient(180deg, var(--muted) 0%, #ffffff 100%);
   padding: 60px 20px;
-  font-family: "Playfair Display", serif;
+font-family: "Raleway", sans-serif;
 }
 
 .container {

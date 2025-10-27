@@ -27,14 +27,14 @@ export default function AboutHero() {
           <p className={styles.text}>
             At <strong>Arihant Industries</strong>, we take pride in being a
             trusted name in the field of industrial and construction solutions.
-            With years of experience, innovation, and excellence, we have built
+            With years of experience, innovation and excellence, we have built
             a reputation for delivering quality products that stand the test of
             time.
           </p>
 
           <p className={styles.text}>
             Our mission is to combine technology and craftsmanship to provide
-            durable, sustainable, and efficient solutions to our clients.
+            durable, sustainable and efficient solutions to our clients.
             Whether it’s custom manufacturing, innovative product design, or
             quality assurance — we aim to exceed expectations every step of the
             way.

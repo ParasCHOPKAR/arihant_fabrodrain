@@ -16,12 +16,12 @@ export default function MissionSection() {
             {
               icon: <FaBinoculars className={styles.icon} />,
               title: "Vision",
-              text: "We envision a future driven by innovation, sustainability, and growth—where our solutions empower businesses to thrive.",
+              text: "We envision a future driven by innovation, sustainability and growth—where our solutions empower businesses to thrive.",
             },
             {
               icon: <FaLightbulb className={styles.icon} />,
               title: "Mission",
-              text: "To deliver reliable, efficient, and high-quality products and services that exceed customer expectations every time.",
+              text: "To deliver reliable, efficient and high-quality products and services that exceed customer expectations every time.",
             },
             {
               icon: <FaBullseye className={styles.icon} />,
