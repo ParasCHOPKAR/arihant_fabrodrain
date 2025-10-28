@@ -23,7 +23,7 @@ Fibrodrain FRP Chambers
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
         >
-   Fibrodrain recess covers with frame are tested as per BS EN 124, IS1726 & AASHTO M306 standards for drainage and Utility services meeting all requirements of the code. Covers are better performing than Cast Iron, Ductile Iron and RCC recess covers.
+   Fibrodrain recess covers with frames are rigorously tested as per BS EN 124, IS 1726, and AASHTO M306 standards for drainage and utility services. These covers meet all requirements of the specified codes and demonstrate superior performance compared to traditional Cast Iron, Ductile Iron, and RCC recess covers.
 
 
         </motion.p>

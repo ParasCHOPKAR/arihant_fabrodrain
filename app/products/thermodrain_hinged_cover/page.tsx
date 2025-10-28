@@ -23,8 +23,7 @@ Hinged Overhead and u.g. Water Tank Covers
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
         >
-FIBRODRAIN Water Tank Covers are tested as per BS EN 124.THERMODRAIN Water Tank Covers are better performing than Cast Iron, Ductile Iron and RCC manhole covers.
-
+FIBRODRAIN Hinged Overhead and Underground (U.G.) Water Tank Covers are tested as per BS EN 124 standards, ensuring high performance, strength, and long service life. These covers provide superior corrosion resistance and ease of operation compared to Cast Iron, Ductile Iron, and RCC covers, making them ideal for both overhead and underground water storage applications.
 
         </motion.p>
       </section>

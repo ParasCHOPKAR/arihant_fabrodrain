@@ -23,7 +23,7 @@ export default function ThermodrainProductPage() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
         >
-FIBRODRAIN  Multiple Covers with Frame are tested as per BS EN 124, IS1726 & AASHTO M306 standards for drainage and Utility services meeting all requirements of the code. THERMODRAIN Covers are better performing than Cast Iron, Ductile Iron and RCC manhole covers.
+FIBRODRAIN  Multiple Covers with Frame are tested as per BS EN 124, IS1726 & AASHTO M306 standards for drainage and Utility services meeting all requirements of the code. Covers are better performing than Cast Iron, Ductile Iron and RCC manhole covers.
         </motion.p>
       </section>
 

@@ -119,30 +119,19 @@
   }
 }
 /* === MOBILE BUTTON RESPONSIVENESS === */
-@media (max-width: 768px) {
-  .buttons {
-    display: flex;
-    flex-direction: row;        /* side by side */
-    justify-content: center;    /* center both buttons */
-    align-items: center;
-    gap: 12px;                  /* space between them */
-    margin-top: 80px;           /* adjust spacing */
-  }
-
-  .primaryBtn,
-  .secondaryBtn {
-    width: 45%;                 /* each button takes half width */
-    text-align: center;
-    font-size: 0.95rem;
-    padding: 10px 0;
-  }
-}
-
+/* === MOBILE BUTTON RESPONSIVENESS === */
 @media (max-width: 900px) {
   .leftContent h1 {
     font-size: 2.2rem;
   }
+
   .leftContent p {
     font-size: 1rem;
   }
+
+  /* Hide buttons on mobile view */
+  .buttons {
+    display: none;
+  }
 }
+

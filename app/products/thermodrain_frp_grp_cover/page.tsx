@@ -23,9 +23,7 @@ export default function ThermodrainProductPage() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
         >
-          Fibrodrain recess covers with frame are tested as per BS EN 124, IS1726 & AASHTO M306
-          standards for drainage and utility services meeting all requirements of the code.
-         Covers are better performing than Cast Iron, Ductile Iron and RCC recess covers.
+    FIBRODRAIN FRP/GRP Drain Channels with Grating / Gully Covers are tested as per BS EN 124, IS 1726, and AASHTO M306 standards for drainage and utility applications, meeting all requirements of the code. These systems offer superior hydraulic efficiency, durability, and corrosion resistance — performing significantly better than conventional Cast Iron, Ductile Iron, and RCC drainage products.
         </motion.p>
       </section>
 

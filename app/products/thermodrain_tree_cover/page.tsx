@@ -24,7 +24,7 @@ FIBRODRAIN TREE GRATINGS
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
         >
-FIBRODRAIN Water Gully Covers are tested as per BS EN 124, IS1726 & AASHTO M306 standards for drainage and Utility services meeting all requirements of the code. Water Gully Covers are better performing than Cast Iron, Ductile Iron and RCC manhole covers.
+FIBRODRAIN Tree Gratings are tested as per BS EN 124, IS 1726, and AASHTO M306 standards for drainage and urban landscaping applications, meeting all requirements of the code. These gratings offer superior strength, durability, and corrosion resistance, making them a better-performing alternative to Cast Iron, Ductile Iron, and RCC tree gratings.
         </motion.p>
       </section>
 
