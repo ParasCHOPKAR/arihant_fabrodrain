@@ -7,11 +7,10 @@ font-family: "Raleway", sans-serif;  background-color: #fdf9f5;
 /* ========== HERO SECTION ========== */
 .hero {
   text-align: center;
-  background-color: #fff;
   padding: 120px 20px 80px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(135deg, #ffe3c4, #ffd1a0);
+  color: #111;
 }
-
 .hero h1 {
   font-size: 3rem;
   font-weight: 800;

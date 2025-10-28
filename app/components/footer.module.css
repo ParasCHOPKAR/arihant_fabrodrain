@@ -267,3 +267,180 @@
     text-align: left;
   }
 }
+/* ====== EXTRA RESPONSIVENESS FOR MOBILE SCREENS ====== */
+
+/* ✅ For small devices (max 480px) - iPhone SE, small Androids */
+@media (max-width: 480px) {
+  .footer {
+    padding: 55px 18px 30px;
+    background-position: center;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .logoSection .logo {
+    height: 65px;
+    margin-bottom: 18px;
+  }
+
+  .logoSection .about {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .linksSection h4,
+  .contactSection h4 {
+    font-size: 17px;
+    margin-bottom: 14px;
+  }
+
+  .linksSection ul li {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .contactSection {
+    font-size: 14px;
+  }
+
+  .contactItem img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .socials {
+    gap: 16px;
+  }
+
+  .socials a {
+    width: 40px;
+    height: 40px;
+  }
+
+  .bottom {
+    font-size: 12px;
+    padding-top: 12px;
+    line-height: 1.6;
+  }
+}
+
+/* ✅ For iPhone 14 / 14 Pro / 14 Pro Max (~390px to 430px width) */
+@media (min-width: 375px) and (max-width: 430px) {
+  .footer {
+    padding: 65px 22px 35px;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .logoSection .logo {
+    height: 70px;
+    margin-bottom: 20px;
+  }
+
+  .logoSection .about {
+    font-size: 15px;
+    line-height: 1.9;
+  }
+
+  .linksSection h4,
+  .contactSection h4 {
+    font-size: 18px;
+  }
+
+  .linksSection ul li a {
+    font-size: 15px;
+  }
+
+  .contactSection {
+    font-size: 15px;
+  }
+
+  .socials {
+    gap: 18px;
+  }
+
+  .socials a {
+    width: 44px;
+    height: 44px;
+  }
+
+  .socials a img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .contactSection a {
+    padding: 13px 24px;
+    font-size: 15px;
+  }
+
+  .bottom {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+}
+
+/* ✅ For large mobile screens (max 600px) - iPhone Plus, large Androids */
+@media (min-width: 431px) and (max-width: 600px) {
+  .footer {
+    padding: 70px 25px 40px;
+  }
+
+  .container {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .logoSection .logo {
+    height: 80px;
+  }
+
+  .logoSection .about {
+    font-size: 16px;
+  }
+
+  .linksSection ul li a,
+  .contactSection {
+    font-size: 16px;
+  }
+
+  .bottom {
+    font-size: 14px;
+    padding-top: 18px;
+  }
+}
+
+/* ✅ For tablets (601px - 768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+  .footer {
+    padding: 80px 40px 50px;
+  }
+
+  .container {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 45px;
+  }
+
+  .logoSection .logo {
+    height: 85px;
+  }
+
+  .logoSection .about {
+    font-size: 16px;
+  }
+
+  .linksSection h4,
+  .contactSection h4 {
+    font-size: 19px;
+  }
+
+  .bottom {
+    font-size: 14px;
+  }
+}
