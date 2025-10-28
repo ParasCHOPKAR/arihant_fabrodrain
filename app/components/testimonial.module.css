@@ -5,11 +5,11 @@
 
 /* ========================================
    TESTIMONIALS FLOW SECTION
-   ======================================== */
+======================================== */
 .testimonialsFlow {
   background: linear-gradient(180deg, var(--muted) 0%, #ffffff 100%);
-  padding: 60px 20px;
-font-family: "Raleway", sans-serif;
+  padding: 80px 20px;
+  font-family: "Raleway", sans-serif;
 }
 
 .container {
@@ -17,16 +17,19 @@ font-family: "Raleway", sans-serif;
   margin: 0 auto;
 }
 
+/* ===== SECTION TITLE ===== */
 .sectionTitle {
   color: var(--text-900);
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   position: relative;
   z-index: 1;
   font-weight: 700;
-  font-size: 2.8rem;
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  line-height: 1.3;
 }
 
+/* ===== TESTIMONIAL SLIDER ===== */
 .tflow {
   position: relative;
   padding: 36px 0 50px;
@@ -39,6 +42,7 @@ font-family: "Raleway", sans-serif;
   margin: 0 auto;
 }
 
+/* ===== TESTIMONIAL CARD ===== */
 .tflowSlide {
   position: absolute;
   top: 50%;
@@ -49,7 +53,7 @@ font-family: "Raleway", sans-serif;
   background: linear-gradient(90deg, #f58220, #ffae42);
   border: 1px solid #2196f3;
   border-radius: 10px;
-  padding: 16px;
+  padding: 16px 20px;
   box-shadow: 0 8px 20px rgba(66, 165, 245, 0.3);
   opacity: 0.55;
   transition: transform 0.4s ease, opacity 0.4s ease, box-shadow 0.4s ease;
@@ -57,18 +61,22 @@ font-family: "Raleway", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .isActive {
   opacity: 1;
   box-shadow: 0 18px 46px rgba(0, 0, 0, 0.35);
+  pointer-events: all;
 }
 
+/* ===== TEXT & CONTENT ===== */
 .tflowQuote {
-  margin: 0 0 10px;
+  margin: 0 0 12px;
   color: white;
   line-height: 1.7;
-  font-size: 16px;
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
   text-align: center;
 }
 
@@ -76,28 +84,31 @@ font-family: "Raleway", sans-serif;
   text-align: center;
   color: #ffd700;
   letter-spacing: 2px;
-  margin-bottom: 8px;
-  font-size: 18px;
+  margin-bottom: 10px;
+  font-size: clamp(0.9rem, 2.8vw, 1.1rem);
 }
 
 .tflowName {
   font-weight: 700;
   color: white;
   text-align: center;
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  margin-top: 4px;
 }
 
 .tflowRole {
-  font-size: 13px;
+  font-size: clamp(0.8rem, 2.2vw, 0.9rem);
   color: rgba(255, 255, 255, 0.8);
   text-align: center;
   letter-spacing: 0.3px;
 }
 
+/* ===== DOTS / INDICATORS ===== */
 .tflowDots {
   display: flex;
   justify-content: center;
   gap: 8px;
-  margin-top: 16px;
+  margin-top: 20px;
 }
 
 .tflowDot {
@@ -114,18 +125,112 @@ font-family: "Raleway", sans-serif;
   transform: scale(1.2);
 }
 
-/* Mobile Responsive */
-@media (max-width: 700px) {
-  .tflowStage {
-    height: 300px;
-  }
+/* ========================================
+   RESPONSIVE DESIGN — FOR ALL PHONES
+======================================== */
 
+/* ----- Tablets & Foldables (1024px ↓) ----- */
+@media (max-width: 1024px) {
+  .testimonialsFlow {
+    padding: 70px 20px;
+  }
+  .tflowStage {
+    height: 380px;
+  }
+}
+
+/* ----- Large Phones (iPhone 15 Pro Max, Pixel 8 Pro, Galaxy S24) ----- */
+@media (max-width: 768px) {
+  .testimonialsFlow {
+    padding: 60px 16px;
+  }
+  .tflowStage {
+    height: 340px;
+  }
+  .tflowSlide {
+    width: 85%;
+    padding: 18px;
+  }
+  .tflowQuote {
+    font-size: 0.95rem;
+  }
+}
+
+/* ----- Medium Phones (iPhone 14, Galaxy S22, OnePlus 10) ----- */
+@media (max-width: 600px) {
+  .tflowStage {
+    height: 320px;
+  }
   .tflowSlide {
     width: 90%;
     padding: 16px;
   }
-
   .tflowQuote {
-    font-size: 15px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  .tflowStars {
+    font-size: 1rem;
+  }
+  .tflowName {
+    font-size: 1rem;
+  }
+  .tflowRole {
+    font-size: 0.85rem;
+  }
+}
+
+/* ----- Small Phones (iPhone SE, iPhone 12 Mini, Galaxy A14) ----- */
+@media (max-width: 480px) {
+  .sectionTitle {
+    font-size: 1.7rem;
+  }
+  .tflowStage {
+    height: 300px;
+  }
+  .tflowSlide {
+    width: 92%;
+    padding: 14px 16px;
+  }
+  .tflowQuote {
+    font-size: 0.85rem;
+  }
+  .tflowStars {
+    font-size: 0.95rem;
+  }
+  .tflowName {
+    font-size: 0.95rem;
+  }
+  .tflowRole {
+    font-size: 0.8rem;
+  }
+  .tflowDots {
+    gap: 6px;
+  }
+}
+
+/* ----- Extra Small Phones (below 360px, old Androids) ----- */
+@media (max-width: 360px) {
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+  .tflowStage {
+    height: 280px;
+  }
+  .tflowSlide {
+    width: 94%;
+    padding: 12px;
+  }
+  .tflowQuote {
+    font-size: 0.8rem;
+  }
+  .tflowStars {
+    font-size: 0.9rem;
+  }
+  .tflowName {
+    font-size: 0.9rem;
+  }
+  .tflowRole {
+    font-size: 0.75rem;
   }
 }

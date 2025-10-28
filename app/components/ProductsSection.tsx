@@ -2,7 +2,7 @@
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { Autoplay } from "swiper/modules"; // ⬅ removed Navigation import
+import { Autoplay } from "swiper/modules";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./productSlider.module.css";
@@ -38,29 +38,34 @@ export default function ProductsSection() {
         slidesPerView={4}
         loop={true}
         autoplay={{ delay: 2500, disableOnInteraction: false }}
-        modules={[Autoplay]} // ⬅ removed Navigation module
+        modules={[Autoplay]}
         breakpoints={{
           320: { slidesPerView: 1 },
           600: { slidesPerView: 2 },
           900: { slidesPerView: 3 },
           1200: { slidesPerView: 4 },
         }}
-        className="customSwiper"
       >
         {products.map((product, index) => (
           <SwiperSlide key={index}>
             <Link href={product.link} className={styles.productCard}>
-              <Image
-                src={product.img}
-                alt={product.name}
-                width={350}
-                height={250}
-                className={styles.productImage}
-              />
-              <div className={styles.productOverlay}>
-                <h3>{product.name}</h3>
-                <button>View More</button>
+              <div className={styles.imageContainer}>
+                <Image
+                  src={product.img}
+                  alt={product.name}
+                  width={350}
+                  height={250}
+                  className={styles.productImage}
+                />
+                <div className={styles.productOverlay}>
+                  <h3>{product.name}</h3>
+                  <button>View More</button>
+                </div>
               </div>
+
+              {/* Shown only on mobile */}
+              <p className={styles.productName}>{product.name}</p>
+              <button className={styles.mobileViewMore}>View More</button>
             </Link>
           </SwiperSlide>
         ))}

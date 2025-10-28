@@ -30,14 +30,14 @@
 .logoSection {
   text-align: left;
 }
-.logoSection .logo {
+.logo {
   height: 80px;
   width: auto;
   margin-bottom: 25px;
 }
-.logoSection .about {
+.about {
   color: white;
-  font-size: 17px;
+  font-size: 1.05rem;
   line-height: 2;
   margin-bottom: 25px;
 }
@@ -79,7 +79,7 @@
 /* ====== LINKS & CONTACT HEADINGS ====== */
 .linksSection h4,
 .contactSection h4 {
-  font-size: 21px;
+  font-size: 1.3rem;
   font-weight: 700;
   margin-bottom: 20px;
   color: #f58220;
@@ -89,41 +89,17 @@
   transition: all 0.3s ease;
 }
 
-/* Animated underline - DESKTOP ONLY */
-@media (min-width: 769px) {
-  .linksSection h4::after,
-  .contactSection h4::after {
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0%;
-    height: 3px;
-    background: #ff8b33;
-    border-radius: 2px;
-    transition: width 0.3s ease;
-  }
-
-  .linksSection h4:hover::after,
-  .contactSection h4:hover::after {
-    width: 60%;
-  }
-}
-
 /* ====== LINKS LIST ====== */
 .linksSection ul {
   list-style: none;
   padding: 0;
 }
-
 .linksSection ul li {
   margin-bottom: 10px;
-  font-size: 17px;
+  font-size: 1.05rem;
   position: relative;
   padding-left: 18px;
 }
-
 .linksSection ul li::before {
   content: "•";
   position: absolute;
@@ -131,15 +107,12 @@
   top: 0;
   color: #f58220;
   font-size: 18px;
-  line-height: 1.2;
 }
-
 .linksSection ul li a {
   color: white;
   text-decoration: none;
   transition: color 0.3s ease;
 }
-
 .linksSection ul li a:hover {
   color: #f58220;
 }
@@ -147,37 +120,45 @@
 /* ====== CONTACT SECTION ====== */
 .contactSection {
   color: #ddd;
-  font-size: 17px;
+  font-size: 1.05rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .contactItem {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 14px;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
+  line-height: 1.7;
 }
 
 .contactIcon {
   width: 24px;
   height: 24px;
+  flex-shrink: 0;
+  margin-top: 3px;
 }
 
-.contactSection a {
-  display: inline-block;
-  margin-top: 25px;
-  background: #f58220;
-  color: #fff;
-  padding: 12px 26px;
-  border-radius: 25px;
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: 500;
-  transition: background 0.3s ease, transform 0.3s ease;
-  text-align: center;
+.contactText {
+  flex: 1;
+  word-break: break-word;
 }
-.contactSection a:hover {
-  background: #ff8b33;
-  transform: scale(1.05);
+
+/* === PHONE ROW (aligned, no background) === */
+.phoneRow {
+  align-items: center;
+}
+.phoneLink {
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.phoneLink:hover {
+  color: #f58220;
 }
 
 /* ====== BOTTOM BAR ====== */
@@ -188,259 +169,121 @@
   text-align: center;
   margin-top: 60px;
   padding-top: 20px;
-  font-size: 15px;
+  font-size: 0.95rem;
   color: white;
 }
-.bottom .developer {
+.developer {
   color: #f58220;
   font-weight: 600;
 }
 
-/* ====== MOBILE VIEW (Left-Aligned) ====== */
-@media (max-width: 480px) {
+/* ===========================================
+   RESPONSIVE STYLING — FOR ALL PHONES
+=========================================== */
+
+/* ----- Tablets (iPad Mini, iPad Air, etc.) ----- */
+@media (max-width: 992px) {
   .footer {
-    padding: 60px 15px 30px;
+    padding: 80px 25px 45px;
   }
-
   .container {
-    gap: 30px;
-    text-align: left;
+    gap: 40px;
   }
-
-  .logoSection,
-  .linksSection,
-  .contactSection {
-    align-items: flex-start !important;
-    text-align: left !important;
-  }
-
-  .logoSection .about,
-  .linksSection ul li a,
-  .contactSection {
-    font-size: 15px;
-    line-height: 1.7;
-    text-align: left;
-  }
-
-  .linksSection ul {
-    align-items: flex-start !important;
-  }
-
-  .contactItem {
-    justify-content: flex-start !important;
-    text-align: left;
-  }
-
-  .socials {
-    justify-content: flex-start !important;
-  }
-
-  .socials a {
-    width: 42px;
-    height: 42px;
-  }
-
-  .socials a img {
-    width: 22px;
-    height: 22px;
-  }
-
-  .linksSection h4,
-  .contactSection h4 {
-    text-align: left;
-    font-size: 18px;
-    font-weight: 800;
-  }
-
-  /* ✅ Center 'Get in Touch' button text on mobile */
-  .contactSection a {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  .bottom {
-    font-size: 13px;
-    padding-top: 15px;
-    text-align: left;
+  .about,
+  .contactSection,
+  .linksSection ul li {
+    font-size: 1rem;
   }
 }
-/* ====== EXTRA RESPONSIVENESS FOR MOBILE SCREENS ====== */
 
-/* ✅ For small devices (max 480px) - iPhone SE, small Androids */
-@media (max-width: 480px) {
+/* ----- Mid-Size Phones (Pixel 7, iPhone 14, Samsung S22) ----- */
+@media (max-width: 768px) {
   .footer {
-    padding: 55px 18px 30px;
-    background-position: center;
+    padding: 70px 20px 40px;
   }
-
   .container {
-    grid-template-columns: 1fr;
-    gap: 28px;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
   }
-
-  .logoSection .logo {
-    height: 65px;
-    margin-bottom: 18px;
+  .logo {
+    height: 70px;
   }
-
-  .logoSection .about {
-    font-size: 14px;
-    line-height: 1.8;
-  }
-
   .linksSection h4,
   .contactSection h4 {
-    font-size: 17px;
-    margin-bottom: 14px;
+    font-size: 1.15rem;
   }
-
-  .linksSection ul li {
-    font-size: 14px;
-    margin-bottom: 8px;
-  }
-
+  .linksSection ul li,
   .contactSection {
-    font-size: 14px;
+    font-size: 0.95rem;
   }
+  .phoneLink {
+    font-size: 1rem;
+  }
+}
 
-  .contactItem img {
+/* ----- Small Phones (iPhone SE, iPhone 12 Mini, Galaxy A14) ----- */
+@media (max-width: 540px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .footer {
+    padding: 60px 18px 35px;
+  }
+  .logo {
+    height: 65px;
+  }
+  .about {
+    font-size: 0.9rem;
+    line-height: 1.8;
+  }
+  .linksSection h4,
+  .contactSection h4 {
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+  .linksSection ul li {
+    font-size: 0.9rem;
+  }
+  .contactSection {
+    font-size: 0.9rem;
+  }
+  .contactIcon {
     width: 20px;
     height: 20px;
   }
-
-  .socials {
-    gap: 16px;
+  .phoneLink {
+    font-size: 0.95rem;
+    font-weight: 600;
   }
+  .bottom {
+    font-size: 0.8rem;
+    line-height: 1.6;
+  }
+}
 
+/* ----- Extra Small Phones (below 360px, older Androids) ----- */
+@media (max-width: 360px) {
+  .footer {
+    padding: 50px 15px 30px;
+  }
+  .linksSection h4,
+  .contactSection h4 {
+    font-size: 0.95rem;
+  }
+  .linksSection ul li,
+  .contactSection {
+    font-size: 0.85rem;
+  }
+  .phoneLink {
+    font-size: 0.9rem;
+  }
   .socials a {
     width: 40px;
     height: 40px;
   }
-
-  .bottom {
-    font-size: 12px;
-    padding-top: 12px;
-    line-height: 1.6;
-  }
-}
-
-/* ✅ For iPhone 14 / 14 Pro / 14 Pro Max (~390px to 430px width) */
-@media (min-width: 375px) and (max-width: 430px) {
-  .footer {
-    padding: 65px 22px 35px;
-  }
-
-  .container {
-    grid-template-columns: 1fr;
-    gap: 35px;
-  }
-
-  .logoSection .logo {
-    height: 70px;
-    margin-bottom: 20px;
-  }
-
-  .logoSection .about {
-    font-size: 15px;
-    line-height: 1.9;
-  }
-
-  .linksSection h4,
-  .contactSection h4 {
-    font-size: 18px;
-  }
-
-  .linksSection ul li a {
-    font-size: 15px;
-  }
-
-  .contactSection {
-    font-size: 15px;
-  }
-
-  .socials {
-    gap: 18px;
-  }
-
-  .socials a {
-    width: 44px;
-    height: 44px;
-  }
-
   .socials a img {
     width: 22px;
     height: 22px;
-  }
-
-  .contactSection a {
-    padding: 13px 24px;
-    font-size: 15px;
-  }
-
-  .bottom {
-    font-size: 13px;
-    line-height: 1.6;
-  }
-}
-
-/* ✅ For large mobile screens (max 600px) - iPhone Plus, large Androids */
-@media (min-width: 431px) and (max-width: 600px) {
-  .footer {
-    padding: 70px 25px 40px;
-  }
-
-  .container {
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-  }
-
-  .logoSection .logo {
-    height: 80px;
-  }
-
-  .logoSection .about {
-    font-size: 16px;
-  }
-
-  .linksSection ul li a,
-  .contactSection {
-    font-size: 16px;
-  }
-
-  .bottom {
-    font-size: 14px;
-    padding-top: 18px;
-  }
-}
-
-/* ✅ For tablets (601px - 768px) */
-@media (min-width: 601px) and (max-width: 768px) {
-  .footer {
-    padding: 80px 40px 50px;
-  }
-
-  .container {
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 45px;
-  }
-
-  .logoSection .logo {
-    height: 85px;
-  }
-
-  .logoSection .about {
-    font-size: 16px;
-  }
-
-  .linksSection h4,
-  .contactSection h4 {
-    font-size: 19px;
-  }
-
-  .bottom {
-    font-size: 14px;
   }
 }

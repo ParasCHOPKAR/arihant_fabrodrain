@@ -16,6 +16,7 @@ const Footer = () => {
             width={150}
             height={50}
             className={styles.logo}
+            priority
           />
           <p className={styles.about}>
             At <b>FIBRODRAIN</b>, we engineer durable and innovative solutions
@@ -25,7 +26,12 @@ const Footer = () => {
 
           {/* SOCIAL ICONS */}
           <div className={styles.socials}>
-            <a href="https://www.linkedin.com/company/arihant-corporation-pune/" aria-label="LinkedIn">
+            <a
+              href="https://www.linkedin.com/company/arihant-corporation-pune/"
+              aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Image
                 src="/icons/LinkedIn_icon.svg.png"
                 alt="LinkedIn"
@@ -33,7 +39,13 @@ const Footer = () => {
                 height={24}
               />
             </a>
-            <a href="https://www.instagram.com/fibrodrain" aria-label="Instagram">
+
+            <a
+              href="https://www.instagram.com/fibrodrain"
+              aria-label="Instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Image
                 src="/icons/Instagram_icon.png.webp"
                 alt="Instagram"
@@ -41,13 +53,14 @@ const Footer = () => {
                 height={24}
               />
             </a>
-            <a href="https://www.facebook.com/people/Fibrodrain-FRP-Products/61555971689060/?rdid=3FP1CAG3WJ4142md&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BRTMchbbo%2F" aria-label="Facebook">
-              <Image
-                src="/icons/facebook.jpg"
-                alt="Facebook"
-                width={24}
-                height={24}
-              />
+
+            <a
+              href="https://www.facebook.com/people/Fibrodrain-FRP-Products/61555971689060/"
+              aria-label="Facebook"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image src="/icons/facebook.jpg" alt="Facebook" width={24} height={24} />
             </a>
           </div>
         </div>
@@ -65,7 +78,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* ===== OUR PRODUCTS ===== */}
+        {/* ===== OUR PRODUCTS (short list) ===== */}
         <div className={styles.linksSection}>
           <h4>Our Products</h4>
           <ul>
@@ -89,46 +102,41 @@ const Footer = () => {
           <h4>Contact Info</h4>
 
           <div className={styles.contactItem}>
-            <Image
-              src="/icons/location.png"
-              alt="Location"
-              width={20}
-              height={20}
-              className={styles.contactIcon}
-            />
-            <p> Shop no. 120+121, 1 floor, Ultima Business Centre </p>
+            <div className={styles.contactIcon}>
+              <Image src="/icons/location.png" alt="location" width={20} height={20} />
+            </div>
+            <div className={styles.contactText}>
+              Shop no. 120+121, 1 floor, Ultima Business Centre
+            </div>
+          </div>
+
+          {/* Phone row: icon + phone link (tel:) */}
+          <div className={`${styles.contactItem} ${styles.phoneRow}`}>
+            <div className={styles.contactIcon}>
+              <Image src="/icons/call.png" alt="phone" width={20} height={20} />
+            </div>
+
+            {/* phoneLink will behave as pill on larger screens and full-width centered on small screens */}
+            <a className={styles.phoneLink} href="tel:+919637819378" aria-label="Call +91 96378 19378">
+              +91 96378 19378
+            </a>
           </div>
 
           <div className={styles.contactItem}>
-            <Image
-              src="/icons/call.png"
-              alt="Phone"
-              width={20}
-              height={20}
-              className={styles.contactIcon}
-            />
-            <p>+91 9637819378</p>
+            <div className={styles.contactIcon}>
+              <Image src="/icons/email.jpg" alt="email" width={20} height={20} />
+            </div>
+            <div className={styles.contactText}>krunal3399@gmail.com</div>
           </div>
 
-          <div className={styles.contactItem}>
-            <Image
-              src="/icons/email.jpg"
-              alt="Email"
-              width={20}
-              height={20}
-              className={styles.contactIcon}
-            />
-            <p>krunal3399@gmail.com</p>
-          </div>
-
-          <a href="/contact">Get in Touch</a>
+      
         </div>
       </div>
 
       {/* ===== BOTTOM BAR ===== */}
       <div className={styles.bottom}>
-        <p>© {new Date().getFullYear()} FIBRODRAIN. All Rights Reserved.</p>
-        <p className={styles.developer}>Developed by DW INNOVATION PVT. LTD.</p>
+        <div>© {new Date().getFullYear()} FIBRODRAIN. All Rights Reserved.</div>
+        <div className={styles.developer}>Developed by DW INNOVATION PVT. LTD.</div>
       </div>
     </footer>
   );
