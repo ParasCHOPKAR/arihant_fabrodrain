@@ -40,7 +40,7 @@ Lifters are used to ensure that Manhole covers are being lifted with ease and to
           className={styles.imageWrapper}
         >
           <Image
-            src="/product_img/pruduct_11.jpg"
+            src="/fibro_image/lifting_acce_12.jpg"
             alt="Thermodrain Solid Top Manhole Cover"
             width={600}
             height={600}

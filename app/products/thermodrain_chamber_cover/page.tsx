@@ -23,7 +23,7 @@ Fibrodrain FRP Chambers
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
         >
-   Fibrodrain recess covers with frame are tested as per BS EN 124, IS1726 & AASHTO M306 standards for drainage and Utility services meeting all requirements of the code. THERMODRAIN Covers are better performing than Cast Iron, Ductile Iron and RCC recess covers.
+   Fibrodrain recess covers with frame are tested as per BS EN 124, IS1726 & AASHTO M306 standards for drainage and Utility services meeting all requirements of the code. Covers are better performing than Cast Iron, Ductile Iron and RCC recess covers.
 
 
         </motion.p>
@@ -38,7 +38,7 @@ Fibrodrain FRP Chambers
           className={styles.imageWrapper}
         >
           <Image
-            src="/product_img/pruduct_11.jpg"
+            src="/fibro_image/chamber_11.jpg"
             alt="Thermodrain Solid Top Manhole Cover"
             width={600}
             height={600}

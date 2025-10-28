@@ -5,18 +5,18 @@ import Image from "next/image";
 import Link from "next/link";
 
 const products = [
-  { name: "Solid Top Manhole Covers with Frame", img: "/product_img/pruduct_01.jpg", link: "/products/thermodrain_solid_top" },
-  { name: "Multiple Covers with Frame", img: "/product_img/pruduct_02.jpg", link: "/products/thermodrain_multi_cover" },
-  { name: "Recess Manhole Cover Sizes", img: "/product_img/pruduct_03.jpg", link: "/products/thermodrain_recess" },
-  { name: "Air and Watertight Covers with Frame", img: "/product_img/pruduct_04.jpg", link: "/products/thermodrain_air_cover" },
-  { name: "Gratings", img: "/product_img/pruduct_05.jpg", link: "/products/thermodrain_gratings" },
-  { name: "Water Gully Cover", img: "/product_img/pruduct_06.jpg", link: "/products/thermodrain_water_cover" }, // ✅ fixed (added /)
-  { name: "Drain Channels with Grating/Gully Cover", img: "/product_img/pruduct_07.jpg", link: "/products/thermodrain_frp_grp_cover" },
-  { name: "Tree Gratings", img: "/product_img/pruduct_08.jpg", link: "/products/thermodrain_tree_cover" },
-  { name: "L Angle", img: "/product_img/pruduct_09.jpg", link: "/products/thermodrain_angle_cover" },
-  { name: "Hinged Overhead and U.G. Water Tank Covers", img: "/product_img/pruduct_10.jpg", link: "/products/thermodrain_hinged_cover" }, // ✅ fixed (added /)
-  { name: "Chambers", img: "/product_img/pruduct_11.jpg", link: "/products/thermodrain_chamber_cover" },
-  { name: "Lifting Accessories", img: "/product_img/pruduct_12.jpg", link: "/products/thermodrain_lifting_cover" },
+  { name: "Solid Top Manhole Covers with Frame", img: "/fibro_image/solid_manhole.jpg", link: "/products/thermodrain_solid_top" },
+  { name: "Multiple Covers with Frame", img: "/fibro_image/multi_cover.jpg", link: "/products/thermodrain_multi_cover" },
+  { name: "Recess Manhole Cover Sizes", img: "/fibro_image/recess_manhole_cover.jpg", link: "/products/thermodrain_recess" },
+  { name: "Air and Watertight Covers with Frame", img: "/fibro_image/wter_cover_04.jpg", link: "/products/thermodrain_air_cover" },
+  { name: "Gratings", img: "/fibro_image/greating_05.jpg", link: "/products/thermodrain_gratings" },
+  { name: "Water Gully Cover", img: "/fibro_image/water_gully_06.jpg", link: "/products/thermodrain_water_cover" }, // ✅ fixed (added /)
+  { name: "Drain Channels with Grating/Gully Cover", img: "/fibro_image/drain_channel_07.jpg", link: "/products/thermodrain_frp_grp_cover" },
+  { name: "Tree Gratings", img: "/fibro_image/tree_greating_08.jpg", link: "/products/thermodrain_tree_cover" },
+  { name: "L Angle", img: "/fibro_image/l_angle_09.jpg", link: "/products/thermodrain_angle_cover" },
+  { name: "Hinged Overhead and U.G. Water Tank Covers", img: "/fibro_image/hinged_10.jpg", link: "/products/thermodrain_hinged_cover" }, // ✅ fixed (added /)
+  { name: "Chambers", img:"/fibro_image/chamber_11.jpg", link: "/products/thermodrain_chamber_cover" },
+  { name: "Lifting Accessories", img:"/fibro_image/lifting_acce_12.jpg", link: "/products/thermodrain_lifting_cover" },
 ];
 
 export default function ProductPage() {

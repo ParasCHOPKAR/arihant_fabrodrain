@@ -99,7 +99,7 @@ const Footer = () => {
               height={20}
               className={styles.contactIcon}
             />
-            <p>+91 9876543210</p>
+            <p>+91 9637819378</p>
           </div>
 
           <div className={styles.contactItem}>

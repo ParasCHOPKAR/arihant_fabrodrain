@@ -25,7 +25,7 @@ export default function ThermodrainProductPage() {
         >
           FIBRODRAIN Water Gully Covers are tested as per BS EN 124, IS 1726 & AASHTO M306
           standards for drainage and utility services meeting all requirements of the code.
-          THERMODRAIN Water Gully Covers perform better than Cast Iron, Ductile Iron, and RCC manhole covers.
+      Water Gully Covers perform better than Cast Iron, Ductile Iron, and RCC manhole covers.
         </motion.p>
       </section>
 
@@ -38,7 +38,7 @@ export default function ThermodrainProductPage() {
           className={styles.imageWrapper}
         >
           <Image
-            src="/product_img/pruduct_06.jpg"
+            src="/fibro_image/water_gully_06.jpg"
             alt="Thermodrain Solid Top Manhole Cover"
             width={600}
             height={600}

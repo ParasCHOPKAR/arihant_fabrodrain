@@ -40,7 +40,7 @@ export default function ThermodrainProductPage() {
           className={styles.imageWrapper}
         >
           <Image
-            src="/product_img/pruduct_01.jpg"
+            src="/fibro_image/solid_manhole.jpg"
             alt="Thermodrain Solid Top Manhole Cover"
             width={600}
             height={600}

@@ -25,7 +25,7 @@ export default function ThermodrainProductPage() {
         >
           Fibrodrain recess covers with frame are tested as per BS EN 124, IS1726 & AASHTO M306
           standards for drainage and utility services meeting all requirements of the code.
-          THERMODRAIN Covers are better performing than Cast Iron, Ductile Iron and RCC recess covers.
+         Covers are better performing than Cast Iron, Ductile Iron and RCC recess covers.
         </motion.p>
       </section>
 
@@ -38,7 +38,7 @@ export default function ThermodrainProductPage() {
           className={styles.imageWrapper}
         >
           <Image
-            src="/product_img/pruduct_07.jpg"
+            src="/fibro_image/drain_channel_07.jpg"
             alt="Thermodrain FRP GRP Drain Channel"
             width={600}
             height={600}

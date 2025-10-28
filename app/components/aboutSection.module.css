@@ -111,7 +111,7 @@ font-family: "Raleway", sans-serif;
 /* ---------- INFO BOXES ---------- */
 .aboutBox {
   position: absolute;
-  background: #333;
+  background: white;
   border-radius: 15px;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
   padding: 15px;
@@ -120,7 +120,9 @@ font-family: "Raleway", sans-serif;
   z-index: 2;
   animation: floatBox 6s ease-in-out infinite;
   transform: rotate(3deg);
+  color: #444; /* Added text color */
 }
+
 
 .successBox {
   top: 0%;

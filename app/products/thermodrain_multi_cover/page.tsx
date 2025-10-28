@@ -36,7 +36,7 @@ FIBRODRAIN  Multiple Covers with Frame are tested as per BS EN 124, IS1726 & AAS
           className={styles.imageWrapper}
         >
           <Image
-            src="/product_img/pruduct_02.jpg"
+            src="/fibro_image/multi_cover.jpg"
             alt="Thermodrain Solid Top Manhole Cover"
             width={600}
             height={600}

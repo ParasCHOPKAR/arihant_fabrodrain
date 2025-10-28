@@ -4,7 +4,7 @@
   height: 90vh;
   display: flex;
   align-items: center;
-font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif;
   overflow: hidden;
   color: #fff;
 }
@@ -20,7 +20,7 @@ font-family: "Raleway", sans-serif;
   opacity: 0;
   transition: opacity 1.5s ease-in-out;
   z-index: 0;
-  filter: brightness(1.05); /* increased brightness */
+  filter: brightness(1.05);
 }
 
 .slide.active {
@@ -31,7 +31,6 @@ font-family: "Raleway", sans-serif;
 .overlay {
   position: absolute;
   inset: 0;
-
   z-index: 1;
 }
 
@@ -68,6 +67,7 @@ font-family: "Raleway", sans-serif;
   color: #fff;
 }
 
+/* === BUTTONS === */
 .buttons {
   display: flex;
   gap: 15px;
@@ -82,7 +82,7 @@ font-family: "Raleway", sans-serif;
   text-decoration: none;
   font-weight: 600;
   transition: all 0.3s ease;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .primaryBtn:hover {
@@ -107,9 +107,35 @@ font-family: "Raleway", sans-serif;
   transform: translateY(-2px);
 }
 
+/* === ANIMATION === */
 @keyframes fadeInUp {
-  0% { opacity: 0; transform: translateY(40px); }
-  100% { opacity: 1; transform: translateY(0); }
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* === MOBILE BUTTON RESPONSIVENESS === */
+@media (max-width: 768px) {
+  .buttons {
+    display: flex;
+    flex-direction: row;        /* side by side */
+    justify-content: center;    /* center both buttons */
+    align-items: center;
+    gap: 12px;                  /* space between them */
+    margin-top: 80px;           /* adjust spacing */
+  }
+
+  .primaryBtn,
+  .secondaryBtn {
+    width: 45%;                 /* each button takes half width */
+    text-align: center;
+    font-size: 0.95rem;
+    padding: 10px 0;
+  }
 }
 
 @media (max-width: 900px) {
