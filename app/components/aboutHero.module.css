@@ -2,10 +2,11 @@
   width: 100%;
   background: #ffffff;
   padding: 100px 0;
-font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif;
   overflow: hidden;
 }
 
+/* ---------- CONTAINER ---------- */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -27,10 +28,10 @@ font-family: "Raleway", sans-serif;
 
 .shapeWrapper {
   position: relative;
-  width: 420px;
-  height: 420px;
+  width: 340px; /* reduced from 420px */
+  height: 340px; /* reduced from 420px */
   background: #f58220;
-  border-radius: 30px;
+  border-radius: 25px;
   transform: rotate(45deg);
   display: flex;
   justify-content: center;
@@ -39,10 +40,10 @@ font-family: "Raleway", sans-serif;
 
 .innerShape {
   position: absolute;
-  width: 360px; /* slightly increased */
-  height: 360px;
+  width: 290px; /* reduced from 360px */
+  height: 290px; /* reduced from 360px */
   background: #fff;
-  border-radius: 25px;
+  border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,8 +51,8 @@ font-family: "Raleway", sans-serif;
 
 .imageWrapper {
   position: absolute;
-  width: 390px; /* increased from 280px */
-  height: 390px;
+  width: 320px; /* reduced from 390px */
+  height: 320px; /* reduced from 390px */
   overflow: hidden;
   transform: rotate(-45deg); /* counter rotation */
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); /* diamond shape */
@@ -75,7 +76,7 @@ font-family: "Raleway", sans-serif;
 }
 
 .title {
-  font-size: 3.2rem;
+  font-size: 3rem; /* slightly reduced */
   font-weight: 700;
   color: #000;
   margin-bottom: 25px;
@@ -122,15 +123,27 @@ font-family: "Raleway", sans-serif;
   .container {
     flex-direction: column;
     text-align: center;
-    gap: 60px;
+    gap: 50px;
   }
 
   .shapeWrapper {
-    transform: rotate(45deg) scale(0.8);
+    width: 260px; /* reduced for mobile */
+    height: 260px;
+    transform: rotate(45deg) scale(0.9);
+  }
+
+  .innerShape {
+    width: 220px;
+    height: 220px;
+  }
+
+  .imageWrapper {
+    width: 240px;
+    height: 240px;
   }
 
   .title {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
   }
 
   .text {

@@ -4,7 +4,7 @@
   background: url('/icons/comparative_hero.gif') center/cover no-repeat;
   color: #fff;
   padding: 90px 30px 50px;
-  font-family: "Playfair Display", serif;
+  font-family: "Raleway", sans-serif;
 
   overflow: hidden;
 }
@@ -181,66 +181,22 @@
   color: #f58220;
   font-weight: 600;
 }
-
-/* ====== RESPONSIVE ====== */
-
-/* Tablet */
-@media (max-width: 768px) {
-  .container {
-    grid-template-columns: 1fr;
-    gap: 45px;
-    padding: 0 25px;
-    text-align: center;
-  }
-
-  .logoSection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .linksSection ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-  }
-
-  .contactSection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .contactItem {
-    justify-content: center;
-    text-align: center;
-  }
-
-  .contactSection a {
-    margin: 25px 0 0 0;
-    width: 80%;
-    text-align: center;
-  }
-
-  .socials {
-    justify-content: center;
-    margin-top: 25px;
-  }
-
-  .linksSection h4,
-  .contactSection h4 {
-    text-align: center;
-    font-weight: 800;
-    font-size: 20px; /* slightly bigger on tablet */
-  }
-}
-
-/* Mobile */
+/* ====== MOBILE VIEW (Left-Aligned) ====== */
 @media (max-width: 480px) {
   .footer {
     padding: 60px 15px 30px;
+  }
+
+  .container {
+    gap: 30px;
+    text-align: left; /* Make all sections left-aligned */
+  }
+
+  .logoSection,
+  .linksSection,
+  .contactSection {
+    align-items: flex-start !important;
+    text-align: left !important;
   }
 
   .logoSection .about,
@@ -248,10 +204,24 @@
   .contactSection {
     font-size: 16px;
     line-height: 1.7;
+    text-align: left;
+  }
+
+  .linksSection ul {
+    align-items: flex-start !important;
+  }
+
+  .contactItem {
+    justify-content: flex-start !important;
+    text-align: left;
+  }
+
+  .socials {
+    justify-content: flex-start !important;
   }
 
   .socials a {
-    width: 44px; /* increased slightly */
+    width: 44px;
     height: 44px;
   }
 
@@ -260,29 +230,36 @@
     height: 22px;
   }
 
-  .bottom {
-    font-size: 14px;
-    padding-top: 15px;
-  }
-
-  .container {
-    gap: 30px;
-  }
-
-  .linksSection.products ul {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-
   .linksSection h4,
   .contactSection h4 {
-    text-align: center;
-    font-size: 18px; /* slightly bigger */
+    text-align: left;
+    font-size: 18px;
     font-weight: 800;
   }
 
   .contactSection a {
     width: 100%;
+    text-align: left;
   }
+
+  .bottom {
+    font-size: 14px;
+    padding-top: 15px;
+    text-align: left;
+  }
+}
+/* ====== PRODUCT LIST DOTS - MOBILE ONLY ====== */
+.linksSection.products ul li {
+  position: relative;
+  padding-left: 18px; /* space for the dot */
+}
+
+.linksSection.products ul li::before {
+  content: "•"; /* bullet dot */
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #f58220; /* your theme orange */
+  font-size: 18px;
+  line-height: 1.2;
 }

@@ -1,3 +1,6 @@
+/* ===============================
+   HERO SECTION STYLING
+================================= */
 .hero {
   position: relative;
   width: 100%;
@@ -118,8 +121,12 @@
     transform: translateY(0);
   }
 }
-/* === MOBILE BUTTON RESPONSIVENESS === */
-/* === MOBILE BUTTON RESPONSIVENESS === */
+
+/* ===============================
+   RESPONSIVE DESIGN
+================================= */
+
+/* --- Tablets --- */
 @media (max-width: 900px) {
   .leftContent h1 {
     font-size: 2.2rem;
@@ -129,9 +136,73 @@
     font-size: 1rem;
   }
 
-  /* Hide buttons on mobile view */
   .buttons {
     display: none;
   }
 }
 
+/* --- Mobile Phones --- */
+@media (max-width: 768px) {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .hero {
+    height: 50vh !important;
+    min-height: 50vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: flex-start; /* move content to top */
+    justify-content: flex-start;
+    position: relative;
+  }
+
+  .slide {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* ensures full screen height */
+    background-size: contain !important; /* show full image */
+    background-repeat: no-repeat;
+    background-position: top center !important; /* push image to top */
+  }
+
+  .container {
+    padding: 0 20px;
+    justify-content: flex-start;
+    text-align: center;
+  }
+
+  .leftContent {
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: 10px; /* small spacing below navbar */
+  }
+
+  .leftContent h1 {
+    font-size: 1.8rem;
+  }
+
+  .leftContent p {
+    font-size: 1rem;
+  }
+
+  .buttons {
+    display: none;
+  }
+}
+
+/* --- Small Phones --- */
+@media (max-width: 480px) {
+  .leftContent h1 {
+    font-size: 1.6rem;
+  }
+
+  .leftContent p {
+    font-size: 0.9rem;
+  }
+}

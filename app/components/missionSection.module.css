@@ -151,17 +151,24 @@
   .grid {
     transform: rotate(0);
     gap: 15px;
+    grid-template-columns: 1fr; /* single column layout */
+  }
+
+  /* hide all small shapes, keep only the large one */
+  .shape {
+    display: none;
+  }
+
+  .shapeLarge {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 16px;
+    margin: 0 auto;
   }
 
   .image {
     transform: none;
-  }
-
-  .shape,
-  .shapeLarge {
-    width: 100%;
-    height: auto;
-    border-radius: 16px;
   }
 
   .heading {
