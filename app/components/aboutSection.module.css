@@ -78,11 +78,6 @@
   transition: all 0.3s ease;
 }
 
-.aboutBtn:hover {
-  background: #ff9c42;
-  transform: translateY(-2px);
-}
-
 /* ---------- RIGHT CONTENT ---------- */
 .aboutRight {
   flex: 1;
@@ -107,10 +102,6 @@
   border-radius: 25px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   transition: transform 0.4s ease;
-}
-
-.aboutImage:hover {
-  transform: scale(1.05) rotate(3deg);
 }
 
 /* ---------- FLOATING BOXES ---------- */

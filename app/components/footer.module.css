@@ -5,7 +5,6 @@
   color: #fff;
   padding: 90px 30px 50px;
   font-family: "Raleway", sans-serif;
-
   overflow: hidden;
 }
 
@@ -32,13 +31,13 @@
   text-align: left;
 }
 .logoSection .logo {
-  height: 80px; /* slightly larger logo */
+  height: 80px;
   width: auto;
   margin-bottom: 25px;
 }
 .logoSection .about {
   color: white;
-  font-size: 18px; /* increased */
+  font-size: 18px;
   line-height: 2.1;
   margin-bottom: 25px;
 }
@@ -54,16 +53,16 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 50px; /* increased */
-  height: 50px; /* increased */
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.08);
   transition: all 0.4s ease;
 }
 
 .socials a img {
-  width: 28px; /* increased */
-  height: 28px; /* increased */
+  width: 28px;
+  height: 28px;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
@@ -80,11 +79,10 @@
 /* ====== LINKS & CONTACT HEADINGS ====== */
 .linksSection h4,
 .contactSection h4 {
-  font-size: 22px; /* increased */
+  font-size: 22px;
   font-weight: 700;
   margin-bottom: 24px;
   color: #f58220;
-
   letter-spacing: 1px;
   position: relative;
   display: inline-block;
@@ -124,7 +122,7 @@
 .linksSection ul li a {
   color: white;
   text-decoration: none;
-  font-size: 18px; /* increased */
+  font-size: 18px;
   transition: color 0.3s ease;
 }
 .linksSection ul li a:hover {
@@ -134,19 +132,19 @@
 /* ====== CONTACT SECTION ====== */
 .contactSection {
   color: #ddd;
-  font-size: 18px; /* increased */
+  font-size: 18px;
 }
 
 .contactItem {
   display: flex;
   align-items: center;
-  gap: 14px; /* slightly increased */
+  gap: 14px;
   margin-bottom: 16px;
 }
 
 .contactIcon {
-  width: 24px; /* increased */
-  height: 24px; /* increased */
+  width: 24px;
+  height: 24px;
 }
 
 .contactSection a {
@@ -154,12 +152,13 @@
   margin-top: 25px;
   background: #f58220;
   color: #fff;
-  padding: 12px 26px; /* increased */
+  padding: 12px 26px;
   border-radius: 25px;
   text-decoration: none;
-  font-size: 16px; /* increased */
+  font-size: 16px;
   font-weight: 500;
   transition: background 0.3s ease, transform 0.3s ease;
+  text-align: center; /* ensures text centering */
 }
 .contactSection a:hover {
   background: #ff8b33;
@@ -174,13 +173,14 @@
   text-align: center;
   margin-top: 70px;
   padding-top: 25px;
-  font-size: 16px; /* increased */
+  font-size: 16px;
   color: white;
 }
 .bottom .developer {
   color: #f58220;
   font-weight: 600;
 }
+
 /* ====== MOBILE VIEW (Left-Aligned) ====== */
 @media (max-width: 480px) {
   .footer {
@@ -189,7 +189,7 @@
 
   .container {
     gap: 30px;
-    text-align: left; /* Make all sections left-aligned */
+    text-align: left;
   }
 
   .logoSection,
@@ -237,9 +237,13 @@
     font-weight: 800;
   }
 
+  /* ✅ Center 'Get in Touch' button text on mobile */
   .contactSection a {
     width: 100%;
-    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   .bottom {
@@ -248,18 +252,19 @@
     text-align: left;
   }
 }
+
 /* ====== PRODUCT LIST DOTS - MOBILE ONLY ====== */
 .linksSection.products ul li {
   position: relative;
-  padding-left: 18px; /* space for the dot */
+  padding-left: 18px;
 }
 
 .linksSection.products ul li::before {
-  content: "•"; /* bullet dot */
+  content: "•";
   position: absolute;
   left: 0;
   top: 0;
-  color: #f58220; /* your theme orange */
+  color: #f58220;
   font-size: 18px;
   line-height: 1.2;
 }
