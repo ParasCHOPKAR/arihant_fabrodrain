@@ -1,7 +1,7 @@
 /* ====== FOOTER MAIN ====== */
 .footer {
   position: relative;
-  background: url('/icons/comparative_hero.gif') center/cover no-repeat;
+  background: url('/gallery/footer_01.jpg') center/cover no-repeat;
   color: #fff;
   padding: 90px 30px 50px;
   font-family: "Raleway", sans-serif;
@@ -37,8 +37,8 @@
 }
 .logoSection .about {
   color: white;
-  font-size: 18px;
-  line-height: 2.1;
+  font-size: 17px;
+  line-height: 2;
   margin-bottom: 25px;
 }
 
@@ -53,16 +53,16 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 50px;
-  height: 50px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.08);
   transition: all 0.4s ease;
 }
 
 .socials a img {
-  width: 28px;
-  height: 28px;
+  width: 26px;
+  height: 26px;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
@@ -79,9 +79,9 @@
 /* ====== LINKS & CONTACT HEADINGS ====== */
 .linksSection h4,
 .contactSection h4 {
-  font-size: 22px;
+  font-size: 21px;
   font-weight: 700;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   color: #f58220;
   letter-spacing: 1px;
   position: relative;
@@ -116,15 +116,30 @@
   list-style: none;
   padding: 0;
 }
+
 .linksSection ul li {
-  margin-bottom: 12px;
+  margin-bottom: 10px;
+  font-size: 17px;
+  position: relative;
+  padding-left: 18px;
 }
+
+.linksSection ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #f58220;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
 .linksSection ul li a {
   color: white;
   text-decoration: none;
-  font-size: 18px;
   transition: color 0.3s ease;
 }
+
 .linksSection ul li a:hover {
   color: #f58220;
 }
@@ -132,14 +147,14 @@
 /* ====== CONTACT SECTION ====== */
 .contactSection {
   color: #ddd;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .contactItem {
   display: flex;
   align-items: center;
   gap: 14px;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 .contactIcon {
@@ -155,10 +170,10 @@
   padding: 12px 26px;
   border-radius: 25px;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   transition: background 0.3s ease, transform 0.3s ease;
-  text-align: center; /* ensures text centering */
+  text-align: center;
 }
 .contactSection a:hover {
   background: #ff8b33;
@@ -171,9 +186,9 @@
   z-index: 2;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
   text-align: center;
-  margin-top: 70px;
-  padding-top: 25px;
-  font-size: 16px;
+  margin-top: 60px;
+  padding-top: 20px;
+  font-size: 15px;
   color: white;
 }
 .bottom .developer {
@@ -202,7 +217,7 @@
   .logoSection .about,
   .linksSection ul li a,
   .contactSection {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.7;
     text-align: left;
   }
@@ -221,8 +236,8 @@
   }
 
   .socials a {
-    width: 44px;
-    height: 44px;
+    width: 42px;
+    height: 42px;
   }
 
   .socials a img {
@@ -247,24 +262,8 @@
   }
 
   .bottom {
-    font-size: 14px;
+    font-size: 13px;
     padding-top: 15px;
     text-align: left;
   }
-}
-
-/* ====== PRODUCT LIST DOTS - MOBILE ONLY ====== */
-.linksSection.products ul li {
-  position: relative;
-  padding-left: 18px;
-}
-
-.linksSection.products ul li::before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: #f58220;
-  font-size: 18px;
-  line-height: 1.2;
 }

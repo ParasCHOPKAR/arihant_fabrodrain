@@ -25,7 +25,7 @@ const Footer = () => {
 
           {/* SOCIAL ICONS */}
           <div className={styles.socials}>
-            <a href="#" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/company/arihant-corporation-pune/" aria-label="LinkedIn">
               <Image
                 src="/icons/LinkedIn_icon.svg.png"
                 alt="LinkedIn"
@@ -33,10 +33,18 @@ const Footer = () => {
                 height={24}
               />
             </a>
-            <a href="#" aria-label="Instagram">
+            <a href="https://www.instagram.com/fibrodrain" aria-label="Instagram">
               <Image
                 src="/icons/Instagram_icon.png.webp"
                 alt="Instagram"
+                width={24}
+                height={24}
+              />
+            </a>
+            <a href="https://www.facebook.com/people/Fibrodrain-FRP-Products/61555971689060/?rdid=3FP1CAG3WJ4142md&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BRTMchbbo%2F" aria-label="Facebook">
+              <Image
+                src="/icons/facebook.jpg"
+                alt="Facebook"
                 width={24}
                 height={24}
               />
@@ -88,7 +96,7 @@ const Footer = () => {
               height={20}
               className={styles.contactIcon}
             />
-            <p>123 Industrial Road, Pune, India</p>
+            <p> Shop no. 120+121, 1 floor, Ultima Business Centre </p>
           </div>
 
           <div className={styles.contactItem}>
@@ -110,7 +118,7 @@ const Footer = () => {
               height={20}
               className={styles.contactIcon}
             />
-            <p>info@thermodrain.com</p>
+            <p>krunal3399@gmail.com</p>
           </div>
 
           <a href="/contact">Get in Touch</a>
@@ -119,7 +127,7 @@ const Footer = () => {
 
       {/* ===== BOTTOM BAR ===== */}
       <div className={styles.bottom}>
-        <p>© {new Date().getFullYear()} THERMODRAIN. All Rights Reserved.</p>
+        <p>© {new Date().getFullYear()} FIBRODRAIN. All Rights Reserved.</p>
         <p className={styles.developer}>Developed by DW INNOVATION PVT. LTD.</p>
       </div>
     </footer>

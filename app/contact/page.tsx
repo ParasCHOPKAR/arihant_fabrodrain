@@ -63,7 +63,7 @@ export default function ContactPage() {
             <h2>Get In Touch</h2>
             <div className={styles.getInTouchCard}>
               <p><strong>Phone:</strong> +91 9637819378</p>
-              <p><strong>Website:</strong> arihantcorp.co.in</p>
+     
               <p><strong>Email:</strong> krunal3399@gmail.com</p>
               <p><strong>Address:</strong> Shop no. 120+121, 1st Floor, Ultima Business Centre</p>
             </div>
