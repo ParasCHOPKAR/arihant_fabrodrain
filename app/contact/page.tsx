@@ -1,12 +1,12 @@
+// app/contact/ContactFormClient.tsx
 "use client";
 
-import { useState, useEffect, Suspense } from "react";
+import React, { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
-import styles from "./contact.module.css";
 import Image from "next/image";
-import Link from "next/link";
+import styles from "./contact.module.css";
 
-function ContactContent() {
+export default function ContactFormClient() {
   const searchParams = useSearchParams();
 
   const [formData, setFormData] = useState({
@@ -20,7 +20,7 @@ function ContactContent() {
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState("");
 
-  // ✅ Prefill subject from URL
+  // Prefill subject from URL (e.g., /contact?subject=Solid%20Top)
   useEffect(() => {
     const subjectFromURL = searchParams.get("subject");
     if (subjectFromURL) {
@@ -28,14 +28,12 @@ function ContactContent() {
     }
   }, [searchParams]);
 
-  // ✅ Handle input changes
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // ✅ Handle form submit
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
@@ -48,20 +46,17 @@ function ContactContent() {
         body: JSON.stringify(formData),
       });
 
+      const data = await res.json();
+
       if (res.ok) {
         setStatus("✅ Message sent successfully! We will contact you soon.");
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          subject: "",
-          message: "",
-        });
+        setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
       } else {
+        console.error("API error:", data);
         setStatus("❌ Something went wrong. Please try again later.");
       }
     } catch (error) {
-      console.error("Error:", error);
+      console.error("Network error:", error);
       setStatus("⚠️ Network error. Please try again later.");
     } finally {
       setLoading(false);
@@ -100,9 +95,7 @@ function ContactContent() {
         <div className={styles.container}>
           {/* LEFT SIDE — FORM */}
           <div className={styles.formWrapper}>
-            <p>
-              Fill out the form below and we will get back to you as soon as possible.
-            </p>
+            <p>Fill out the form below and we will get back to you as soon as possible.</p>
 
             <form onSubmit={handleSubmit} className={styles.contactForm}>
               <input
@@ -137,7 +130,7 @@ function ContactContent() {
                 placeholder="Subject"
                 value={formData.subject}
                 onChange={handleChange}
-                readOnly={!!searchParams.get("subject")} // ✅ Lock if prefilled
+                readOnly={!!searchParams.get("subject")}
                 required
               />
               <textarea
@@ -146,7 +139,7 @@ function ContactContent() {
                 value={formData.message}
                 onChange={handleChange}
                 required
-              ></textarea>
+              />
               <button type="submit" disabled={loading}>
                 {loading ? "Sending..." : "Submit"}
               </button>
@@ -155,24 +148,18 @@ function ContactContent() {
             {status && <p className={styles.statusMessage}>{status}</p>}
           </div>
 
-          {/* RIGHT SIDE — INFO */}
+          {/* RIGHT SIDE — GET IN TOUCH INFO */}
           <div className={styles.infoWrapper}>
             <h2>Get In Touch</h2>
             <div className={styles.getInTouchCard}>
-              <p>
-                <strong>Phone:</strong> +91 9637819378
-              </p>
-              <p>
-                <strong>Email:</strong> fibrodrain@gmail.com
-              </p>
-              <p>
-                <strong>Address:</strong> Shop no. 120+121, 1st Floor, Ultima Business Centre
-              </p>
+              <p><strong>Phone:</strong> +91 9637819378</p>
+              <p><strong>Email:</strong> fibrodrain@gmail.com</p>
+              <p><strong>Address:</strong> Shop no. 120+121, 1st Floor, Ultima Business Centre</p>
             </div>
           </div>
         </div>
 
-        {/* MAP SECTION */}
+        {/* MAP BELOW FORM */}
         <div className={styles.mapWrapperBelow}>
           <h2 className={styles.mapHeading}>Our Location</h2>
           <iframe
@@ -183,18 +170,9 @@ function ContactContent() {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
+          />
         </div>
       </section>
     </div>
-  );
-}
-
-// ✅ Wrap the component in Suspense to fix the build-time error
-export default function ContactPage() {
-  return (
-    <Suspense fallback={<div>Loading Contact Page...</div>}>
-      <ContactContent />
-    </Suspense>
   );
 }
