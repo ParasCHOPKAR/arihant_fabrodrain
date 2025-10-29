@@ -25,7 +25,7 @@ export default function AboutHero() {
         <div className={styles.rightContent}>
           <h1 className={styles.title}>About <span>Us</span></h1>
           <p className={styles.text}>
-            At <strong>Arihant Industries</strong>, we take pride in being a
+            At <strong>Fibrodrain</strong>, we take pride in being a
             trusted name in the field of industrial and construction solutions.
             With years of experience, innovation and excellence, we have built
             a reputation for delivering quality products that stand the test of

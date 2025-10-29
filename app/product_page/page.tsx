@@ -7,7 +7,7 @@ import Link from "next/link";
 const products = [
   { name: "Solid Top Manhole Covers with Frame", img: "/product_img/solid.jpg", link: "/products/thermodrain_solid_top" },
   { name: "Multiple Covers with Frame", img: "/fibro_image/multi_cover.jpg", link: "/products/thermodrain_multi_cover" },
-  { name: "Recess Manhole Cover Sizes", img: "/product_img/recess.jpg", link: "/products/thermodrain_recess" },
+  { name: "Recess Manhole Cover Sizes", img: "/product_img/recess_02.jpg", link: "/products/thermodrain_recess" },
   { name: "Air and Watertight Covers with Frame", img: "/fibro_image/wter_cover_04.jpg", link: "/products/thermodrain_air_cover" },
   { name: "Gratings", img: "/fibro_image/greating_05.jpg", link: "/products/thermodrain_gratings" },
   { name: "Water Gully Cover", img: "/fibro_image/water_gully_06.jpg", link: "/products/thermodrain_water_cover" }, // ✅ fixed (added /)

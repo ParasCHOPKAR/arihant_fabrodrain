@@ -1,12 +1,65 @@
 "use client";
 
+import { useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation"; // ✅ used to read query params
 import styles from "./contact.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ContactPage() {
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const searchParams = useSearchParams(); // ✅ initialize query reader
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState("");
+
+  // ✅ Prefill subject from URL (e.g., /contact?subject=Solid%20Top%20Manhole%20Cover)
+  useEffect(() => {
+    const subjectFromURL = searchParams.get("subject");
+    if (subjectFromURL) {
+      setFormData((prev) => ({ ...prev, subject: subjectFromURL }));
+    }
+  }, [searchParams]);
+
+  // ✅ Handle input changes
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  // ✅ Handle form submit
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    alert("Message sent! We will contact you shortly.");
+    setLoading(true);
+    setStatus("");
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (res.ok) {
+        setStatus("✅ Message sent successfully! We will contact you soon.");
+        setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
+      } else {
+        setStatus("❌ Something went wrong. Please try again later.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      setStatus("⚠️ Network error. Please try again later.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -17,11 +70,14 @@ export default function ContactPage() {
           <div className={styles.heroText}>
             <h1>Contact Us</h1>
             <p>
-              We would love to hear from you. Reach out for quotes, inquiries, or 
+              We would love to hear from you. Reach out for quotes, inquiries, or
               project consultation. Our team is ready to assist you!
             </p>
           </div>
-          <div className={styles.heroImage} style={{ position: "relative", width: "100%", height: "400px" }}>
+          <div
+            className={styles.heroImage}
+            style={{ position: "relative", width: "100%", height: "400px" }}
+          >
             <Image
               src="/icons/contact.jpg"
               alt="Contact Us"
@@ -38,24 +94,57 @@ export default function ContactPage() {
         <div className={styles.container}>
           {/* LEFT SIDE — FORM */}
           <div className={styles.formWrapper}>
-            <p>
-              Fill out the form below and we will get back to you as soon as possible.
-            </p>
+            <p>Fill out the form below and we will get back to you as soon as possible.</p>
 
             <form onSubmit={handleSubmit} className={styles.contactForm}>
-              <input type="text" placeholder="First Name" required />
-              <input type="email" placeholder="Email" required />
+              <input
+                type="text"
+                name="name"
+                placeholder="Full Name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
               <input
                 type="tel"
+                name="phone"
                 placeholder="Mobile Number"
                 pattern="[0-9]{10}"
                 maxLength={10}
+                value={formData.phone}
+                onChange={handleChange}
                 required
               />
-              <input type="text" placeholder="Subject" required />
-              <textarea placeholder="Message" required></textarea>
-              <button type="submit">Submit</button>
+              <input
+                type="text"
+                name="subject"
+                placeholder="Subject"
+                value={formData.subject}
+                onChange={handleChange}
+                readOnly={!!searchParams.get("subject")} // ✅ lock field if prefilled
+                required
+              />
+              <textarea
+                name="message"
+                placeholder="Message"
+                value={formData.message}
+                onChange={handleChange}
+                required
+              ></textarea>
+              <button type="submit" disabled={loading}>
+                {loading ? "Sending..." : "Submit"}
+              </button>
             </form>
+
+            {status && <p className={styles.statusMessage}>{status}</p>}
           </div>
 
           {/* RIGHT SIDE — GET IN TOUCH INFO */}
@@ -63,14 +152,13 @@ export default function ContactPage() {
             <h2>Get In Touch</h2>
             <div className={styles.getInTouchCard}>
               <p><strong>Phone:</strong> +91 9637819378</p>
-     
-              <p><strong>Email:</strong> krunal3399@gmail.com</p>
+              <p><strong>Email:</strong> fibrodrain@gmail.com</p>
               <p><strong>Address:</strong> Shop no. 120+121, 1st Floor, Ultima Business Centre</p>
             </div>
           </div>
         </div>
 
-        {/* MAP BELOW FORM */}     
+        {/* MAP BELOW FORM */}
         <div className={styles.mapWrapperBelow}>
           <h2 className={styles.mapHeading}>Our Location</h2>
           <iframe
@@ -84,6 +172,9 @@ export default function ContactPage() {
           ></iframe>
         </div>
       </section>
+
+      {/* CTA SECTION */}
+
     </div>
   );
 }

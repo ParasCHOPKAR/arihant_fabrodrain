@@ -16,7 +16,7 @@ interface Product {
 const products: Product[] = [
   { name: "Solid Top Manhole Covers With Frame", img: "/product_img/solid.jpg", link: "/products/thermodrain_air_cover" },
   { name: "Multiple Covers With Frame", img: "/product_img/multi_cover.jpg", link: "/products/thermodrain_angle_cover" },
-  { name: "Recess Manhole Covers (With Frame)", img: "/product_img/recess.jpg", link: "/products/thermodrain_chamber_cover" },
+  { name: "Recess Manhole Covers (With Frame)", img: "/product_img/recess_02.jpg", link: "/products/thermodrain_chamber_cover" },
   { name: "Air & Watertight (Pressfit) Covers With Frame", img: "/product_img/air_water_tight.jpg", link: "/products/thermodrain_frp_grp_cover" },
   { name: "Gratings", img: "/product_img/grating.jpg", link: "/products/thermodrain_gratings" },
   { name: "Water Gully Covers", img: "/product_img/water_gully_cover.jpg", link: "/products/thermodrain_hinged_cover" },
