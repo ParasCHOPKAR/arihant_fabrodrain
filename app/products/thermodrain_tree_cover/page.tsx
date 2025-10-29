@@ -37,7 +37,7 @@ FIBRODRAIN Tree Gratings are tested as per BS EN 124, IS 1726, and AASHTO M306 s
           className={styles.imageWrapper}
         >
           <Image
-            src="/fibro_image/tree_greating_08.jpg"
+            src="/product_img/tree_grating.jpg"
             alt="Thermodrain Solid Top Manhole Cover"
             width={600}
             height={600}

@@ -36,7 +36,7 @@ export default function ThermodrainProductPage() {
           className={styles.imageWrapper}
         >
           <Image
-            src="/fibro_image/drain_channel_07.jpg"
+            src="/product_img/frp_grp_drain.jpg"
             alt="Thermodrain FRP GRP Drain Channel"
             width={600}
             height={600}

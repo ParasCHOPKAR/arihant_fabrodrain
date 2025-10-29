@@ -37,7 +37,7 @@ FIBRODRAIN Hinged Overhead and Underground (U.G.) Water Tank Covers are tested a
           className={styles.imageWrapper}
         >
           <Image
-            src="/fibro_image/hinged_10.jpg"
+            src="/product_img/hinged_overhead.jpg"
             alt="Thermodrain Solid Top Manhole Cover"
             width={600}
             height={600}

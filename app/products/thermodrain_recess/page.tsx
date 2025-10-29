@@ -40,7 +40,7 @@ export default function FibrodrainRecessPage() {
           className={styles.imageWrapper}
         >
           <Image
-            src="/fibro_image/recess_manhole_cover.jpg"
+            src="/product_img/recess.jpg"
             alt="Fibrodrain Recess Manhole Cover"
             width={600}
             height={600}
