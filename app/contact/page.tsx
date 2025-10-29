@@ -1,13 +1,13 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { useSearchParams } from "next/navigation"; // ✅ used to read query params
+import { useState, useEffect, Suspense } from "react";
+import { useSearchParams } from "next/navigation";
 import styles from "./contact.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function ContactPage() {
-  const searchParams = useSearchParams(); // ✅ initialize query reader
+function ContactContent() {
+  const searchParams = useSearchParams();
 
   const [formData, setFormData] = useState({
     name: "",
@@ -20,7 +20,7 @@ export default function ContactPage() {
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState("");
 
-  // ✅ Prefill subject from URL (e.g., /contact?subject=Solid%20Top%20Manhole%20Cover)
+  // ✅ Prefill subject from URL
   useEffect(() => {
     const subjectFromURL = searchParams.get("subject");
     if (subjectFromURL) {
@@ -50,7 +50,13 @@ export default function ContactPage() {
 
       if (res.ok) {
         setStatus("✅ Message sent successfully! We will contact you soon.");
-        setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          subject: "",
+          message: "",
+        });
       } else {
         setStatus("❌ Something went wrong. Please try again later.");
       }
@@ -94,7 +100,9 @@ export default function ContactPage() {
         <div className={styles.container}>
           {/* LEFT SIDE — FORM */}
           <div className={styles.formWrapper}>
-            <p>Fill out the form below and we will get back to you as soon as possible.</p>
+            <p>
+              Fill out the form below and we will get back to you as soon as possible.
+            </p>
 
             <form onSubmit={handleSubmit} className={styles.contactForm}>
               <input
@@ -129,7 +137,7 @@ export default function ContactPage() {
                 placeholder="Subject"
                 value={formData.subject}
                 onChange={handleChange}
-                readOnly={!!searchParams.get("subject")} // ✅ lock field if prefilled
+                readOnly={!!searchParams.get("subject")} // ✅ Lock if prefilled
                 required
               />
               <textarea
@@ -147,18 +155,24 @@ export default function ContactPage() {
             {status && <p className={styles.statusMessage}>{status}</p>}
           </div>
 
-          {/* RIGHT SIDE — GET IN TOUCH INFO */}
+          {/* RIGHT SIDE — INFO */}
           <div className={styles.infoWrapper}>
             <h2>Get In Touch</h2>
             <div className={styles.getInTouchCard}>
-              <p><strong>Phone:</strong> +91 9637819378</p>
-              <p><strong>Email:</strong> fibrodrain@gmail.com</p>
-              <p><strong>Address:</strong> Shop no. 120+121, 1st Floor, Ultima Business Centre</p>
+              <p>
+                <strong>Phone:</strong> +91 9637819378
+              </p>
+              <p>
+                <strong>Email:</strong> fibrodrain@gmail.com
+              </p>
+              <p>
+                <strong>Address:</strong> Shop no. 120+121, 1st Floor, Ultima Business Centre
+              </p>
             </div>
           </div>
         </div>
 
-        {/* MAP BELOW FORM */}
+        {/* MAP SECTION */}
         <div className={styles.mapWrapperBelow}>
           <h2 className={styles.mapHeading}>Our Location</h2>
           <iframe
@@ -172,9 +186,15 @@ export default function ContactPage() {
           ></iframe>
         </div>
       </section>
-
-      {/* CTA SECTION */}
-
     </div>
+  );
+}
+
+// ✅ Wrap the component in Suspense to fix the build-time error
+export default function ContactPage() {
+  return (
+    <Suspense fallback={<div>Loading Contact Page...</div>}>
+      <ContactContent />
+    </Suspense>
   );
 }
