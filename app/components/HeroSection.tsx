@@ -20,18 +20,18 @@ export default function HeroSection() {
   ];
 
   const mobileSlides = [
-    "/mobile/1.png",
-     "/mobile/2.png",
-      "/mobile/3.png",
-       "/mobile/4.png",
-        "/mobile/5.png",
-         "/mobile/6.png",
-          "/mobile/7.png",
-           "/mobile/8.png",
-            "/mobile/9.png",
-             "/mobile/10.png",
-              "/mobile/11.png",
-               "/mobile/12.png",
+    "/mobile/1.jpg",
+      "/mobile/2.jpg",
+        "/mobile/3.jpg",
+          "/mobile/4.jpg",
+            "/mobile/5.jpg",
+              "/mobile/6.jpg",
+                "/mobile/7.jpg",
+                  "/mobile/8.jpg",
+                    "/mobile/9.jpg",
+                      "/mobile/10.jpg",
+                        "/mobile/11.jpg",
+                          "/mobile/12.jpg",
 
   ];
 
