@@ -45,12 +45,14 @@ const ComparativePage = () => {
             onClick={() => openModal(img)}
           >
             <Image
-              src={img}
-              alt={`Comparison ${idx + 1}`}
-              fill // Fills the container, making it square
-              style={{ objectFit: "cover" }}
-              priority
-            />
+            src={img}
+  alt={`Comparison ${idx + 1}`}
+  width={800}
+  height={800}
+  className={styles.cardImage}
+  priority
+/>
+
           </div>
         ))}
       </section>
