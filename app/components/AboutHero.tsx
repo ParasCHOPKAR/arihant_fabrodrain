@@ -12,7 +12,7 @@ export default function AboutHero() {
             <div className={styles.innerShape}></div>
             <div className={styles.imageWrapper}>
               <Image
-                src="/images/about__011.jpg" // ← replace with your image path
+                src="/product_img/air_water_tight.jpg" // ← replace with your image path
                 alt="About Us"
                 width={400}
                 height={400}

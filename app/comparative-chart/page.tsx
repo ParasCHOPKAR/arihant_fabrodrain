@@ -6,10 +6,10 @@ import styles from "./Comparative.module.css"; // CSS Modules
 
 const ComparativePage = () => {
   const images = [
-    "/icons/comparative-chart1.png",
-    "/icons/comparative-chart2.png",
-    "/icons/comparative-chart3.jpg",
-    "/icons/comparative-chart4.jpg",
+    "/icons/2.png",
+    "/icons/3.png",
+    "/icons/4.png",
+    "/icons/5.png",
   ];
 
   const [modalOpen, setModalOpen] = useState(false);

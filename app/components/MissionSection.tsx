@@ -44,7 +44,7 @@ export default function MissionSection() {
           <div className={styles.grid}>
             <div className={styles.shape}>
               <Image
-                src="/images/about__011.jpg"
+                src="/product_img/solid.jpg"
                 alt="Mission"
                 width={200}
                 height={200}
@@ -53,7 +53,7 @@ export default function MissionSection() {
             </div>
             <div className={styles.shape}>
               <Image
-                src="/images/about_01.jpg"
+                src="/product_img/water_gully_cover.jpg"
                 alt="Mission"
                 width={200}
                 height={200}
@@ -62,7 +62,7 @@ export default function MissionSection() {
             </div>
             <div className={styles.shape}>
               <Image
-                src="/images/about__22.jpg"
+                src="/product_img/tree_grating.jpg"
                 alt="Mission"
                 width={200}
                 height={200}
@@ -71,7 +71,7 @@ export default function MissionSection() {
             </div>
             <div className={styles.shapeLarge}>
               <Image
-                src="/images/about__33.jpg"
+                src="/product_img/hinged_overhead.jpg"
                 alt="Mission"
                 width={400}
                 height={400}

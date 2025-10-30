@@ -106,7 +106,7 @@ const Footer = () => {
               <Image src="/icons/location.png" alt="location" width={20} height={20} />
             </div>
             <div className={styles.contactText}>
-              Shop no. 120+121, 1 floor, Ultima Business Centre
+    ULTIMA BUSINESS CENTER, 120+121, Gangadham - Shatrunjay Rd, near Shri Shanti Nagar Society, Kondhwa Budruk, Pune, Maharashtra 411048
             </div>
           </div>
 
@@ -126,7 +126,7 @@ const Footer = () => {
             <div className={styles.contactIcon}>
               <Image src="/icons/email.jpg" alt="email" width={20} height={20} />
             </div>
-            <div className={styles.contactText}>krunal3399@gmail.com</div>
+            <div className={styles.contactText}>fibrodrain@gmail.com</div>
           </div>
 
       

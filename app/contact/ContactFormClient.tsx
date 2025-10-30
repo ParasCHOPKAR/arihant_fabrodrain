@@ -153,7 +153,7 @@ export default function ContactFormClient() {
             <div className={styles.getInTouchCard}>
               <p><strong>Phone:</strong> +91 9637819378</p>
               <p><strong>Email:</strong> fibrodrain@gmail.com</p>
-              <p><strong>Address:</strong> Shop no. 120+121, 1st Floor, Ultima Business Centre</p>
+              <p><strong>Address:</strong> ULTIMA BUSINESS CENTER, 120+121, Gangadham - Shatrunjay Rd, near Shri Shanti Nagar Society, Kondhwa Budruk, Pune, Maharashtra 411048</p>
             </div>
           </div>
         </div>
@@ -162,7 +162,7 @@ export default function ContactFormClient() {
         <div className={styles.mapWrapperBelow}>
           <h2 className={styles.mapHeading}>Our Location</h2>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3779.4881389195765!2d73.8780771!3d18.4585846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2ebefbdeffd67%3A0x41563099a603bb11!2sUltima%20Business%20Centre!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d946.1386151887093!2d73.87811590429969!3d18.45852764966973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1ffc8d7e2ff%3A0x80c20256138bda39!2sARIHANT%20CORPORATION!5e0!3m2!1sen!2sin!4v1761802741464!5m2!1sen!2sin"
             width="100%"
             height="400"
             style={{ border: 0 }}
