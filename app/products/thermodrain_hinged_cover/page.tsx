@@ -15,7 +15,7 @@ export default function ThermodrainProductPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
         >
-Hinged Overhead and u.g. Water Tank Covers
+FIBRODRAIN Hinged Overhead and u.g. Water Tank Covers
         </motion.h1>
 
         <motion.p
