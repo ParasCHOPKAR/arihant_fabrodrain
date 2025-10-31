@@ -11,7 +11,7 @@ const products = [
   { name: "Air and Watertight Covers with Frame", img: "/fibro_image/wter_cover_04.jpg", link: "/products/thermodrain_air_cover" },
   { name: "Gratings", img: "/fibro_image/greating_05.jpg", link: "/products/thermodrain_gratings" },
   { name: "Water Gully Cover", img: "/fibro_image/water_gully_06.jpg", link: "/products/thermodrain_water_cover" }, // ✅ fixed (added /)
-  { name: "Drain Channels with Grating/Gully Cover", img: "/product_img/water_gully_cover.jpg", link: "/products/thermodrain_frp_grp_cover" },
+  { name: "Drain Channels with Grating/Gully Cover", img: "/product_img/frp_grp_drain.jpg", link: "/products/thermodrain_frp_grp_cover" },
   { name: "Tree Gratings", img: "/product_img/tree_grating.jpg", link: "/products/thermodrain_tree_cover" },
   { name: "L Angle", img: "/fibro_image/l_angle_09.jpg", link: "/products/thermodrain_angle_cover" },
   { name: "Hinged Overhead and U.G. Water Tank Covers", img: "/product_img/hinged_overhead.jpg", link: "/products/thermodrain_hinged_cover" }, // ✅ fixed (added /)

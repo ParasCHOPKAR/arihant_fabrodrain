@@ -68,9 +68,9 @@ const Footer = () => {
         {/* ===== QUICK LINKS ===== */}
         <div className={styles.linksSection}>
           <h4>Quick Links</h4>
-          <ul>
+          <ul>                 
             <li><Link href="/">Home</Link></li>
-            <li><Link href="/about-us">About Us</Link></li>
+            <li><Link href="/about">About Us</Link></li>
             <li><Link href="/industries-served">Industries Served</Link></li>
             <li><Link href="/comparative-chart">Features Comparison</Link></li>
             <li><Link href="/load-testing">Load Testing</Link></li>
